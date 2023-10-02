@@ -41,8 +41,7 @@ module.exports = withMT({
       "meta-7": "#FF6766",
       "meta-8": "#F0950C",
       "meta-9": "#E5E7EB",
-      primary_color: "#065758",
-      primary_green: "#087EA2", // 0A8791
+      primary_green: "#087c7c", // 0A8791
       primary_orange: "#f8ac44", // FBA83c
       secondary_orange: "#ff8c04",
       colorless_green: "#f0f4f4",
@@ -100,9 +99,6 @@ module.exports = withMT({
       ...defaultTheme.screens,
     },
     extend: {
-      backgroundImage: {
-        back: "url('/src/assets/images/wave_five.png')",
-      },
       fontSize: {
         "title-xxl": ["44px", "55px"],
         "title-xl": ["36px", "45px"],
