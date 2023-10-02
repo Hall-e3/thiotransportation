@@ -100,6 +100,10 @@ module.exports = withMT({
       ...defaultTheme.screens,
     },
     extend: {
+      backgroundImage: {
+        background_truck: "url('/src/assets/images/truck.jpeg')",
+        background_truck2: "url('/src/assets/images/truck2.jpeg')",
+      },
       fontSize: {
         "title-xxl": ["44px", "55px"],
         "title-xl": ["36px", "45px"],

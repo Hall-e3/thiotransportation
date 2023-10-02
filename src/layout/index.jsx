@@ -38,7 +38,7 @@ export default function Layout({ children, style }) {
                   <p>info@theotransportation.com</p>
                 </div>
               </div>
-              <div className="py-5 px-10 flex items-center justify-center bg-primary_orange absolute cursor-pointer duration-300 ease-out right-75 rounded-b-lg hover:bg-primary_green">
+              <div className="py-5 px-10 flex items-center justify-center bg-primary_orange z-20 cursor-pointer duration-300 ease-out right-75 rounded-b-lg hover:bg-primary_green">
                 <h4 className="font-bold text-white text-lg">Get A Quote</h4>
               </div>
             </div>
@@ -97,16 +97,7 @@ export default function Layout({ children, style }) {
             </div>
           </div>
         </section>
-        <main
-          className={`w-full h-full row-span-5 relative ease-linear overflow-y-auto ${style}`}
-        >
-          {children}
-        </main>
-        <div className="my-4 flex justify-center">
-          <p className="text-black text-sm text-center sm:text-start">
-            Copyright @2023 FindMyNationalID. All rights reserved
-          </p>
-        </div>
+        <main className="w-full h-full">{children}</main>
       </div>
     </div>
   );
