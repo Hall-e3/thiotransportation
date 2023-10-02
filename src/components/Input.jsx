@@ -31,7 +31,7 @@ export default function Input({
             name={name}
             value={value}
             onFocus={onFocus}
-            className={`h-full outline-none rounded text-gray-900 text-sm py-5 px-3 ${
+            className={`h-full outline-none rounded text-gray-900 text-sm py-6 px-3 ${
               icon ? "mr-4" : ""
             }  block w-full dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white`}
             placeholder={placeholder}
