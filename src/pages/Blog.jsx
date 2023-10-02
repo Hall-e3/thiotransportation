@@ -1,15 +1,19 @@
 import React from "react";
 import Layout from "../layout";
-import { b1 } from "../constants";
+import { b1, b2, b5 } from "../constants";
 import {
   ChatBubbleLeftRightIcon,
   ChevronRightIcon,
   ClockIcon,
+  MagnifyingGlassIcon,
+  PlayIcon,
   UserIcon,
 } from "@heroicons/react/24/solid";
-import { Button } from "../components";
+import { Button, Footer, Input } from "../components";
 
-import { LinkedIn, Twitter, Facebook } from "@mui/icons-material";
+import { LinkedIn, Twitter, Facebook, YouTube } from "@mui/icons-material";
+import { blogs } from "../data";
+import { Carousel } from "@material-tailwind/react";
 
 export default function Blog() {
   return (
@@ -23,77 +27,248 @@ export default function Blog() {
           </div>
         </div>
       </div>
-      <div className="py-16">
-        <div className="max-w-[1240px] mx-auto ">
-          <div className="grid grid-cols-1 sm:grid-cols-7">
-            <div className="col-span-5 border border-stroke rounded-lg">
-              <div className="flex flex-col ">
-                <div className="rounded-lg">
-                  <img
-                    src={b1}
-                    alt="b1"
-                    className="w-full object-contain rounded-t-lg"
-                  />
-                </div>
-                <div className="flex flex-col space-y-8 p-14">
-                  <div className="flex flex-row items-center space-x-6">
-                    <div className="flex items-center space-x-1">
-                      <UserIcon className="w-5 h-5 text-primary_green" />
-                      <p className="text-md font-medium text-grey_skip">
-                        Theo Transportation
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <ClockIcon className="w-5 h-5 text-primary_green" />
-                      <p className="text-md font-medium text-grey_skip">
-                        June 4, 2023
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-1">
-                      <ChatBubbleLeftRightIcon className="w-5 h-5 text-primary_green" />
-                      <p className="text-md font-medium text-grey_skip">
-                        No Comments
-                      </p>
-                    </div>
+      <div className="pt-20 mb-40">
+        <div className="max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-9 gap-8">
+            {blogs.map((blog) => (
+              <div
+                key={blog.id}
+                className="col-span-1 sm:col-span-6 border border-stroke rounded-lg mb-6"
+              >
+                <div className="flex flex-col">
+                  <div className="rounded-lg">
+                    {blog.image ? (
+                      <img
+                        src={blog.image}
+                        alt="b1"
+                        className="w-full object-contain rounded-t-lg"
+                      />
+                    ) : (
+                      <Carousel className="rounded-xl">
+                        {blog?.images &&
+                          blog?.images.map((image, i) => (
+                            <img
+                              key={i}
+                              src={image}
+                              alt={image + i}
+                              className="h-full w-full object-cover"
+                            />
+                          ))}
+                      </Carousel>
+                    )}
                   </div>
-                  <div className="flex flex-col space-y-8">
-                    <h3 className="text-4xl font-bold hover:text-[#005bac] cursor-pointer">
-                      Why Transport is Key in Logistics?
-                    </h3>
-                    <p className="text-md font-medium text-grey_skip">
-                      Kobita mnis iste natus error sit voluptatem acycu sa mnis
-                      iste nat Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip
-                      ex ea commodo consequat. Duis aute irure dolor in
-                      reprehenderit in […]
-                    </p>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <Button
-                      text="Read More"
-                      buttonStyle="w-[30%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
-                      icon={
-                        <div className="bg-[#005bac] p-3 rounded-md">
-                          <ChevronRightIcon className="w-5 h-5 text-white" />
-                        </div>
-                      }
-                    />
-                    <div className="flex items-center space-x-3">
-                      <h6>SHARE</h6>
-                      <Facebook className="text-[#005bac]" />
-                      <Twitter className="text-[#0693e3]" />
-                      <LinkedIn className="text-primary_color" />
+                  <div className="flex flex-col space-y-8 p-14">
+                    <div className="flex flex-row items-center space-x-6">
+                      <div className="flex items-center space-x-1">
+                        <UserIcon className="w-5 h-5 text-primary_green" />
+                        <p className="text-md font-medium text-grey_skip">
+                          {blog.title}
+                        </p>
+                      </div>
+                      <div className="flex items-center space-x-1">
+                        <ClockIcon className="w-5 h-5 text-primary_green" />
+                        <p className="text-md font-medium text-grey_skip">
+                          {blog.date}
+                        </p>
+                      </div>
+                      <div className="flex items-center space-x-1">
+                        <ChatBubbleLeftRightIcon className="w-5 h-5 text-primary_green" />
+                        <p className="text-md font-medium text-grey_skip">
+                          {blog.comments}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex flex-col space-y-8">
+                      <h3 className="text-4xl font-bold hover:text-[#005bac] cursor-pointer">
+                        {blog.subtitle}
+                      </h3>
+                      <p className="text-md font-medium text-grey_skip">
+                        {blog.description}
+                      </p>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <Button
+                        text="Read More"
+                        buttonStyle="w-[30%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
+                        icon={
+                          <div className="bg-[#005bac] p-3 rounded-md">
+                            <ChevronRightIcon className="w-5 h-5 text-white" />
+                          </div>
+                        }
+                      />
+                      <div className="flex items-center space-x-3">
+                        <h6>SHARE</h6>
+                        <Facebook className="text-[#005bac]" />
+                        <Twitter className="text-[#0693e3]" />
+                        <LinkedIn className="text-primary_color" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+            ))}
+            <div className="col-span-3">
+              <div className="flex flex-col space-y-10">
+                <div className="rounded-lg bg-blue-gray-50 p-8 flex flex-col space-y-6">
+                  <div className="flex items-center space-x-2">
+                    <PlayIcon className="text-primary_green h-4 w-4" />
+                    <h5 className="font-semibold text-2xl">Search</h5>
+                  </div>
+                  <Input
+                    placeholder="Search"
+                    icon={<MagnifyingGlassIcon className="w-5 h-5" />}
+                  />
+                </div>
+                <div className="rounded-lg bg-blue-gray-50 p-8 flex flex-col space-y-8">
+                  <div className="flex items-center space-x-2">
+                    <PlayIcon className="text-primary_green h-4 w-4" />
+                    <h5 className="font-semibold text-2xl">Recent Posts</h5>
+                  </div>
+                  <div className="flex flex-col space-y-10">
+                    <div className="flex items-center space-x-4">
+                      <img src={b1} alt="h1" className="h-20 w-20 rounded-lg" />
+                      <div>
+                        <h5 className="font-bold text-lg hover:text-[#005bac] cursor-pointer">
+                          Why Transport Is Key In Logistics?
+                        </h5>
+                        <p className="text-grey_skip">June 04, 2023</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <img src={b2} alt="h1" className="h-20 w-20 rounded-lg" />
+                      <div>
+                        <h5 className="font-bold text-lg hover:text-[#005bac] cursor-pointer">
+                          Can You Transport Furniture in Uber?
+                        </h5>
+                        <p className="text-grey_skip">June 04, 2023</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <img src={b5} alt="h1" className="h-20 w-20 rounded-lg" />
+                      <div>
+                        <h5 className="font-bold text-lg hover:text-[#005bac] cursor-pointer">
+                          Acadian Non Emergency Transport
+                        </h5>
+                        <p className="text-grey_skip">June 04, 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="rounded-lg bg-blue-gray-50 p-8 flex flex-col space-y-6">
+                  <div className="flex items-center space-x-2">
+                    <PlayIcon className="text-primary_green h-4 w-4" />
+                    <h5 className="font-semibold text-2xl">Categories</h5>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <p className="text-grey_skip hover:text-[#005bac] cursor-pointer">
+                      Logistic Support
+                    </p>
+                    <p className="text-grey_skip">(4)</p>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <p className="text-grey_skip hover:text-[#005bac] cursor-pointer">
+                      Marketing
+                    </p>
+                    <p className="text-grey_skip">(3)</p>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <p className="text-grey_skip hover:text-[#005bac] cursor-pointer">
+                      Product Delivery
+                    </p>
+                    <p className="text-grey_skip">(4)</p>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <p className="text-grey_skip hover:text-[#005bac] cursor-pointer">
+                      Transport Business
+                    </p>
+                    <p className="text-grey_skip">(1)</p>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <p className="text-grey_skip hover:text-[#005bac] cursor-pointer">
+                      Transportation
+                    </p>
+                    <p className="text-grey_skip">(4)</p>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <p className="text-grey_skip hover:text-[#005bac] cursor-pointer">
+                      Uncategorized
+                    </p>
+                    <p className="text-grey_skip">(3)</p>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <p className="text-grey_skip hover:text-[#005bac] cursor-pointer">
+                      World Travelling
+                    </p>
+                    <p className="text-grey_skip">(5)</p>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <p className="text-grey_skip hover:text-[#005bac] cursor-pointer">
+                      XFeatured
+                    </p>
+                    <p className="text-grey_skip">(6)</p>
+                  </div>
+                </div>
+                <div className="rounded-lg bg-blue-gray-50 p-8 flex flex-col space-y-6">
+                  <div className="flex items-center space-x-2">
+                    <PlayIcon className="text-primary_green h-4 w-4" />
+                    <h5 className="font-semibold text-2xl">Tag Search</h5>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "Air Freight",
+                      "Cargo",
+                      "Logistics",
+                      "Ocean",
+                      "Sea Freight",
+                      "Train Freight",
+                      "Transportation",
+                      "Truck",
+                      "Warehouse",
+                    ].map((i) => (
+                      <p
+                        key={i}
+                        className="border border-stroke rounded-3xl px-6 py-2 font-thin text-sm hover:bg-primary_color hover:text-white cursor-pointer"
+                      >
+                        {i}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+                <div className="rounded-lg bg-blue-gray-50 p-8 flex flex-col space-y-6">
+                  <div className="flex items-center space-x-2">
+                    <PlayIcon className="text-primary_green h-4 w-4" />
+                    <h5 className="font-semibold text-2xl">Social Link</h5>
+                  </div>
+                  <div className="flex space-x-8">
+                    {[
+                      {
+                        id: 1,
+                        icon: <Facebook className="text-white" />,
+                      },
+                      {
+                        id: 2,
+                        icon: <Twitter className="text-white" />,
+                      },
+                      {
+                        id: 3,
+                        icon: <YouTube className="text-white" />,
+                      },
+                    ].map((c) => (
+                      <div
+                        key={c.id}
+                        className="p-6 bg-primary_color hover:bg-primary_orange rounded-full "
+                      >
+                        {c.icon}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
-            <div></div>
           </div>
         </div>
       </div>
+      <Footer />
     </Layout>
   );
 }
