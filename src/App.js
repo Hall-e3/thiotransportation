@@ -1,8 +1,10 @@
+const { Routes, Route } = require("react-router-dom");
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">hello</header>
-    </div>
+    <Routes>
+      <Route />
+    </Routes>
   );
 }
 
