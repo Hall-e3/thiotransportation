@@ -41,7 +41,7 @@ module.exports = withMT({
       "meta-7": "#FF6766",
       "meta-8": "#F0950C",
       "meta-9": "#E5E7EB",
-      primary_green: "#087c7c", // 0A8791
+      primary_color: "#0B4FB2", // 0A8791
       primary_orange: "#FF7029",
       secondary_orange: "#ff8c04",
       colorless_green: "#f0f4f4",
