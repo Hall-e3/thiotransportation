@@ -6,6 +6,7 @@ import TextArea from "./TextArea";
 import Footer from "./Footer";
 import SelectField from "./SelectField";
 import CheckBox from "./CheckBox";
+import DisclosureComponent from "./DisclosureComponent";
 export {
   Loader,
   Supensing,
@@ -15,4 +16,5 @@ export {
   Footer,
   SelectField,
   CheckBox,
+  DisclosureComponent,
 };

@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../layout";
-import { hardboard, service, transport } from "../constants";
-import { Button, Input, SelectField } from "../components";
-import { CheckIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import { service } from "../constants";
+import {
+  Button,
+  CheckBox,
+  DisclosureComponent,
+  Input,
+  SelectField,
+} from "../components";
+import {
+  CheckIcon,
+  ChevronRightIcon,
+  MinusIcon,
+  PlusIcon,
+} from "@heroicons/react/24/solid";
 import { cards, works } from "../data";
 
 export default function Services() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDisclosure = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <Layout>
       <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-cyan-500 to-primary_green opacity-90">
@@ -194,8 +210,8 @@ export default function Services() {
       </div>
       <div className="py-30 bg-[#003869CC]">
         <div className="max-w-[1240px] mx-auto">
-          <div className="flex flex-row">
-            <div className="w-full flex flex-col justify-center px-10">
+          <div className="flex flex-row space-x-8">
+            <div className="flex flex-col justify-center flex-1">
               <div className="border border-stroke rounded-lg px-10 py-15 space-y-8 bg-white">
                 <div className="flex flex-col space-y-2">
                   <h3 className="text-2xl font-bold text-[#ff6731]">
@@ -255,6 +271,32 @@ export default function Services() {
                     <Input type="number" styles="border rounded-md" />
                   </div>
                 </div>
+                <div className="flex justify-center items-center space-x-5">
+                  <CheckBox
+                    label="First checkbox"
+                    type="checkbox"
+                    onChange={() => {}}
+                    right={true}
+                  />
+                  <CheckBox
+                    label="Express Delivery"
+                    type="checkbox"
+                    onChange={() => {}}
+                    right={true}
+                  />
+                  <CheckBox
+                    label="Insurence"
+                    type="checkbox"
+                    onChange={() => {}}
+                    right={true}
+                  />
+                  <CheckBox
+                    label="Packaging"
+                    type="checkbox"
+                    onChange={() => {}}
+                    right={true}
+                  />
+                </div>
                 <Button
                   text="Get A Quote"
                   buttonStyle="w-[30%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
@@ -266,12 +308,18 @@ export default function Services() {
                 />
               </div>
             </div>
-            <div className="">
-              <img
-                src={service}
-                alt="service"
-                className="w-full h-full object-cover"
-              />
+            <div className="flex-1">
+              <div className={`flex flex-col space-y-8 pl-30`}>
+                <div className="flex flex-col space-y-3">
+                  <h3 className="text-2xl font-bold text-white">
+                    Frequently Asked Questions
+                  </h3>
+                  <h3 className="text-5xl font-bold text-white leading-relaxed">
+                    Get the best logistic service
+                  </h3>
+                </div>
+                <DisclosureComponent />
+              </div>
             </div>
           </div>
         </div>

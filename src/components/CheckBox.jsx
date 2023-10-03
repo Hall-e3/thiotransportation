@@ -13,7 +13,7 @@ export default function CheckBox({
   return (
     <div className="flex space-x-4 items-center">
       {left && (
-        <label className="ml-2 lg:text-[13px] 2xl:text-[14px] font-medium text-gray-900 dark:text-gray-300">
+        <label className="ml-2 lg:text-[13px] 2xl:text-[14px] font-medium text-grey_skip">
           {label}
         </label>
       )}
@@ -28,7 +28,7 @@ export default function CheckBox({
         />
       </div>
       {right && (
-        <label className="ml-2 lg:text-[13px] 2xl:text-[14px] font-medium text-gray-900 dark:text-gray-300">
+        <label className="ml-2 lg:text-[13px] 2xl:text-[14px] font-medium text-grey_skip">
           {label}
         </label>
       )}

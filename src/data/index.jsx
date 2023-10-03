@@ -171,3 +171,36 @@ export const works = [
       "Knim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aliquip betha kake jeye.",
   },
 ];
+
+export const disclosures = [
+  {
+    id: 1,
+    title: "How to send my percel?",
+    description:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiatmnis iste natus error sits when the musics over turn off the light",
+  },
+  {
+    id: 2,
+    title: "What is the best way to use Transico?",
+    description:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiatmnis iste natus error sits when the musics over turn off the light",
+  },
+  {
+    id: 3,
+    title: "Why Transico is very popualr?",
+    description:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiatmnis iste natus error sits when the musics over turn off the light",
+  },
+  {
+    id: 4,
+    title: "How to get refund from Transico?",
+    description:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiatmnis iste natus error sits when the musics over turn off the light",
+  },
+  {
+    id: 5,
+    title: "How to receive my percel?",
+    description:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiatmnis iste natus error sits when the musics over turn off the light",
+  },
+];
