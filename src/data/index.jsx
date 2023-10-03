@@ -80,3 +80,42 @@ export const blogs = [
       "Kobita mnis iste natus error sit voluptatem acycu sa mnis iste nat Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in […]",
   },
 ];
+
+const cards = [
+  {
+    id: 1,
+    title: "Product Transportation",
+    description:
+      "Rus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+  },
+  {
+    id: 2,
+    title: "Wirehouse Storage",
+    description:
+      "Kus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in neprehenderit",
+  },
+  {
+    id: 3,
+    title: "Product Packaging",
+    description:
+      "Dus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in ceprehenderit",
+  },
+  {
+    id: 4,
+    title: "Source Optimization",
+    description:
+      "Qus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in deprehenderit",
+  },
+  {
+    id: 5,
+    title: "Lost Product Recovery",
+    description:
+      "Mus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in yeprehenderit",
+  },
+  {
+    id: 6,
+    title: "Logistic Consultancy",
+    description:
+      "Yus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in ueprehenderit",
+  },
+];

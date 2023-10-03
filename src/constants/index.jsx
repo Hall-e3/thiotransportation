@@ -9,6 +9,12 @@ const b1 = require("../assets/images/b1.webp");
 const b5 = require("../assets/images/b5.webp");
 const bdetials = require("../assets/images/b-details.webp");
 const b2 = require("../assets/images/b2.webp");
+const search = require("../assets/images/search.webp");
+const transport = require("../assets/images/transport.webp");
+const tracking = require("../assets/images/tracking.webp");
+const payment = require("../assets/images/payment.webp");
+const home_delivery = require("../assets/images/home-delivery.webp");
+const call_center = require("../assets/images/call-center.webp");
 export {
   logo,
   another_logo,
@@ -21,4 +27,10 @@ export {
   b1,
   b5,
   b2,
+  search,
+  transport,
+  tracking,
+  payment,
+  home_delivery,
+  call_center,
 };
