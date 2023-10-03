@@ -8,7 +8,7 @@ import SelectField from "./SelectField";
 import CheckBox from "./CheckBox";
 import DisclosureComponent from "./DisclosureComponent";
 import QuoteForm from "./QuoteForm";
-
+import CustomStep from "./CustomStep";
 export {
   Loader,
   Supensing,
@@ -20,4 +20,5 @@ export {
   CheckBox,
   DisclosureComponent,
   QuoteForm,
+  CustomStep,
 };

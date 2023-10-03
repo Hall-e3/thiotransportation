@@ -235,3 +235,30 @@ export const reviews = [
     image: b5,
   },
 ];
+
+export const abouts = [
+  {
+    id: 1,
+    number: " 33",
+    title: "Total Countries",
+    description: "accusa mnis iste natus error sit vol uptatem accusa nulla",
+  },
+  {
+    id: 2,
+    number: "82",
+    title: "Worldwide Cities",
+    description: "kccusa mnis iste natus error sit vol uptatem accusa oulla",
+  },
+  {
+    id: 3,
+    number: "180+",
+    title: "People Engaged",
+    description: "pccusa mnis iste natus error sit vol uptatem accusa iulles",
+  },
+  {
+    id: 4,
+    number: "3M",
+    title: "Package Delivery",
+    description: "dccusa mnis iste natus error sit vol uptatem accusa yulls",
+  },
+];
