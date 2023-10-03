@@ -7,18 +7,23 @@ import {
   QuoteForm,
   Testimonials,
 } from "../components";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import { ChevronLeftIcon, ChevronRightIcon, PlayIcon } from "@heroicons/react/24/solid";
 import {
   boxes,
   delivery_courier,
+  home1,
+  home2,
   img1,
   img3,
   img4,
   person,
   person1,
+  track,
+  tropy,
   truck,
   truck1,
   truck2,
+  videoImage,
 } from "../constants";
 import { Carousel, Progress } from "@material-tailwind/react";
 import { abouts, cards } from "../data";
@@ -137,45 +142,53 @@ export default function Home() {
           </div>
         </Carousel>
       </div>
-      <div className="py-30">
+      <div className="py-30 mb-90">
         <div className="max-w-[1240px] mx-auto">
           <div className="w-full flex space-x-10">
             <div className="flex flex-1">
               <div className="h-full w-full flex justify-center relative">
-                <div className="bg-[#ff8485] rounded-lg absolute bottom-0 right-0 z-50">
+                <div className="bg-[#ff8485] rounded-lg absolute bottom-0 left-0 z-20">
                   <img
-                    src={img4}
+                    src={home2}
                     alt="nin4"
                     className="object-cover h-full rounded-lg"
                   />
                 </div>
 
-                <div className="bg-[#9cc4f5] absolute rounded-lg top-0 left-4 z-20">
+                <div className="bg-[#9cc4f5] absolute rounded-lg top-0 right-0 z-10">
                   <img
-                    src={img1}
-                    alt="student"
+                    src={home1}
+                    alt="home"
                     className="object-cover h-full rounded-lg "
                   />
                 </div>
 
-                <div className="absolute rounded-lg bottom-7 -left-30">
+                <div className="absolute bottom-10 right-5 motion-safe:animate-bounce rounded-lg bg-primary_orange p-8 z-30">
                   <img
-                    src={img3}
+                    src={track}
                     alt="driver"
                     className="object-cover h-full rounded-lg"
                   />
                 </div>
 
-                <div className="bg-gradient-to-r text-white h-40 w-40 px-5  from-red-500  to-primary_orange absolute flex flex-col space-y-5 z-40 bottom-35 motion-safe:animate-bounce items-center justify-center -left-10 rounded-lg">
-                  <h6 className="text-white font-bold text-6xl">7K</h6>
-                  <p className="text-white font-bold text-lg">
-                    Product Delivered
+                <div className="absolute top-10 -right-12 motion-safe:animate-bounce rounded-lg bg-[#005bac] p-8 z-30">
+                  <img
+                    src={tropy}
+                    alt="driver"
+                    className="object-cover h-full rounded-lg"
+                  />
+                </div>
+
+                <div className="bg-gradient-to-r from-[#005bac] to-cyan-500 text-white h-40 w-40 px-5  absolute z-40 bottom-50 left-25 flex flex-col space-y-5  motion-safe:animate-bounce items-center justify-center  rounded-lg">
+                  <h6 className="text-white font-bold text-6xl">12</h6>
+                  <p className="text-white font-bold text-lg text-center">
+                    Year of Success
                   </p>
                 </div>
               </div>
             </div>
             <div className="flex flex-1">
-              <div className="flex flex-col space-y-6 pl-20">
+              <div className="flex flex-col space-y-8 pl-20">
                 <h5 className="text-primary_orange font-bold text-3xl">
                   We are Theo Transportation
                 </h5>
@@ -196,14 +209,16 @@ export default function Home() {
                   pariatur.
                 </p>
 
-                <div className="w-full flex items-center space-x-10">
-                  <div className="flex flex-col space-y-8 flex-1 py-4">
+                <div className="w-full flex items-center space-x-6 mb-6">
+                  <div className="flex flex-col space-y-8 flex-1  border-l-4 pl-16  border-l-primary_color pl-">
                     <p className="text-[#c7cdda] font-normal tracking-normal">
                       Excepteur sint occaecat cupidatat non proident, sunt in
                       culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                    <div className="flex flex-row space-x-3">
-                      <div /> <h5 className="font-bold text-lg">Tom Anderson,</h5> <p>Founder & CEO</p>
+                    <div className="flex flex-row space-x-3 items-center">
+                      <hr className=" border-1 border-[#dde4f6] w-10" />
+                      <h5 className="font-bold text-lg">Tom Anderson,</h5>{" "}
+                      <p>Founder & CEO</p>
                     </div>
                   </div>
                 </div>
@@ -221,13 +236,23 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-[#003869] to-primary_color opacity-90">
-        <div className="max-w-[1240px] mx-auto py-20">
+      <div className="py-40 bg-no-repeat bg-cover bg-gradient-to-r from-[#003869] to-primary_color opacity-90 relative">
+        <div className="border-8 border-white absolute -top-80 right-[20%] rounded-lg">
+          <img
+            src={videoImage}
+            alt="videoImage"
+            className="object-contain w-full h-full rounded-lg"
+          />
+          <div className="bg-gradient-to-r from-[#005bac] to-primary_green motion-safe:animate-ping-once text-white h-40 w-40 rounded-full absolute flex flex-col space-y-5 z-20 bottom-50 left-[42%] items-center justify-center">
+            <PlayIcon className="w-7 h-7" />
+          </div>
+        </div>
+        <div className="max-w-[1240px] mx-auto pt-50">
           <div className="flex space-x-12 items-center">
             {abouts.map((about) => (
               <div
                 key={about.id}
-                className="flex flex-col items-center justify-center space-y-8 flex-1"
+                className="flex flex-col items-center justify-center space-y-6 flex-1"
               >
                 <h4 className="text-[#ff6731] font-bold text-5xl">
                   {about.number}
@@ -291,7 +316,7 @@ export default function Home() {
         </div>
       </div>
       <Testimonials />
-      <div className="py-30 bg-[#003869CC]">
+      <div className="py-30 bg-[#003869CC] mb-90">
         <div className="max-w-[1240px] mx-auto">
           <div className="flex flex-row space-x-8">
             <div className="flex flex-col justify-center flex-1">
