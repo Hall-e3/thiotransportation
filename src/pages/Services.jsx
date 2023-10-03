@@ -1,18 +1,48 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../layout";
 import { service } from "../constants";
-import { DisclosureComponent, QuoteForm } from "../components";
+import {
+  DisclosureComponent,
+  Footer,
+  QuoteForm,
+  ReviewCarousel,
+} from "../components";
 import {
   CheckIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
 } from "@heroicons/react/24/solid";
 import { cards, reviews, works } from "../data";
+import { Carousel } from "@material-tailwind/react";
 
 export default function Services() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const next = () => {};
-  const previous = () => {};
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handleSlideChange = (action) => {
+    if (action === "next") {
+      setCurrentSlide((prevSlide) =>
+        prevSlide === reviews.length - 1 ? 0 : prevSlide + 1
+      );
+    } else if (action === "prev") {
+      setCurrentSlide((prevSlide) =>
+        prevSlide === 0 ? reviews.length - 1 : prevSlide - 1
+      );
+    } else if (action === "middle") {
+      const middleIndex = Math.floor(reviews.length / 2);
+      setCurrentSlide(middleIndex);
+    }
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleSlideChange("next");
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <Layout>
       <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-cyan-500 to-primary_green opacity-90">
@@ -222,7 +252,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="py-30 bg-[#f3f7fc]">
+      <div className="py-30 bg-[#f3f7fc] relative mb-40">
         <div className="max-w-[1240px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 transition">
             <div className="md:col-span-2">
@@ -245,13 +275,13 @@ export default function Services() {
                 <div className="flex space-x-8 items-center">
                   <div
                     className="group hover:bg-[#ff6731] rounded-full p-5 border border-stroke transition "
-                    onClick={() => {}}
+                    onClick={() => handleSlideChange("prev")}
                   >
                     <ChevronLeftIcon className="text-[#ff6731] group-hover:text-white  w-5 h-5 duration-300 ease-in" />
                   </div>
                   <div
                     className="group hover:bg-[#ff6731] rounded-full p-5 border border-stroke transition"
-                    onClick={() => {}}
+                    onClick={() => handleSlideChange("next")}
                   >
                     <ChevronRightIcon className="text-[#ff6731] group-hover:text-white w-5 h-5 duration-300 ease-in" />
                   </div>
@@ -259,33 +289,52 @@ export default function Services() {
               </div>
             </div>
             <div className="md:col-span-3">
-              <div className="flex">
-                {reviews.map((rev) => (
-                  <div
-                    key={rev.id}
-                    className="bg-white shadow-lg rounded-lg p-6"
-                  >
-                    {rev.icon}
-                    <p className="text-grey_skip">{rev.description}</p>
-                    <div className="flex items-center space-x-5">
-                      <img
-                        src={rev.image}
-                        alt={rev.user}
-                        className="object-cover w-15 h-15 rounded-full"
-                      />
-
-                      <div className="flex flex-col justify-center">
-                        <h6 className="font-bold text-xl">{rev.user}</h6>
-                        <p className="font-light text-grey_skip">{rev.job}</p>
+              <div className="flex h-full">
+                <Carousel
+                  className="rounded-xl grid-cols-2"
+                  transition={{ duration: 2 }}
+                >
+                  {reviews.map((rev) => (
+                    <div
+                      key={rev.id}
+                      className="bg-white shadow-lg rounded-lg p-10 flex flex-col space-y-8"
+                    >
+                      {rev.icon}
+                      <p className="text-grey_skip">{rev.description}</p>
+                      <div className="flex items-center space-x-5">
+                        <img
+                          src={rev.image}
+                          alt={rev.user}
+                          className="object-cover w-15 h-15 rounded-full"
+                        />
+                        <div className="flex flex-col justify-center">
+                          <h6 className="font-bold text-xl">{rev.user}</h6>
+                          <p className="font-light text-grey_skip">{rev.job}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </Carousel>
               </div>
             </div>
           </div>
         </div>
+        {/* <div className="absolute right-70 top-70 flex flex-col space-y-4">
+          <div
+            className="h-3 w-3 bg-grey_skip rounded-full "
+            onClick={() => handleSlideChange("prev")}
+          />
+          <div
+            className="h-3 w-3 bg-grey_skip rounded-full "
+            onClick={() => handleSlideChange("middle")}
+          />
+          <div
+            className="h-3 w-3 bg-grey_skip rounded-full "
+            onClick={() => handleSlideChange("next")}
+          />
+        </div> */}
       </div>
+      <Footer />
     </Layout>
   );
 }

@@ -8,7 +8,7 @@ import SelectField from "./SelectField";
 import CheckBox from "./CheckBox";
 import DisclosureComponent from "./DisclosureComponent";
 import QuoteForm from "./QuoteForm";
-import ReviewCarousel from "./ReviewCarousel";
+
 export {
   Loader,
   Supensing,
@@ -20,5 +20,4 @@ export {
   CheckBox,
   DisclosureComponent,
   QuoteForm,
-  ReviewCarousel,
 };

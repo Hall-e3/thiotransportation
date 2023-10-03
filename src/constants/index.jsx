@@ -20,6 +20,13 @@ const process_2 = require("../assets/images/process-2.png");
 const process_3 = require("../assets/images/process-3.png");
 const process_4 = require("../assets/images/process-4.png");
 const service = require("../assets/images/service.webp");
+const boxes = require("../assets/images/boxes.webp");
+const delivery_courier = require("../assets/images/delivery-courier.webp");
+const img = require("../assets/images/img.webp");
+const img1 = require("../assets/images/img1.webp");
+const img3 = require("../assets/images/img3.png");
+const img4 = require("../assets/images/img4.png");
+
 export {
   logo,
   another_logo,
@@ -43,4 +50,10 @@ export {
   process_2,
   process_4,
   service,
+  boxes,
+  delivery_courier,
+  img,
+  img1,
+  img3,
+  img4,
 };
