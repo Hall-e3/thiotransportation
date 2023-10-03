@@ -27,7 +27,7 @@ export default function Contact() {
       </div>
       <div className="py-40">
         <div className="max-w-[1240px] mx-auto flex space-x-12  items-center">
-          <div className="rounded-md flex flex-1 justify-center flex-col space-y-6 p-10 border border-stroke relative">
+          <div className="rounded-md flex flex-1 justify-center flex-col space-y-6 p-10 border bg-blue-gray-50 border-stroke relative">
             <div className="bg-primary_green rounded-full p-7 absolute -top-10 left-[40%]">
               <MapPinIcon className="w-5 h-5 text-white" />
             </div>
@@ -36,7 +36,7 @@ export default function Contact() {
               <p className="text-lg">20, Bordeshi,New York,US</p>
             </div>
           </div>
-          <div className="rounded-md flex flex-1 justify-center flex-col space-y-6 p-10 border border-stroke relative">
+          <div className="rounded-md flex flex-1 justify-center flex-col space-y-6 p-10 border bg-blue-gray-50 border-stroke relative">
             <div className="bg-primary_green rounded-full p-7 absolute -top-10 left-[40%]">
               <MapPinIcon className="w-5 h-5 text-white" />
             </div>
@@ -45,7 +45,7 @@ export default function Contact() {
               <p className="text-lg">20, Bordeshi,New York,US</p>
             </div>
           </div>
-          <div className="rounded-md flex flex-1 justify-center flex-col space-y-6 p-10 border border-stroke relative">
+          <div className="rounded-md flex flex-1 justify-center flex-col space-y-6 p-10 border bg-blue-gray-50 border-stroke relative">
             <div className="bg-primary_green rounded-full p-7 absolute -top-10 left-[40%]">
               <MapPinIcon className="w-5 h-5 text-white" />
             </div>

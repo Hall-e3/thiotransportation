@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import Layout from "../layout";
 
 export default function Services() {
   return (
-    <div>Services</div>
-  )
+    <Layout>
+      <div>Services</div>
+    </Layout>
+  );
 }
