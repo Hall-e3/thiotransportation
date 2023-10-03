@@ -1,27 +1,18 @@
 import React, { useState } from "react";
 import Layout from "../layout";
 import { service } from "../constants";
-import {
-  Button,
-  CheckBox,
-  DisclosureComponent,
-  Input,
-  SelectField,
-} from "../components";
+import { DisclosureComponent, QuoteForm } from "../components";
 import {
   CheckIcon,
+  ChevronLeftIcon,
   ChevronRightIcon,
-  MinusIcon,
-  PlusIcon,
 } from "@heroicons/react/24/solid";
-import { cards, works } from "../data";
+import { cards, reviews, works } from "../data";
 
 export default function Services() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDisclosure = () => {
-    setIsOpen(!isOpen);
-  };
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const next = () => {};
+  const previous = () => {};
   return (
     <Layout>
       <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-cyan-500 to-primary_green opacity-90">
@@ -126,7 +117,7 @@ export default function Services() {
       <div className="py-30">
         <div className="max-w-[1240px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-5 ">
-            <div className="flex flex-col space-y-10 col-span-3 pt-15 pr-25">
+            <div className="flex flex-col space-y-10 md:col-span-3 pt-15 pr-25">
               <div className="flex flex-col space-y-4">
                 <h5 className="text-primary_orange font-bold text-2xl">
                   Why Choose Us
@@ -198,7 +189,7 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <div className="col-span-2">
+            <div className="md:col-span-2">
               <img
                 src={service}
                 alt="service"
@@ -212,101 +203,7 @@ export default function Services() {
         <div className="max-w-[1240px] mx-auto">
           <div className="flex flex-row space-x-8">
             <div className="flex flex-col justify-center flex-1">
-              <div className="border border-stroke rounded-lg px-10 py-15 space-y-8 bg-white">
-                <div className="flex flex-col space-y-2">
-                  <h3 className="text-2xl font-bold text-[#ff6731]">
-                    Know the price
-                  </h3>
-                  <h3 className="text-4xl font-bold">Get A Free Quote</h3>
-                </div>
-                <div className="flex space-x-5">
-                  <Input
-                    placeholder="Your Name"
-                    styles="border rounded-md flex-1"
-                  />
-                  <Input
-                    placeholder="Your Email address"
-                    styles="border rounded-md flex-1"
-                  />
-                </div>
-                <div className="flex space-x-5">
-                  <Input
-                    placeholder="Your Phone number"
-                    styles="border rounded-md"
-                  />
-                  <Input placeholder="Subject" styles="border rounded-md" />
-                </div>
-                <div className="flex space-x-5">
-                  <Input placeholder="Pickup City" styles="border rounded-md" />
-                  <Input
-                    placeholder="Delivery City"
-                    styles="border rounded-md"
-                  />
-                </div>
-                <div className="flex space-x-5">
-                  <SelectField styles="border border-stroke bg-white rounded-md focus:border-blue-500 py-4 px-3">
-                    <option value="">Choose....</option>
-                    {["Freight type", "One", "Two", "Three"].map((c) => (
-                      <option key={c} value={c}>
-                        {c}
-                      </option>
-                    ))}
-                  </SelectField>
-                  <SelectField styles="border border-stroke bg-white rounded-md focus:border-blue-500 py-4 px-3">
-                    <option value="">Choose....</option>
-                    {["Incoterms", "One", "Two", "Three"].map((c) => (
-                      <option key={c} value={c}>
-                        {c}
-                      </option>
-                    ))}
-                  </SelectField>
-                </div>
-                <div className="flex space-x-5">
-                  <div className="flex items-center space-x-2">
-                    <Input placeholder="Width" styles="border rounded-md" />
-                    <Input type="number" styles="border rounded-md" />
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Input placeholder="Length" styles="border rounded-md" />
-                    <Input type="number" styles="border rounded-md" />
-                  </div>
-                </div>
-                <div className="flex justify-center items-center space-x-5">
-                  <CheckBox
-                    label="First checkbox"
-                    type="checkbox"
-                    onChange={() => {}}
-                    right={true}
-                  />
-                  <CheckBox
-                    label="Express Delivery"
-                    type="checkbox"
-                    onChange={() => {}}
-                    right={true}
-                  />
-                  <CheckBox
-                    label="Insurence"
-                    type="checkbox"
-                    onChange={() => {}}
-                    right={true}
-                  />
-                  <CheckBox
-                    label="Packaging"
-                    type="checkbox"
-                    onChange={() => {}}
-                    right={true}
-                  />
-                </div>
-                <Button
-                  text="Get A Quote"
-                  buttonStyle="w-[30%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
-                  icon={
-                    <div className="bg-primary_color p-3 rounded-md">
-                      <ChevronRightIcon className="w-5 h-5 text-white" />
-                    </div>
-                  }
-                />
-              </div>
+              <QuoteForm />
             </div>
             <div className="flex-1">
               <div className={`flex flex-col space-y-8 pl-30`}>
@@ -319,6 +216,71 @@ export default function Services() {
                   </h3>
                 </div>
                 <DisclosureComponent />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-30 bg-[#f3f7fc]">
+        <div className="max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 transition">
+            <div className="md:col-span-2">
+              <div className="flex flex-col  space-y-8">
+                <div className="flex flex-col space-y-8">
+                  <h5 className="text-primary_orange font-bold text-3xl">
+                    Testimonials
+                  </h5>
+                  <h3 className="font-bold text-5xl text-black leading-tight">
+                    What<span className="text-[#1eae98]">Clients</span> it About
+                    <span className="text-[#1eae98]">Us</span>
+                  </h3>
+                </div>
+                <p className="text-[#c7cdda] font-medium tracking-normal">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiatmnis iste na minim veniam, quis nostrud
+                  exercita tion ullamco laboris nisi ut aliquip ex ea commodo
+                </p>
+
+                <div className="flex space-x-8 items-center">
+                  <div
+                    className="group hover:bg-[#ff6731] rounded-full p-5 border border-stroke transition "
+                    onClick={() => {}}
+                  >
+                    <ChevronLeftIcon className="text-[#ff6731] group-hover:text-white  w-5 h-5 duration-300 ease-in" />
+                  </div>
+                  <div
+                    className="group hover:bg-[#ff6731] rounded-full p-5 border border-stroke transition"
+                    onClick={() => {}}
+                  >
+                    <ChevronRightIcon className="text-[#ff6731] group-hover:text-white w-5 h-5 duration-300 ease-in" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="md:col-span-3">
+              <div className="flex">
+                {reviews.map((rev) => (
+                  <div
+                    key={rev.id}
+                    className="bg-white shadow-lg rounded-lg p-6"
+                  >
+                    {rev.icon}
+                    <p className="text-grey_skip">{rev.description}</p>
+                    <div className="flex items-center space-x-5">
+                      <img
+                        src={rev.image}
+                        alt={rev.user}
+                        className="object-cover w-15 h-15 rounded-full"
+                      />
+
+                      <div className="flex flex-col justify-center">
+                        <h6 className="font-bold text-xl">{rev.user}</h6>
+                        <p className="font-light text-grey_skip">{rev.job}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

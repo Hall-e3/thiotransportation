@@ -1,3 +1,4 @@
+import { FormatQuote } from "@mui/icons-material";
 import {
   b1,
   b2,
@@ -202,5 +203,35 @@ export const disclosures = [
     title: "How to receive my percel?",
     description:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiatmnis iste natus error sits when the musics over turn off the light",
+  },
+];
+
+export const reviews = [
+  {
+    id: 1,
+    icon: <FormatQuote className="text-[#005bac] w-8 h-8" />,
+    description:
+      " Kenim ad minim veniam quis nostrud exe rcitati oen ullamco labor is nisi ut aliq uip ex ea comm odo cons equa uis aute iruoesre trud exeon ulla ",
+    user: "Jewel Khan",
+    job: "Traveller",
+    image: b1,
+  },
+  {
+    id: 2,
+    icon: <FormatQuote className="text-[#005bac] w-8 h-8" />,
+    description:
+      " Kenim ad minim veniam quis nostrud exe rcitati oen ullamco labor is nisi ut aliq uip ex ea comm odo cons equa uis aute iruoesre trud exeon ulla ",
+    user: "Nayan Eva",
+    job: "Traveller",
+    image: b2,
+  },
+  {
+    id: 3,
+    icon: <FormatQuote className="text-[#005bac] w-8 h-8" />,
+    description:
+      " Kenim ad minim veniam quis nostrud exe rcitati oen ullamco labor is nisi ut aliq uip ex ea comm odo cons equa uis aute iruoesre trud exeon ulla ",
+    user: "Mike Peter",
+    job: "Journalist",
+    image: b5,
   },
 ];
