@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Layout from "../layout";
-import { ChevronRightIcon, PlayIcon } from "@heroicons/react/24/solid";
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  PlayIcon,
+} from "@heroicons/react/24/solid";
 import {
   b2,
   b5,
@@ -12,9 +16,10 @@ import {
   img3,
   img4,
 } from "../constants";
-import { Progress, Typography } from "@material-tailwind/react";
-import { Button, CustomStep } from "../components";
-import { abouts } from "../data";
+import { Carousel, Progress, Typography } from "@material-tailwind/react";
+import { Button, CustomStep, SecondFooter } from "../components";
+import { abouts, members, reviews } from "../data";
+import { Facebook, LinkedIn, Twitter } from "@mui/icons-material";
 
 export default function About() {
   const [activeTab, setActiveTab] = useState(1);
@@ -62,7 +67,7 @@ export default function About() {
                   />
                 </div>
 
-                <div className="bg-gradient-to-r text-white h-40 w-40 px-5  from-red-500  to-primary_orange absolute flex flex-col space-y-5 z-9999 bottom-35 animate-bounce items-center justify-center -left-10 rounded-lg">
+                <div className="bg-gradient-to-r text-white h-40 w-40 px-5  from-red-500  to-primary_orange absolute flex flex-col space-y-5 z-9999 bottom-35 motion-safe:animate-bounce items-center justify-center -left-10 rounded-lg">
                   <h6 className="text-white font-bold text-6xl">7K</h6>
                   <p className="text-white font-bold text-lg">
                     Product Delivered
@@ -416,8 +421,107 @@ export default function About() {
               <div className="py-[2.5px] px-[30px]  bg-primary_color" />
             </div>
           </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-14">
+            {members.map((member) => (
+              <div
+                key={member.id}
+                className="rounded-lg relative flex flex-col justify-center items-center group transition duration-700 ease-in-out"
+              >
+                <div>
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="rounded-lg duration-1000 ease-in transform group-hover:scale-105"
+                  />
+                </div>
+                <div className="flex flex-col space-y-3 items-center justify-center absolute -bottom-7 bg-[#005bac] w-[70%] py-8 z-20 group-hover:-translate-y-18 duration-700 ease-in-out dura">
+                  <h5 className="text-white text-2xl font-bold">
+                    {member.name}
+                  </h5>
+                  <p className="text-white text-md font-light">
+                    {member.position}
+                  </p>
+                </div>
+                <div className="flex items-center justify-center space-x-4 bg-[#ff6731] w-[65%] absolute -bottom-9 py-8">
+                  <Facebook className="text-white" />
+                  <Twitter className="text-white" />
+                  <LinkedIn className="text-white" />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+      <div className="py-30 bg-[#f3f7fc]">
+        <div className="max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 transition">
+            <div className="md:col-span-2">
+              <div className="flex flex-col  space-y-8">
+                <div className="flex flex-col space-y-8">
+                  <h5 className="text-primary_orange font-bold text-3xl">
+                    Testimonials
+                  </h5>
+                  <h3 className="font-bold text-5xl text-black leading-tight">
+                    What<span className="text-[#1eae98]">Clients</span> it About
+                    <span className="text-[#1eae98]">Us</span>
+                  </h3>
+                </div>
+                <p className="text-[#c7cdda] font-medium tracking-normal">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiatmnis iste na minim veniam, quis nostrud
+                  exercita tion ullamco laboris nisi ut aliquip ex ea commodo
+                </p>
+
+                <div className="flex space-x-8 items-center">
+                  <div
+                    className="group hover:bg-[#ff6731] rounded-full p-5 border border-stroke transition "
+                    onClick={() => {}}
+                  >
+                    <ChevronLeftIcon className="text-[#ff6731] group-hover:text-white  w-5 h-5 duration-300 ease-in" />
+                  </div>
+                  <div
+                    className="group hover:bg-[#ff6731] rounded-full p-5 border border-stroke transition"
+                    onClick={() => {}}
+                  >
+                    <ChevronRightIcon className="text-[#ff6731] group-hover:text-white w-5 h-5 duration-300 ease-in" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="md:col-span-3">
+              <div className="flex h-full">
+                <Carousel
+                  className="rounded-xl grid-cols-2"
+                  transition={{ duration: 2 }}
+                >
+                  {reviews.map((rev) => (
+                    <div
+                      key={rev.id}
+                      className="bg-white shadow-lg rounded-lg p-10 flex flex-col space-y-8"
+                    >
+                      {rev.icon}
+                      <p className="text-grey_skip">{rev.description}</p>
+                      <div className="flex items-center space-x-5">
+                        <img
+                          src={rev.image}
+                          alt={rev.user}
+                          className="object-cover w-15 h-15 rounded-full"
+                        />
+                        <div className="flex flex-col justify-center">
+                          <h6 className="font-bold text-xl">{rev.user}</h6>
+                          <p className="font-light text-grey_skip">{rev.job}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </Carousel>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <SecondFooter />
     </Layout>
   );
 }

@@ -5,6 +5,7 @@ import {
   DisclosureComponent,
   Footer,
   QuoteForm,
+  SecondFooter,
 } from "../components";
 import {
   CheckIcon,
@@ -229,7 +230,6 @@ export default function Services() {
         </div>
       </div>
 
-
       <div className="py-30 bg-[#003869CC]">
         <div className="max-w-[1240px] mx-auto">
           <div className="flex flex-row space-x-8">
@@ -253,7 +253,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="py-30 bg-[#f3f7fc] relative mb-40">
+      <div className="py-30 bg-[#f3f7fc]">
         <div className="max-w-[1240px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 transition">
             <div className="md:col-span-2">
@@ -335,7 +335,7 @@ export default function Services() {
           />
         </div> */}
       </div>
-      <Footer />
+      <SecondFooter />
     </Layout>
   );
 }

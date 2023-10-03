@@ -10,6 +10,7 @@ import DisclosureComponent from "./DisclosureComponent";
 import QuoteForm from "./QuoteForm";
 import CustomStep from "./CustomStep";
 import Divider from "./Divider";
+import SecondFooter from "./SecondFooter";
 export {
   Loader,
   Supensing,
@@ -23,4 +24,5 @@ export {
   QuoteForm,
   CustomStep,
   Divider,
+  SecondFooter,
 };
