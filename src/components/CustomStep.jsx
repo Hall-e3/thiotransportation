@@ -9,8 +9,9 @@ export default function CustomStep({ rightTitle, leftTitle }) {
       </div>
       <Divider styles="my-2 absolute w-[8%] left-132.5  -mx-1" />
       <div className="flex flex-col items-center">
-        <div className="w-4 h-4 rounded-full bg-grey_skip" />
-        <div className="w-1 h-90 bg-grey_skip" />
+        <div className="w-4 h-4 rounded-full bg-[#dde4f6]" />
+        <div className="w-1 h-90 bg-[#dde4f6]" />
+        <div className="w-4 h-4 rounded-full bg-[#dde4f6]" />
       </div>
       <Divider styles="my-2  absolute w-[8%] right-132.5 -mx-1" />
       <div className="flex-1 ">

@@ -26,6 +26,12 @@ const img4 = require("../assets/images/img.webp");
 const img1 = require("../assets/images/img1.webp");
 const img3 = require("../assets/images/img3.png");
 const containers = require("../assets/images/containers.webp");
+const peter = require("../assets/images/peter.webp");
+const paul = require("../assets/images/paul.webp");
+const parker = require("../assets/images/parker.webp");
+const johnson = require("../assets/images/johnson.webp");
+const harrison = require("../assets/images/harrison.webp");
+const doe = require("../assets/images/doe.webp");
 export {
   logo,
   another_logo,
@@ -55,4 +61,10 @@ export {
   img1,
   img3,
   containers,
+  peter,
+  paul,
+  parker,
+  johnson,
+  harrison,
+  doe,
 };

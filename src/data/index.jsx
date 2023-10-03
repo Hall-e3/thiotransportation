@@ -262,3 +262,12 @@ export const abouts = [
     description: "dccusa mnis iste natus error sit vol uptatem accusa yulls",
   },
 ];
+
+export const members = [
+  {
+    id: 1,
+    name: "",
+    position: "",
+    image: "",
+  },
+];

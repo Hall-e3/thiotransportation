@@ -402,6 +402,22 @@ export default function About() {
           </div>
         </div>
       </div>
+      <div className="py-40">
+        <div className="max-w-[1240px] mx-auto">
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <div className="flex flex-col items-center justify-center space-y-4 px-80 mb-10">
+              <h5 className="text-primary_orange font-bold text-2xl">
+                Team Members
+              </h5>
+              <span className="font-bold text-5xl text-black text-center leading-tight pb-4">
+                The <span className="text-[#1eae98]"> Best </span> &{" "}
+                <span className="text-[#1eae98]">Skilled </span>People Together
+              </span>
+              <div className="py-[2.5px] px-[30px]  bg-primary_color" />
+            </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 }
