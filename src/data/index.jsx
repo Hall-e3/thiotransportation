@@ -1,4 +1,15 @@
-import { b1, b2, b5, bdetials } from "../constants";
+import {
+  b1,
+  b2,
+  b5,
+  bdetials,
+  call_center,
+  home_delivery,
+  payment,
+  search,
+  tracking,
+  transport,
+} from "../constants";
 
 export const links = [
   {
@@ -81,41 +92,74 @@ export const blogs = [
   },
 ];
 
-const cards = [
+export const cards = [
   {
     id: 1,
     title: "Product Transportation",
+    image: transport,
     description:
       "Rus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
   },
   {
     id: 2,
     title: "Wirehouse Storage",
+    image: home_delivery,
     description:
       "Kus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in neprehenderit",
   },
   {
     id: 3,
     title: "Product Packaging",
+    image: tracking,
     description:
       "Dus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in ceprehenderit",
   },
   {
     id: 4,
     title: "Source Optimization",
+    image: payment,
     description:
       "Qus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in deprehenderit",
   },
   {
     id: 5,
     title: "Lost Product Recovery",
+    image: search,
     description:
       "Mus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in yeprehenderit",
   },
   {
     id: 6,
     title: "Logistic Consultancy",
+    image: call_center,
     description:
       "Yus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in ueprehenderit",
+  },
+];
+
+export const works = [
+  {
+    id: 1,
+    title: "Pick A Service",
+    description:
+      "Knim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aliquip betha kake jeye.",
+  },
+  {
+    id: 2,
+    title: "Send The Product",
+    description:
+      "Knim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aliquip betha kake jeye.",
+  },
+  {
+    id: 3,
+    title: "Delivery Confirmation",
+    description:
+      "Knim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aliquip betha kake jeye.",
+  },
+  {
+    id: 4,
+    title: "Clear The Payments",
+    description:
+      "Knim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aliquip betha kake jeye.",
   },
 ];
