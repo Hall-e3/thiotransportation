@@ -327,10 +327,10 @@ export default function About() {
                 Our <span className="text-[#1eae98]">Company </span>
               </span>
             </div>
-            <div className="flex flex-col items-center space-y-30 ">
+            <div className="flex flex-col items-center">
               <CustomStep
                 leftTitle={
-                  <div className="border border-stroke rounded-lg h-[25vh] bg-white">
+                  <div className="border border-stroke rounded-lg h-[25vh] bg-white mr-1.5">
                     <div className="flex items-center justify-center p-4 bg-primary_orange rounded-t-lg">
                       <h5 className="font-bold text-xl text-white">
                         Company Founded
@@ -352,12 +352,16 @@ export default function About() {
               />
               <CustomStep
                 leftTitle={
-                  <div className="rounded-3xl bg-[#1eae98] flex justify-center items-center w-[40%] py-3">
-                    <p className="font-bold text-white text-lg">Jan 23, 1984</p>
+                  <div className="flex justify-end">
+                    <div className="rounded-3xl bg-[#1eae98] flex justify-center items-center w-[40%] py-3">
+                      <p className="font-bold text-white text-lg">
+                        Jan 23, 1984
+                      </p>
+                    </div>
                   </div>
                 }
                 rightTitle={
-                  <div className="border border-stroke rounded-lg h-[25vh] bg-white">
+                  <div className="border border-stroke rounded-lg h-[25vh] bg-white ml-1.5">
                     <div className="flex items-center justify-center p-4 bg-primary_orange rounded-t-lg">
                       <h5 className="font-bold text-xl text-white">
                         New Office Taken
@@ -374,7 +378,7 @@ export default function About() {
               />
               <CustomStep
                 leftTitle={
-                  <div className="border border-stroke rounded-lg h-[25vh] bg-white">
+                  <div className="border border-stroke rounded-lg h-[25vh] bg-white mr-1.5">
                     <div className="flex items-center justify-center p-4 bg-primary_orange rounded-t-lg">
                       <h5 className="font-bold text-xl text-white">
                         Become Top Company
