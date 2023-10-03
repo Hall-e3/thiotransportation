@@ -2,10 +2,7 @@ import React from "react";
 import Layout from "../layout";
 import {
   ChevronRightIcon,
-  EnvelopeIcon,
-  MapIcon,
   MapPinIcon,
-  PhoneIcon,
 } from "@heroicons/react/24/solid";
 import { Button, Footer, Input, TextArea } from "../components";
 

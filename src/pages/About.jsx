@@ -8,18 +8,16 @@ import {
   boxes,
   containers,
   delivery_courier,
-  img,
   img1,
   img3,
   img4,
-  service,
 } from "../constants";
 import { Progress, Typography } from "@material-tailwind/react";
-import { Button } from "../components";
+import { Button, CustomStep } from "../components";
 import { abouts } from "../data";
 
 export default function About() {
-  const [activeTab, setActiveTab] = useState();
+  const [activeTab, setActiveTab] = useState(1);
   return (
     <Layout>
       <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-cyan-500 to-primary_green opacity-90">
@@ -42,8 +40,8 @@ export default function About() {
               <div className="h-full w-full flex justify-center relative">
                 <div className="bg-[#ff8485] rounded-lg absolute bottom-0 right-0 z-999">
                   <img
-                    src={img}
-                    alt="nin"
+                    src={img4}
+                    alt="nin4"
                     className="object-cover h-full rounded-lg"
                   />
                 </div>
@@ -150,8 +148,8 @@ export default function About() {
                   </div>
                   <div className="">
                     <img
-                      src={img}
-                      alt="image"
+                      src={img4}
+                      alt="image4"
                       className="rounded-lg h-50 w-40"
                     />
                   </div>
@@ -318,13 +316,85 @@ export default function About() {
         </div>
       </div>
       <div className="py-30 bg-[#f3f8fc]">
-        <div className="max-w-[1240px] mx-auto py-20">
-          <div className="flex flex-col space-y-4">
-            <h5 className="text-primary_orange font-bold text-2xl">History</h5>
-            <span className="font-bold text-5xl text-black ">
-              Know More <span className="text-[#1eae98]"> Detail </span> About
-              Our <span className="text-[#1eae98]">Company </span>
-            </span>
+        <div className="max-w-[1240px] mx-auto">
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <div className="flex flex-col items-center justify-center space-y-4 px-80 mb-10">
+              <h5 className="text-primary_orange font-bold text-2xl">
+                History
+              </h5>
+              <span className="font-bold text-5xl text-black text-center leading-tight">
+                Know More <span className="text-[#1eae98]"> Detail </span> About
+                Our <span className="text-[#1eae98]">Company </span>
+              </span>
+            </div>
+            <div className="flex flex-col items-center space-y-30 ">
+              <CustomStep
+                leftTitle={
+                  <div className="border border-stroke rounded-lg h-[25vh] bg-white">
+                    <div className="flex items-center justify-center p-4 bg-primary_orange rounded-t-lg">
+                      <h5 className="font-bold text-xl text-white">
+                        Company Founded
+                      </h5>
+                    </div>
+                    <div className="flex items-center justify-center py-10 px-10">
+                      <p className="text-grey_skip font-normal text-lg">
+                        Xolore magna aliqua enim ad minim ven mod tempor
+                        incididunt ut labore et doore magna when the musics iver
+                      </p>
+                    </div>
+                  </div>
+                }
+                rightTitle={
+                  <div className="rounded-3xl bg-[#1eae98] flex justify-center items-center w-[40%] py-3">
+                    <p className="font-bold text-white text-lg">Dec 23, 1983</p>
+                  </div>
+                }
+              />
+              <CustomStep
+                leftTitle={
+                  <div className="rounded-3xl bg-[#1eae98] flex justify-center items-center w-[40%] py-3">
+                    <p className="font-bold text-white text-lg">Jan 23, 1984</p>
+                  </div>
+                }
+                rightTitle={
+                  <div className="border border-stroke rounded-lg h-[25vh] bg-white">
+                    <div className="flex items-center justify-center p-4 bg-primary_orange rounded-t-lg">
+                      <h5 className="font-bold text-xl text-white">
+                        New Office Taken
+                      </h5>
+                    </div>
+                    <div className="flex items-center justify-center py-10 px-10">
+                      <p className="text-grey_skip font-normal text-lg">
+                        Lolore magna aliqua enim ad minim ven mod tempor
+                        incididunt ut labore et doore magna when the musics pves
+                      </p>
+                    </div>
+                  </div>
+                }
+              />
+              <CustomStep
+                leftTitle={
+                  <div className="border border-stroke rounded-lg h-[25vh] bg-white">
+                    <div className="flex items-center justify-center p-4 bg-primary_orange rounded-t-lg">
+                      <h5 className="font-bold text-xl text-white">
+                        Become Top Company
+                      </h5>
+                    </div>
+                    <div className="flex items-center justify-center py-10 px-10">
+                      <p className="text-grey_skip font-normal text-lg">
+                        Tolore magna aliqua enim ad minim ven mod tempor
+                        incididunt ut labore et doore magna when the musics cves
+                      </p>
+                    </div>
+                  </div>
+                }
+                rightTitle={
+                  <div className="rounded-3xl bg-[#1eae98] flex justify-center items-center w-[40%] py-3">
+                    <p className="font-bold text-white text-lg">Dec 23, 1983</p>
+                  </div>
+                }
+              />
+            </div>
           </div>
         </div>
       </div>

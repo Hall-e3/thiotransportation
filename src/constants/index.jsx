@@ -22,7 +22,7 @@ const process_4 = require("../assets/images/process-4.png");
 const service = require("../assets/images/service.webp");
 const boxes = require("../assets/images/boxes.webp");
 const delivery_courier = require("../assets/images/delivery-courier.webp");
-const img = require("../assets/images/img.webp");
+const img4 = require("../assets/images/img.webp");
 const img1 = require("../assets/images/img1.webp");
 const img3 = require("../assets/images/img3.png");
 const containers = require("../assets/images/containers.webp");
@@ -51,7 +51,7 @@ export {
   service,
   boxes,
   delivery_courier,
-  img,
+  img4,
   img1,
   img3,
   containers,
