@@ -15,7 +15,7 @@ export default function SelectField({
   error,
 }) {
   return (
-    <div className={`flex flex-col justify-center`}>
+    <div className={`flex flex-col justify-center flex-1`}>
       <label className="block mb-2 lg:text-[13px] 2xl:text-[14px] font-medium text-gray-900 dark:text-white">
         {label}
       </label>

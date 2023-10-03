@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../layout";
 import { hardboard, service, transport } from "../constants";
-import { Button, Input } from "../components";
+import { Button, Input, SelectField } from "../components";
 import { CheckIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import { cards, works } from "../data";
 
@@ -221,13 +221,40 @@ export default function Services() {
                   <Input placeholder="Subject" styles="border rounded-md" />
                 </div>
                 <div className="flex space-x-5">
+                  <Input placeholder="Pickup City" styles="border rounded-md" />
                   <Input
-                    placeholder="Your Phone number"
+                    placeholder="Delivery City"
                     styles="border rounded-md"
                   />
-                  <Input placeholder="Subject" styles="border rounded-md" />
                 </div>
-
+                <div className="flex space-x-5">
+                  <SelectField styles="border border-stroke bg-white rounded-md focus:border-blue-500 py-4 px-3">
+                    <option value="">Choose....</option>
+                    {["Freight type", "One", "Two", "Three"].map((c) => (
+                      <option key={c} value={c}>
+                        {c}
+                      </option>
+                    ))}
+                  </SelectField>
+                  <SelectField styles="border border-stroke bg-white rounded-md focus:border-blue-500 py-4 px-3">
+                    <option value="">Choose....</option>
+                    {["Incoterms", "One", "Two", "Three"].map((c) => (
+                      <option key={c} value={c}>
+                        {c}
+                      </option>
+                    ))}
+                  </SelectField>
+                </div>
+                <div className="flex space-x-5">
+                  <div className="flex items-center space-x-2">
+                    <Input placeholder="Width" styles="border rounded-md" />
+                    <Input type="number" styles="border rounded-md" />
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Input placeholder="Length" styles="border rounded-md" />
+                    <Input type="number" styles="border rounded-md" />
+                  </div>
+                </div>
                 <Button
                   text="Get A Quote"
                   buttonStyle="w-[30%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
