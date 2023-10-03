@@ -19,6 +19,7 @@ const hardboard = require("../assets/images/hardboard.png");
 const process_2 = require("../assets/images/process-2.png");
 const process_3 = require("../assets/images/process-3.png");
 const process_4 = require("../assets/images/process-4.png");
+const service = require("../assets/images/service.webp");
 export {
   logo,
   another_logo,
@@ -41,4 +42,5 @@ export {
   process_3,
   process_2,
   process_4,
+  service,
 };

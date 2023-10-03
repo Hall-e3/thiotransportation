@@ -1,9 +1,9 @@
 import React from "react";
 import Layout from "../layout";
-import { transport } from "../constants";
-import { Button } from "../components";
-import { ChevronRightIcon } from "@heroicons/react/24/solid";
-import { cards } from "../data";
+import { hardboard, service, transport } from "../constants";
+import { Button, Input } from "../components";
+import { CheckIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import { cards, works } from "../data";
 
 export default function Services() {
   return (
@@ -59,26 +59,192 @@ export default function Services() {
       </div>
       <div className="py-30 bg-[#393d48]">
         <div className="max-w-[1240px] mx-auto">
-          <div className="flex items-center px-4 space-x-8">
-            <div className="flex flex-col space-y-4 flex-1">
-              <h5 className="text-primary_orange font-bold text-3xl">
-                How it works
-              </h5>
-              <h3 className="font-bold text-5xl text-white leading-normal">
-                We <span className="text-primary_green">Make</span> &{" "}
-                <span className="text-primary_green">Keep</span> it{" "}
-                <span className="text-primary_green">Simple</span> For You
-              </h3>
+          <div className="flex flex-col space-y-20">
+            <div className="flex items-center px-4 space-x-8">
+              <div className="flex flex-col space-y-3 flex-1">
+                <h5 className="text-primary_orange font-bold text-3xl">
+                  How it works
+                </h5>
+                <h3 className="font-bold text-5xl text-white leading-normal">
+                  We <span className="text-[#1eae98]">Make</span> &{" "}
+                  <span className="text-[#1eae98]">Keep</span> it{" "}
+                  <span className="text-[#1eae98]">Simple</span> For You
+                </h3>
+              </div>
+              <p className="flex-1 text-[#c7cdda] font-medium tracking-normal">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiatmnis iste na minim veniam, quis nostrud
+                exercita tion ullamco laboris nisi ut aliquip ex ea commodo
+              </p>
             </div>
-            <p className="flex-1 text-[#c7cdda] font-medium tracking-normal">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiatmnis iste na minim veniam, quis nostrud
-              exercita tion ullamco laboris nisi ut aliquip ex ea commodo
-            </p>
+            <div className="flex">
+              {works.map((work) => (
+                <div
+                  key={work.id}
+                  className="transition flex flex-col space-y-6 flew-1"
+                >
+                  <div className="relative group duration-300 ease-in">
+                    <div className="h-22 w-22 flex items-center justify-center rounded-full bg-white h">
+                      <img
+                        src={work.image}
+                        alt={work.title}
+                        className="transition-transform transform group-hover:rotate-180"
+                      />
+                    </div>
+                    <div className="h-6 w-6 flex items-center justify-center rounded-full bg-[#1eae98] absolute top-0 group-hover:bg-primary_orange">
+                      {work.id}
+                    </div>
+                  </div>
+                  <h4 className="font-bold text-2xl text-white">
+                    {work.title}
+                  </h4>
+                  <p className="text-md text-[#c7cdda] font-medium tracking-normal">
+                    {work.description}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="">
-            <div>
-              
+        </div>
+      </div>
+      <div className="py-30">
+        <div className="max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-5 ">
+            <div className="flex flex-col space-y-10 col-span-3 pt-15 pr-25">
+              <div className="flex flex-col space-y-4">
+                <h5 className="text-primary_orange font-bold text-2xl">
+                  Why Choose Us
+                </h5>
+                <span className="font-bold text-5xl text-black ">
+                  The <span className="text-[#1eae98]">Fastest Way</span> To
+                  Send & Recieve We
+                </span>
+              </div>
+              <p className="text-grey_skip font-medium tracking-normal">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiatmnis iste na minim veniam, quis nostrud
+                exercita tion ullamco laboris nisi ut aliquip ex ea commodo
+              </p>
+              <div className="flex flex-col space-y-12">
+                <div className="flex items-center space-x-5">
+                  <div className="flex items-center space-x-4 flex-1">
+                    <div className="bg-[#ff6731] rounded-full p-5">
+                      <CheckIcon className="text-white w-5 h-5" />
+                    </div>
+                    <p className="text-grey_skip font-medium">
+                      Sundori toma amar tumi nilimar dike takiye
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-4 flex-1">
+                    <div className="bg-[#ff6731] rounded-full p-5">
+                      <CheckIcon className="text-white w-5 h-5" />
+                    </div>
+                    <p className="text-grey_skip font-medium">
+                      Kobita tumi sopno charini hoye khobor nio na
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-5">
+                  <div className="flex items-center space-x-4 flex-1">
+                    <div className="bg-[#ff6731] rounded-full p-5">
+                      <CheckIcon className="text-white w-5 h-5" />
+                    </div>
+                    <p className="text-grey_skip font-medium">
+                      Tumi jodi nodi hou ami hobo jege thaka chor
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-4 flex-1">
+                    <div className="bg-[#ff6731] rounded-full p-5">
+                      <CheckIcon className="text-white w-5 h-5" />
+                    </div>
+                    <p className="text-grey_skip font-medium">
+                      Dekha holo kotha holo apon moner tane
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-5">
+                  <div className="flex items-center space-x-4 flex-1">
+                    <div className="bg-[#ff6731] rounded-full p-5">
+                      <CheckIcon className="text-white w-5 h-5" />
+                    </div>
+                    <p className="text-grey_skip font-medium">
+                      Bondhu torai amar jan torai amar pran
+                    </p>
+                  </div>
+                  <div className="flex items-center space-x-4 flex-1">
+                    <div className="bg-[#ff6731] rounded-full p-5">
+                      <CheckIcon className="text-white w-5 h-5" />
+                    </div>
+                    <p className="text-grey_skip font-medium">
+                      Toder chhara bondhu ar gaite chay na pran
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-span-2">
+              <img
+                src={service}
+                alt="service"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="py-30 bg-[#003869CC]">
+        <div className="max-w-[1240px] mx-auto">
+          <div className="flex flex-row">
+            <div className="w-full flex flex-col justify-center px-10">
+              <div className="border border-stroke rounded-lg px-10 py-15 space-y-8 bg-white">
+                <div className="flex flex-col space-y-2">
+                  <h3 className="text-2xl font-bold text-[#ff6731]">
+                    Know the price
+                  </h3>
+                  <h3 className="text-4xl font-bold">Get A Free Quote</h3>
+                </div>
+                <div className="flex space-x-5">
+                  <Input
+                    placeholder="Your Name"
+                    styles="border rounded-md flex-1"
+                  />
+                  <Input
+                    placeholder="Your Email address"
+                    styles="border rounded-md flex-1"
+                  />
+                </div>
+                <div className="flex space-x-5">
+                  <Input
+                    placeholder="Your Phone number"
+                    styles="border rounded-md"
+                  />
+                  <Input placeholder="Subject" styles="border rounded-md" />
+                </div>
+                <div className="flex space-x-5">
+                  <Input
+                    placeholder="Your Phone number"
+                    styles="border rounded-md"
+                  />
+                  <Input placeholder="Subject" styles="border rounded-md" />
+                </div>
+
+                <Button
+                  text="Get A Quote"
+                  buttonStyle="w-[30%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
+                  icon={
+                    <div className="bg-primary_color p-3 rounded-md">
+                      <ChevronRightIcon className="w-5 h-5 text-white" />
+                    </div>
+                  }
+                />
+              </div>
+            </div>
+            <div className="">
+              <img
+                src={service}
+                alt="service"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

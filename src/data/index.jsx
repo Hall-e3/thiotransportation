@@ -4,8 +4,12 @@ import {
   b5,
   bdetials,
   call_center,
+  hardboard,
   home_delivery,
   payment,
+  process_2,
+  process_3,
+  process_4,
   search,
   tracking,
   transport,
@@ -141,24 +145,28 @@ export const works = [
   {
     id: 1,
     title: "Pick A Service",
+    image: hardboard,
     description:
       "Knim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aliquip betha kake jeye.",
   },
   {
     id: 2,
     title: "Send The Product",
+    image: process_2,
     description:
       "Knim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aliquip betha kake jeye.",
   },
   {
     id: 3,
     title: "Delivery Confirmation",
+    image: process_3,
     description:
       "Knim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aliquip betha kake jeye.",
   },
   {
     id: 4,
     title: "Clear The Payments",
+    image: process_4,
     description:
       "Knim ad minim veniam, quis nostud exercitation ullamco laboris nisi ut aliquip betha kake jeye.",
   },
