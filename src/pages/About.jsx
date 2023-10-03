@@ -43,7 +43,7 @@ export default function About() {
           <div className="w-full flex space-x-10">
             <div className="flex flex-1">
               <div className="h-full w-full flex justify-center relative">
-                <div className="bg-[#ff8485] rounded-lg absolute bottom-0 right-0 z-999">
+                <div className="bg-[#ff8485] rounded-lg absolute bottom-0 right-0 z-50">
                   <img
                     src={img4}
                     alt="nin4"
@@ -59,7 +59,7 @@ export default function About() {
                   />
                 </div>
 
-                <div className="absolute rounded-lg bottom-7 -left-40">
+                <div className="absolute rounded-lg bottom-7 -left-30">
                   <img
                     src={img3}
                     alt="driver"
@@ -67,7 +67,7 @@ export default function About() {
                   />
                 </div>
 
-                <div className="bg-gradient-to-r text-white h-40 w-40 px-5  from-red-500  to-primary_orange absolute flex flex-col space-y-5 z-9999 bottom-35 motion-safe:animate-bounce items-center justify-center -left-10 rounded-lg">
+                <div className="bg-gradient-to-r text-white h-40 w-40 px-5  from-red-500  to-primary_orange absolute flex flex-col space-y-5 z-40 bottom-35 motion-safe:animate-bounce items-center justify-center -left-10 rounded-lg">
                   <h6 className="text-white font-bold text-6xl">7K</h6>
                   <p className="text-white font-bold text-lg">
                     Product Delivered

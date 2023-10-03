@@ -47,7 +47,7 @@ export default function Layout({ children, style }) {
         <section
           className={`border-b border-stroke py-8 ${
             show
-              ? "md:fixed fixed z-20 top-0 w-screen h-[90px] bg-white drop-shadow-lg duration-500 "
+              ? "md:fixed fixed top-0 w-screen h-[90px] bg-white drop-shadow-lg duration-700 z-99"
               : " "
           }`}
         >

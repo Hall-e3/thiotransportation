@@ -11,6 +11,7 @@ import QuoteForm from "./QuoteForm";
 import CustomStep from "./CustomStep";
 import Divider from "./Divider";
 import SecondFooter from "./SecondFooter";
+import Testimonials from "./Testimonials";
 export {
   Loader,
   Supensing,
@@ -25,4 +26,5 @@ export {
   CustomStep,
   Divider,
   SecondFooter,
+  Testimonials,
 };

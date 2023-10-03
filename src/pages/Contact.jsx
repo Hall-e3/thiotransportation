@@ -1,9 +1,6 @@
 import React from "react";
 import Layout from "../layout";
-import {
-  ChevronRightIcon,
-  MapPinIcon,
-} from "@heroicons/react/24/solid";
+import { ChevronRightIcon, MapPinIcon } from "@heroicons/react/24/solid";
 import { Button, Footer, Input, TextArea } from "../components";
 
 export default function Contact() {
