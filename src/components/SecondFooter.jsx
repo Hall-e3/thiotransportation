@@ -7,11 +7,11 @@ import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 
 export default function SecondFooter() {
   return (
-    <section className="py-20 md:py-40 px-4 md:px-10 text-white bg-[#31373f]">
+    <section className="py-20 md:py-30 lg:py-40 px-10 sm:px-20 md:px-10 text-white bg-[#31373f]">
       <div className="max-w-[1240px] mx-auto">
-        <div className="flex flex-col space-y-10 md:space-y-25">
-          <div className="flex flex-col space-y-5 md:space-y-0 md:flex-row md:space-x-20 ">
-            <div className="flex flex-col space-y-6 md:flex-row md:space-y-8 flex-1">
+        <div className="flex flex-col space-y-10 lg:space-y-25">
+          <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-10">
+            <div className="flex flex-col space-y-6  lg:space-y-8 flex-1">
               <div className="flex items-center space-x-3">
                 <img src={logo} alt="logo" className="h-10 w-10" />
                 <h5 className="font-bold text-2xl">Theo Transportation</h5>
@@ -21,7 +21,7 @@ export default function SecondFooter() {
                 cillum dolore eu fugiatmnis iste na minim veniam, quis nostrud
                 exercita tion ullamco laboris nisi ut aliquip ex ea commodo
               </p>
-              <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:items-center md:space-x-6">
+              <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row md:items-center md:space-x-6">
                 <Input
                   placeholder="Your email here"
                   icon={
@@ -37,7 +37,7 @@ export default function SecondFooter() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col space-y-5 md:space-y-8 flex-none">
+            <div className="flex flex-col space-y-5  flex-none">
               <p className="font-semibold text-2xl">Recent Posts</p>
               <div className="flex items-center space-x-3">
                 <img
@@ -66,44 +66,44 @@ export default function SecondFooter() {
                 </div>
               </div>
             </div>
-            <div className=" flex flex-col space-y-5 md:space-y-8 flex-none">
+            <div className=" flex flex-col space-y-5 flex-none">
               <p className="font-semibold text-2xl">Links</p>
               <div className="flex flex-row items-center space-x-6">
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer ">
+                <p className="flex-1 md:flex-none  font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer ">
                   World Travelling
                 </p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="flex-1 md:flex-none  font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
                   Product Delivery
                 </p>
               </div>
               <div className="flex flex-row items-center space-x-6">
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="flex-1 md:flex-none font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
                   Logistic Support
                 </p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="flex-1 md:flex-none  font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
                   Transportation
                 </p>
               </div>
               <div className="flex flex-row items-center space-x-6">
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="flex-1 md:flex-none  font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
                   Train Freight
                 </p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className=" flex-1 md:flex-none font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
                   World Travelling
                 </p>
               </div>
               <div className="flex flex-row items-center space-x-6">
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="flex-1 md:flex-none font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
                   World Travelling
                 </p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="flex-1 md:flex-none font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
                   Product Delivery
                 </p>
               </div>
             </div>
           </div>
-          <div className="flex flex-col space-y-8 md:space-y-0 md:flex-row  md:space-x-20">
-            <div className="flex flex-col space-y-5 md:space-y-8">
+          <div className="flex flex-col space-y-8 lg:space-y-0 lg:flex-row  lg:space-x-10">
+            <div className="flex flex-col space-y-5 lg:space-y-6">
               <h5 className="font-bold text-2xl">Dhaka Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
@@ -126,7 +126,7 @@ export default function SecondFooter() {
               </div>
             </div>
 
-            <div className="flex flex-col space-y-5 md:space-y-8">
+            <div className="flex flex-col space-y-5 lg:space-y-6">
               <h5 className="font-bold text-2xl">New York Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
@@ -148,7 +148,7 @@ export default function SecondFooter() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col space-y-5 md:space-y-8">
+            <div className="flex flex-col space-y-5 lg:space-y-6">
               <h5 className="font-bold text-2xl">London Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
@@ -170,7 +170,7 @@ export default function SecondFooter() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col space-y-5 md:space-y-8">
+            <div className="flex flex-col space-y-5 lg:space-y-6">
               <h5 className="font-bold text-2xl">Cape Town Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
@@ -195,7 +195,7 @@ export default function SecondFooter() {
           </div>
           <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-between items-center">
             <h4>Copyright ©2023 Transco. All Rights Reserved</h4>
-            <div className="flex items-center space-x-5 md:space-x-10">
+            <div className="flex items-center space-x-5 lg:space-x-10">
               <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
                 World Travelling
               </p>

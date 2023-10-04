@@ -58,9 +58,9 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className="py-20 md:py-40 px-4 md:px-10">
+      <div className="py-15 sm:py-20 lg:py-40 px-4 sm:px-20 md:px-10">
         <div className="max-w-[1240px] mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 transition">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition">
             {cards.map((card) => (
               <div
                 key={card.id}
@@ -94,11 +94,11 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className="py-20 md:py-40 px-4 md:px-10 bg-[#393d48]">
+      <div className="py-15 sm:py-20 md:py-40 px-4 sm:px-20 md:px-10 bg-[#393d48]">
         <div className="max-w-[1240px] mx-auto">
           <div className="flex flex-col space-y-20">
-            <div className="flex flex-col md:flex-row items-center px-4 md:space-x-8">
-              <div className="flex flex-col space-y-3 flex-1">
+            <div className="flex flex-col md:space-y-6 px-4 lg:px-0">
+              <div className="flex flex-col space-y-3 md:space-y-6  flex-1">
                 <h5 className="text-primary_orange font-bold text-xl md:text-2xl lg:text-3xl">
                   How it works
                 </h5>
@@ -114,7 +114,7 @@ export default function Services() {
                 exercita tion ullamco laboris nisi ut aliquip ex ea commodo
               </p>
             </div>
-            <div className="flex flex-wrap gap-y-10 lg:gap-y-0 px-4 lg:px-0">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 px-4 lg:px-0">
               {works.map((work) => (
                 <div
                   key={work.id}
@@ -144,9 +144,9 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className="py-15 md:py-40 px-4 md:px-10">
+      <div className="py-15 sm:py-20 md:py-30 lg:py-40 px-4 sm:px-20 md:px-10">
         <div className="max-w-[1240px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-y-8 md:gap-y-0">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-y-8 lg:gap-y-0">
             <div className="flex flex-col space-y-10 md:col-span-3 lg:pt-15 lg:pr-25">
               <div className="flex flex-col space-y-4">
                 <h5 className="text-primary_orange font-bold text-2xl">
@@ -230,14 +230,14 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="py-15 md:py-40 px-4 md:px-10 bg-[#003869CC]">
+      <div className="py-15 sm:py-20 md:py-30 lg:py-40 px-4 sm:px-20 md:px-10 bg-[#003869CC]">
         <div className="max-w-[1240px] mx-auto">
-          <div className="flex flex-col md:flex-row md:space-x-8">
-            <div className="flex flex-col justify-center md:flex-1">
+          <div className="flex flex-col lg:flex-row lg:space-x-8">
+            <div className="flex flex-col justify-center lg:flex-1">
               <QuoteForm />
             </div>
-            <div className="flex-1 pt-15 sm:pt-0">
-              <div className={`flex flex-col space-y-8 md:pl-30`}>
+            <div className="flex-1 pt-15 lg:pt-0">
+              <div className={`flex flex-col space-y-8 lg:pl-30`}>
                 <div className="flex flex-col space-y-3">
                   <h3 className="text-xl lg:text-2xl  font-bold text-white">
                     Frequently Asked Questions

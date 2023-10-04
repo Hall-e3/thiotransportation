@@ -5,9 +5,9 @@ import { reviews } from "../data";
 
 export default function Testimonials() {
   return (
-    <div className="py-20 md:py-40 px-4 md:px-10">
+    <div className="py-15 sm:py-20 md:py-40 px-4 sm:px-20 md:px-10">
       <div className="max-w-[1240px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 transition">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 transition">
           <div className="md:col-span-2">
             <div className="flex flex-col  space-y-8">
               <div className="flex flex-col space-y-8">
