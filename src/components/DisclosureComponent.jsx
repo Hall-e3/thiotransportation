@@ -16,10 +16,10 @@ export default function DisclosureComponent() {
                 ) : (
                   <MinusIcon className="w-6 h-6 text-white" />
                 )}
-                <span className="font-bold text-white text-2xl">{d.title}</span>
+                <span className="font-bold text-white text-xl md:text-2xl">{d.title}</span>
               </Disclosure.Button>
               <Disclosure.Panel className="transition-max-height ease-in-out duration-300 py-0 flex ">
-                <span className="font-medium text-md text-grey_skip pl-13">
+                <span className="font-medium md:text-md text-grey_skip pl-13">
                   {d.description}
                 </span>
               </Disclosure.Panel>

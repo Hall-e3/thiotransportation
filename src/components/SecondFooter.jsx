@@ -2,16 +2,16 @@ import React from "react";
 
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Input from "./Input";
-import { b1, b2, logo, truck, truck1 } from "../constants";
+import { b1, logo, truck1 } from "../constants";
 import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 
 export default function SecondFooter() {
   return (
-    <section className="py-30 text-white bg-[#31373f]">
+    <section className="py-20 md:py-40 px-4 md:px-10 text-white bg-[#31373f]">
       <div className="max-w-[1240px] mx-auto">
-        <div className="flex flex-col space-y-25">
-          <div className="flex space-x-20">
-            <div className="flex flex-col space-y-8 flex-1">
+        <div className="flex flex-col space-y-10 md:space-y-25">
+          <div className="flex flex-col space-y-5 md:space-y-0 md:flex-row md:space-x-20 ">
+            <div className="flex flex-col space-y-6 md:flex-row md:space-y-8 flex-1">
               <div className="flex items-center space-x-3">
                 <img src={logo} alt="logo" className="h-10 w-10" />
                 <h5 className="font-bold text-2xl">Theo Transportation</h5>
@@ -21,7 +21,7 @@ export default function SecondFooter() {
                 cillum dolore eu fugiatmnis iste na minim veniam, quis nostrud
                 exercita tion ullamco laboris nisi ut aliquip ex ea commodo
               </p>
-              <div className="flex items-center space-x-6">
+              <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:items-center md:space-x-6">
                 <Input
                   placeholder="Your email here"
                   icon={
@@ -37,7 +37,7 @@ export default function SecondFooter() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col space-y-8 flex-none">
+            <div className="flex flex-col space-y-5 md:space-y-8 flex-none">
               <p className="font-semibold text-2xl">Recent Posts</p>
               <div className="flex items-center space-x-3">
                 <img
@@ -66,119 +66,143 @@ export default function SecondFooter() {
                 </div>
               </div>
             </div>
-            <div className=" flex flex-col space-y-8 flex-none">
+            <div className=" flex flex-col space-y-5 md:space-y-8 flex-none">
               <p className="font-semibold text-2xl">Links</p>
               <div className="flex flex-row items-center space-x-6">
-                <p className="font-normal text-sm ">World Travelling</p>
-                <p className="font-normal text-sm">Product Delivery</p>
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer ">
+                  World Travelling
+                </p>
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                  Product Delivery
+                </p>
               </div>
               <div className="flex flex-row items-center space-x-6">
-                <p className="font-normal text-sm">Logistic Support</p>
-                <p className="font-normal text-sm">Transportation</p>
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                  Logistic Support
+                </p>
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                  Transportation
+                </p>
               </div>
               <div className="flex flex-row items-center space-x-6">
-                <p className="font-normal text-sm">Train Freight</p>
-                <p className="font-normal text-sm">World Travelling</p>
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                  Train Freight
+                </p>
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                  World Travelling
+                </p>
               </div>
               <div className="flex flex-row items-center space-x-6">
-                <p className="font-normal text-sm">World Travelling</p>
-                <p className="font-normal text-sm">Product Delivery</p>
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                  World Travelling
+                </p>
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                  Product Delivery
+                </p>
               </div>
             </div>
           </div>
-          <div className="flex space-x-20">
-            <div className="flex flex-col space-y-8">
+          <div className="flex flex-col space-y-8 md:space-y-0 md:flex-row  md:space-x-20">
+            <div className="flex flex-col space-y-5 md:space-y-8">
               <h5 className="font-bold text-2xl">Dhaka Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
-                <MapPinIcon className="h-7 w-7" />
-                <p className="font-medium text-sm">
+                <MapPinIcon className="h-5 w-5" />
+                <p className="font-normal lg:text-lg text-[#c7cdda]">
                   22/1 Bardeshi, Amin Bazar Dhaka 1348
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <EnvelopeIcon className="h-5 w-5" />
-                <p className="font-medium text-sm">
+                <p className="font-normal lg:text-lg text-[#c7cdda]">
                   hello@theotransportation.com
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <PhoneIcon className="h-5 w-5" />
-                <p className="font-medium text-sm">+88 01234 567 890</p>
+                <p className="font-normal lg:text-lg text-[#c7cdda]">
+                  +88 01234 567 890
+                </p>
               </div>
             </div>
 
-            <div className="flex flex-col space-y-8">
+            <div className="flex flex-col space-y-5 md:space-y-8">
               <h5 className="font-bold text-2xl">New York Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
-                <MapPinIcon className="h-7 w-7" />
-                <p className="font-medium text-sm">
+                <MapPinIcon className="h-5 w-5" />
+                <p className="font-normal lg:text-lg text-[#c7cdda]">
                   22/1 Bardeshi, Amin Bazar Dhaka 1348
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <EnvelopeIcon className="h-5 w-5" />
-                <p className="font-medium text-sm">
+                <p className="font-normal lg:text-lg text-[#c7cdda]">
                   hello@theotransportation.com
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <PhoneIcon className="h-5 w-5" />
-                <p className="font-medium text-sm">+88 01234 567 890</p>
+                <p className="font-normal lg:text-lg text-[#c7cdda]">
+                  +88 01234 567 890
+                </p>
               </div>
             </div>
-            <div className="flex flex-col space-y-8">
+            <div className="flex flex-col space-y-5 md:space-y-8">
               <h5 className="font-bold text-2xl">London Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
-                <MapPinIcon className="h-7 w-7" />
-                <p className="font-medium text-sm">
+                <MapPinIcon className="h-5 w-5" />
+                <p className="font-normal lg:text-lg text-[#c7cdda]">
                   22/1 Bardeshi, Amin Bazar Dhaka 1348
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <EnvelopeIcon className="h-5 w-5" />
-                <p className="font-medium text-sm">
+                <p className="font-normal lg:text-lg text-[#c7cdda]">
                   hello@theotransportation.com
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <PhoneIcon className="h-5 w-5" />
-                <p className="font-medium text-sm">+88 01234 567 890</p>
+                <p className="font-normal lg:text-lg text-[#c7cdda]">
+                  +88 01234 567 890
+                </p>
               </div>
             </div>
-            <div className="flex flex-col space-y-8">
+            <div className="flex flex-col space-y-5 md:space-y-8">
               <h5 className="font-bold text-2xl">Cape Town Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
-                <MapPinIcon className="h-7 w-7" />
-                <p className="font-medium text-sm">
+                <MapPinIcon className="h-5 w-5" />
+                <p className="font-normal lg:text-lg text-[#c7cdda]">
                   22/1 Bardeshi, Amin Bazar Dhaka 1348
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <EnvelopeIcon className="h-5 w-5" />
-                <p className="font-medium text-sm">
+                <p className="font-normal lg:text-lg text-[#c7cdda]">
                   hello@theotransportation.com
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <PhoneIcon className="h-5 w-5" />
-                <p className="font-medium text-sm">+88 01234 567 890</p>
+                <p className="font-normal lg:text-lg text-[#c7cdda]">
+                  +88 01234 567 890
+                </p>
               </div>
             </div>
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-between items-center">
             <h4>Copyright ©2023 Transco. All Rights Reserved</h4>
-            <div className="flex items-center space-x-10">
-              <p className="font-normal text-sm hover:underline hover:underline-offset-1">
+            <div className="flex items-center space-x-5 md:space-x-10">
+              <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
                 World Travelling
               </p>
-              <p className="font-normal text-sm hover:underline hover:underline-offset-1">
+              <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
                 Product Delivery
               </p>
-              <p className="font-normal text-sm hover:underline hover:underline-offset-1">
+              <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
                 Marketing
               </p>
             </div>

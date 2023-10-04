@@ -5,16 +5,16 @@ import { reviews } from "../data";
 
 export default function Testimonials() {
   return (
-    <div className="py-30 bg-[#f3f7fc]">
+    <div className="py-20 md:py-40 px-4 md:px-10">
       <div className="max-w-[1240px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 transition">
           <div className="md:col-span-2">
             <div className="flex flex-col  space-y-8">
               <div className="flex flex-col space-y-8">
-                <h5 className="text-primary_orange font-bold text-3xl">
+                <h5 className="text-primary_orange font-bold text-xl md:text-2xl lg:text-3xl">
                   Testimonials
                 </h5>
-                <h3 className="font-bold text-5xl text-black leading-tight">
+                <h3 className="font-bold text-3xl md:text-4xl lg:text-5xl text-black leading-tight">
                   What<span className="text-[#1eae98]"> Clients</span> it About
                   <span className="text-[#1eae98]"> Us</span>
                 </h3>
