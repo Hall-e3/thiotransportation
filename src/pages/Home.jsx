@@ -7,8 +7,14 @@ import {
   QuoteForm,
   Testimonials,
 } from "../components";
-import { ChevronLeftIcon, ChevronRightIcon, PlayIcon } from "@heroicons/react/24/solid";
 import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  PlayIcon,
+} from "@heroicons/react/24/solid";
+import {
+  best_truck,
+  bike,
   boxes,
   delivery_courier,
   home1,
@@ -315,8 +321,83 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="py-30 bg-[#31373f]">
+        <div className="max-w-[1240px] mx-auto flex flex-col space-y-20">
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <div className="flex flex-col items-center justify-center space-y-4 px-80 mb-10">
+              <h5 className="text-primary_orange font-bold text-2xl">
+                How it works
+              </h5>
+              <span className="font-bold text-5xl text-white text-center leading-tight pb-4">
+                World Class <span className="text-[#1eae98]"> Logistics </span>
+                and <span className="text-[#1eae98]">Transportation </span>
+              </span>
+              <div className="py-[2.5px] px-[30px]  bg-primary_color" />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12">
+            <div className="col-span-3 flex flex-col space-y-30">
+              <div className="relative">
+                <div className="flex flex-col items-center justify-center p-10 bg-white rounded-lg shadow-sm">
+                  <h4 className="font-bold text-2xl">Pick A Service</h4>
+                  <p className="text-grey_skip font-light text-center">
+                    Ynim ad minim veniam ex ercitation pllamycp.
+                  </p>
+                </div>
+                <p className="font-bold text-base absolute -top-7 -left-6.5 rounded-full p-6 bg-[#1eae98]">
+                  01
+                </p>
+              </div>
+              <div className="relative">
+                <div className="flex flex-col items-center justify-center py-10  bg-white rounded-lg shadow-sm">
+                  <h4 className="font-bold text-2xl">Pick A Service</h4>
+                  <p className="text-grey_skip font-light text-center">
+                    Dim ad minim veniam ex ercitation cllamycd.
+                  </p>
+                </div>
+                <p className="font-bold text-base absolute -top-7 -left-6.5 rounded-full p-6 bg-[#1eae98]">
+                  03
+                </p>
+              </div>
+            </div>
+            <div className="col-span-6 flex items-center justify-center">
+              <div>
+                <img
+                  src={bike}
+                  alt="bike"
+                  className="object-contain w-full h-full rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="col-span-3 flex flex-col space-y-30">
+              <div className="relative">
+                <div className="flex flex-col items-center justify-center p-10 bg-white rounded-lg shadow-sm">
+                  <h4 className="font-bold text-2xl">Send Product</h4>
+                  <p className="text-grey_skip font-light text-center">
+                    Unim ad minim veniam ex ercitation illamyce.
+                  </p>
+                </div>
+                <p className="font-bold text-base absolute -top-7 -left-6.5 rounded-full p-6 bg-[#1eae98]">
+                  02
+                </p>
+              </div>
+              <div className="relative">
+                <div className="flex flex-col items-center justify-center p-10 bg-white rounded-lg shadow-sm">
+                  <h4 className="font-bold text-2xl">Clear Payment</h4>
+                  <p className="text-grey_skip font-light text-center">
+                    Onim ad minim veniam ex ercitation illamycy.
+                  </p>
+                </div>
+                <p className="font-bold text-base absolute -top-7 -left-6.5 rounded-full p-6 bg-[#1eae98]">
+                  04
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Testimonials />
-      <div className="py-30 bg-[#003869CC] mb-90">
+      <div className="py-30 bg-[#003869CC]">
         <div className="max-w-[1240px] mx-auto">
           <div className="flex flex-row space-x-8">
             <div className="flex flex-col justify-center flex-1">
@@ -333,6 +414,88 @@ export default function Home() {
                   </h3>
                 </div>
                 <DisclosureComponent />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="py-30 mb-50">
+        <div className="max-w-[1240px] mx-auto">
+          <div className="flex flex-col items-center justify-center space-y-">
+            <div className="flex flex-col items-center justify-center space-y-4 px-80 mb-10">
+              <h5 className="text-primary_orange font-bold text-2xl">
+                From Our Blog
+              </h5>
+              <span className="font-bold text-5xl text-black text-center leading-tight pb-4">
+                Get latest <span className="text-[#1eae98]"> news </span> and
+                Your <span className="text-[#1eae98]">updates </span>
+              </span>
+              <div className="py-[2.5px] px-[30px]  bg-primary_color" />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 transition">
+            <div className="relative group">
+              <img
+                src={best_truck}
+                alt="best_truck"
+                className="rounded-lg object-cover w-full h-full duration-700 ease-linear transform hover:scale-105"
+              />
+              <div className="absolute bottom-10 left-10">
+                <p className="text-white font-medium text-md">Web Design    |   October 09, 2022</p>
+                <p className="group-hover:text-primary_orange text-white font-bold text-2xl">Tips n tricks to make your clients happy</p>
+              </div>
+            </div>
+            <div className="h-full flex items-center justify-center space-x-6 px-4">
+              <div className="h-full flex flex-col  space-y-6 group">
+                <div className="flex flex-1 flex-col space-y-10  p-10 border border-stroke rounded-lg shadow-sm">
+                  <div className="flex flex-col">
+                    <h4 className="font-bold text-lg text-primary_orange">
+                      Logistis
+                    </h4>
+                    <p className="text-black text-xl font-bold">
+                      When the musics over turn off the light
+                    </p>
+                  </div>
+                  <p>April 02, 2023</p>
+                </div>
+
+                <div className="flex flex-1 flex-col space-y-10 p-10 border border-stroke rounded-lg shadow-sm">
+                  <div className="flex flex-col">
+                    <h4 className="font-bold text-lg text-primary_orange">
+                      Logistis
+                    </h4>
+                    <p className="text-black text-xl font-bold">
+                      Daycares Provide Transportation
+                    </p>
+                  </div>
+                  <p>March 13, 2022</p>
+                </div>
+              </div>
+
+              <div className="h-full flex flex-col  space-y-6">
+                <div className="flex flex-1 flex-col space-y-10 p-10 border border-stroke rounded-lg shadow-sm">
+                  <div className="flex flex-col">
+                    <h4 className="font-bold text-lg text-primary_orange">
+                      Logistis
+                    </h4>
+                    <p className="text-black text-xl font-bold">
+                      Acadian Emergency Transportation
+                    </p>
+                  </div>
+                  <p>February 13, 2022</p>
+                </div>
+
+                <div className="flex flex-1 flex-col space-y-10 p-10 border border-stroke rounded-lg shadow-sm">
+                  <div className="flex flex-col">
+                    <h4 className="font-bold text-lg text-primary_orange">
+                      Logistis
+                    </h4>
+                    <p className="text-black text-xl font-bold">
+                      Can You Transport Furniture In Uber
+                    </p>
+                  </div>
+                  <p>April 13, 2022</p>
+                </div>
               </div>
             </div>
           </div>

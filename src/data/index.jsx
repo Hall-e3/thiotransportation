@@ -8,7 +8,10 @@ import {
   doe,
   hardboard,
   harrison,
+  home1,
+  home2,
   home_delivery,
+  img4,
   johnson,
   parker,
   paul,
@@ -305,5 +308,32 @@ export const members = [
     name: "Johnson Blake",
     position: "General Manager",
     image: johnson,
+  },
+];
+
+export const images = [
+  {
+    id: 1,
+    image: b1,
+  },
+  {
+    id: 2,
+    image: b2,
+  },
+  {
+    id: 3,
+    image: b5,
+  },
+  {
+    id: 4,
+    image: home1,
+  },
+  {
+    id: 5,
+    image: home2,
+  },
+  {
+    id: 6,
+    image: img4,
   },
 ];

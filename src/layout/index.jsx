@@ -1,8 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { logo } from "../constants";
 import { Link } from "react-router-dom";
-import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
+import {
+  Bars3Icon,
+  EnvelopeIcon,
+  MapPinIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/solid";
 import { links } from "../data";
+import {
+  Facebook,
+  LinkedIn,
+  Twitter,
+  YouTube,
+} from "@mui/icons-material";
 
 export default function Layout({ children, style }) {
   const [hoveredLinkId, setHoveredLinkId] = useState(0);
@@ -23,7 +34,7 @@ export default function Layout({ children, style }) {
   return (
     <div className="h-screen w-full transition">
       <div className="h-full w-full">
-        <div className="h-12 w-full bg-primary_color transition">
+        <div className="h-12 w-full bg-primary_color transition hidden xl:flex">
           <nav className="h-full max-w-[1240px] flex mx-auto">
             <div className="h-full w-full flex items-center justify-between">
               <div></div>
@@ -44,19 +55,56 @@ export default function Layout({ children, style }) {
             </div>
           </nav>
         </div>
+        <div className="h-10 w-full bg-primary_color transition hidden lg:block xl:hidden">
+          <nav className="h-full max-w-[1240px] flex items-center justify-between mx-auto px-10">
+            <div className="flex items-center space-x-2 pr-7 border-r border-r-stroke">
+              <MapPinIcon className="w-5 h-5 text-white" />
+              <p className="text-white text-base">20,Bordeshi, New York, US</p>
+            </div>
+
+            <div className="flex items-center space-x-2 pr-7 border-r border-r-stroke">
+              <EnvelopeIcon className="w-4 h-4 text-white" />
+              <p className="text-white text-base">
+                info@theotransportation.com
+              </p>
+            </div>
+            <div className="flex items-center space-x-2">
+              <PhoneIcon className="w-4 h-4 text-white" />
+              <p className="text-white text-base">+123-895-6147</p>
+            </div>
+            <div className="flex items-center space-x-4">
+              <Facebook
+                className="text-white h-5 w-5"
+                style={{ height: "22px", width: "22px" }}
+              />
+              <Twitter
+                className="text-white h-5 w-5"
+                style={{ height: "22px", width: "22px" }}
+              />
+              <LinkedIn
+                className="text-white h-5 w-5"
+                style={{ height: "22px", width: "22px" }}
+              />
+              <YouTube
+                className="text-white h-5 w-5"
+                style={{ height: "22px", width: "22px" }}
+              />
+            </div>
+          </nav>
+        </div>
         <section
-          className={`border-b border-stroke py-8 ${
+          className={`border-b border-stroke lg:py-6 ${
             show
-              ? "md:fixed fixed top-0 w-screen h-[90px] bg-white drop-shadow-lg duration-700 z-99"
+              ? "md:fixed fixed top-0 w-screen lg:h-[90px]  bg-white drop-shadow-lg duration-700 z-99"
               : " "
           }`}
         >
-          <div className="w-full h-full flex flex-row items-center justify-between max-w-[1260px] mx-auto px-6">
+          <div className="w-full h-full flex items-center justify-between max-w-[1260px] mx-auto px-10 lg:px-6">
             <Link to="/" className="flex items-center space-x-1 bg">
               <img src={logo} alt="card" className="h-18 w-18" />
               <h5 className="font-bold text-2xl">Theo Transporation</h5>
             </Link>
-            <div className="flex flex-row space-x-14 h-full transition">
+            <div className="lg:flex space-x-14 h-full transition hidden">
               {links.map((link) => (
                 <Link
                   to={link.link}
@@ -82,7 +130,7 @@ export default function Layout({ children, style }) {
                 </Link>
               ))}
             </div>
-            <div className="flex flex-row space-x-3 items-center">
+            <div className="xl:flex space-x-3 items-center hidden">
               <div className="rounded-full border border-primary_green p-1 delay-300 transition opacity-75">
                 <div className="rounded-full p-4 bg-primary_orange">
                   <PhoneIcon className="w-5 h-5 text-white" />
@@ -94,6 +142,9 @@ export default function Layout({ children, style }) {
                 </p>
                 <p className="text-lg font-bold">+123-456-7890</p>
               </div>
+            </div>
+            <div className="lg:hidden">
+              <Bars3Icon className="w-7 h-7" />
             </div>
           </div>
         </section>

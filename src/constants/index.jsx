@@ -37,6 +37,8 @@ const tropy = require("../assets/images/tropy.webp");
 const home1 = require("../assets/images/home1.webp");
 const home2 = require("../assets/images/home2.webp");
 const videoImage = require("../assets/images/videoImage.webp");
+const bike = require("../assets/images/bike.webp");
+const best_truck = require("../assets/images/best_truck.webp");
 export {
   logo,
   another_logo,
@@ -77,4 +79,6 @@ export {
   track,
   tropy,
   videoImage,
+  bike,
+  best_truck,
 };
