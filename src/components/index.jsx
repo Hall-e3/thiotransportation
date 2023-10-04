@@ -8,7 +8,7 @@ import SelectField from "./SelectField";
 import CheckBox from "./CheckBox";
 import DisclosureComponent from "./DisclosureComponent";
 import QuoteForm from "./QuoteForm";
-import CustomStep from "./CustomStep";
+import { CustomStep, CustomStepSmallDevice } from "./CustomStep";
 import Divider from "./Divider";
 import SecondFooter from "./SecondFooter";
 import Testimonials from "./Testimonials";
@@ -27,4 +27,5 @@ export {
   Divider,
   SecondFooter,
   Testimonials,
+  CustomStepSmallDevice,
 };
