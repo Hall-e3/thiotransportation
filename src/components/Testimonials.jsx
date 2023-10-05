@@ -7,7 +7,7 @@ export default function Testimonials() {
     <div className="py-15 sm:py-20 md:py-40 px-4 sm:px-20 md:px-10">
       <div className="max-w-[1240px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 transition">
-          <div className="md:col-span-2">
+          <div className="lg:col-span-2">
             <div className="flex flex-col  space-y-8">
               <div className="flex flex-col space-y-8">
                 <h5 className="text-primary_orange font-bold text-xl md:text-2xl lg:text-3xl">
@@ -40,12 +40,12 @@ export default function Testimonials() {
               </div>
             </div>
           </div>
-          <div className="md:col-span-3 overflow-hidden">
+          <div className="lg:col-span-3 overflow-hidden">
             <div className="grid grid-cols-1 gap-4">
             {reviews.map((rev) => (
                   <div
                     key={rev.id}
-                    className="bg-white shadow-lg border border-stroke rounded-lg md:w-[50%]  flex flex-col space-y-8"
+                    className="bg-white shadow-lg border border-stroke rounded-lg p-8  flex flex-col space-y-8"
                   >
                     {rev.icon}
                     <p className="text-grey_skip">{rev.description}</p>

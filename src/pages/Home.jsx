@@ -61,7 +61,7 @@ export default function Home() {
 
                   <Button
                     text="Read More"
-                    buttonStyle="w-[45%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
+                    buttonStyle="w-[70%] md:w-[45%]  bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
                     icon={
                       <div className="bg-primary_color p-3 rounded-md">
                         <ChevronRightIcon className="w-5 h-5 text-white" />
@@ -92,7 +92,7 @@ export default function Home() {
 
                   <Button
                     text="Read More"
-                    buttonStyle="w-[45%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
+                    buttonStyle="w-[70%] md:w-[45%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
                     icon={
                       <div className="bg-primary_color p-3 rounded-md">
                         <ChevronRightIcon className="w-5 h-5 text-white" />
@@ -123,7 +123,7 @@ export default function Home() {
 
                   <Button
                     text="Read More"
-                    buttonStyle="w-[45%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
+                    buttonStyle="w-[70%] md:w-[45%]  bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
                     icon={
                       <div className="bg-primary_color p-3 rounded-md">
                         <ChevronRightIcon className="w-5 h-5 text-white" />
@@ -139,9 +139,9 @@ export default function Home() {
           </div>
         </Carousel>
       </div>
-      <div className="pt-16 lg:pb-30 pb-16  sm:py-20 md:py-40 px-4 sm:px-20 md:px-10 mb-60 lg:mb-90">
+      <div className="sm:pt-15 lg:pb-30 sm:pb-16  sm:py-20 md:py-40 px-4 sm:px-20 md:px-10 mb-60 lg:mb-90">
         <div className="max-w-[1240px] mx-auto">
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-10 md:space-x-30">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-10 space-y-20 sm:space-y-0 lg:space-x-30">
             <div className="hidden lg:flex md:col-span-5">
               <div className="h-full w-full flex justify-center relative">
                 <div className="bg-[#ff8485] rounded-lg absolute bottom-0 left-0 z-20">
@@ -185,7 +185,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lg:hidden pb-15 px-10 h-[50vh]">
+            <div className="lg:hidden pb-15 px-10 h-[50vh] sm:h-[70vh]">
               <div className="h-full w-full flex justify-center relative">
                 <div className="bg-[#ff8485] rounded-lg absolute w-[50%] -bottom-20 -left-10 z-20">
                   <img
@@ -332,7 +332,7 @@ export default function Home() {
               <div className="py-[2.5px] px-[30px]  bg-primary_color" />
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-14 lg:gap-x-8 transition">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-14 lg:gap-x-8 transition">
             {cards.map((card) => (
               <div
                 key={card.id}
@@ -380,10 +380,10 @@ export default function Home() {
               <div className="py-[2.5px] px-[30px]  bg-primary_color" />
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12">
-            <div className="col-span-3 flex flex-col space-y-8 lg:space-y-30 mb-6 lg:mb-0">
+          <div className="grid grid-cols-1 lg:grid-cols-12">
+            <div className="lg:col-span-3 flex flex-col space-y-8 lg:space-y-30 mb-6 lg:mb-0">
               <div className="lg:relative">
-                <div className="flex flex-col lg:items-center justify-center h-[25vh] px-8 space-y-4 bg-white rounded-lg shadow-sm">
+                <div className="flex flex-col lg:items-center justify-center h-[30vh] md:h-[25vh] px-8 space-y-4 bg-white rounded-lg shadow-sm">
                   <p className="font-bold text-base rounded-full h-18 w-18 flex justify-center items-center bg-[#1eae98]">
                     01
                   </p>
@@ -397,7 +397,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="relative">
-                <div className="flex flex-col lg:items-center justify-center h-[25vh] px-8 space-y-4  bg-white rounded-lg shadow-sm">
+                <div className="flex flex-col lg:items-center justify-center h-[30vh] md:h-[25vh] px-8  space-y-4  bg-white rounded-lg shadow-sm">
                   <p className="font-bold text-base rounded-full h-18 w-18 flex justify-center items-center bg-[#1eae98]">
                     03
                   </p>
@@ -422,7 +422,7 @@ export default function Home() {
             </div>
             <div className="col-span-3 flex flex-col space-y-8 lg:space-y-30">
               <div className="relative">
-                <div className="flex flex-col lg:items-center justify-center h-[25vh] px-8 space-y-4 bg-white rounded-lg shadow-sm">
+                <div className="flex flex-col lg:items-center justify-center h-[30vh] md:h-[25vh] px-8 space-y-4 bg-white rounded-lg shadow-sm">
                   <p className="font-bold text-base rounded-full h-18 w-18 flex justify-center items-center bg-[#1eae98]">
                     02
                   </p>
@@ -436,7 +436,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="relative">
-                <div className="flex flex-col lg:items-center justify-center h-[25vh] px-8 space-y-4 bg-white rounded-lg shadow-sm">
+                <div className="flex flex-col lg:items-center justify-center h-[30vh] md:h-[25vh] px-8 space-y-4 bg-white rounded-lg shadow-sm">
                   <p className="font-bold text-base rounded-full h-18 w-18 flex justify-center items-center bg-[#1eae98]">
                     03
                   </p>
@@ -490,8 +490,8 @@ export default function Home() {
               <div className="py-[2.5px] px-[30px]  bg-primary_color" />
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 transition">
-            <div className="relative group px-4 lg:px-0">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-2 transition">
+            <div className="relative group px-4 sm:px-8 lg:px-0">
               <img
                 src={best_truck}
                 alt="best_truck"
@@ -506,8 +506,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="h-full flex flex-col space-y-5 lg:space-y-0 lg:flex-row items-center justify-center lg:space-x-6 px-4 pt-8 lg:pt-0">
-              <div className="h-full flex flex-col  space-y-6 group">
+            <div className="w-full h-full flex flex-col space-y-5 lg:space-y-0 lg:flex-row items-center justify-center lg:space-x-6 px-4 pt-8 lg:pt-0">
+              <div className="w-full h-full flex flex-col  space-y-6 group">
                 <div className="flex flex-1 flex-col space-y-10  p-10 border border-stroke rounded-lg shadow-sm">
                   <div className="flex flex-col">
                     <h4 className="font-bold text-lg text-primary_orange">
@@ -520,7 +520,7 @@ export default function Home() {
                   <p>April 02, 2023</p>
                 </div>
 
-                <div className="flex flex-1 flex-col space-y-10 p-10 border border-stroke rounded-lg shadow-sm">
+                <div className="w-full flex flex-1 flex-col space-y-10 p-10 border border-stroke rounded-lg shadow-sm">
                   <div className="flex flex-col">
                     <h4 className="font-bold text-lg text-primary_orange">
                       Logistis
@@ -533,7 +533,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="h-full flex flex-col  space-y-6 group">
+              <div className="w-full h-full flex flex-col  space-y-6 group">
                 <div className="flex flex-1 flex-col space-y-10 px-12 py-10 lg:p-10 lg:py-0 lg:px-0 border border-stroke rounded-lg shadow-sm">
                   <div className="flex flex-col">
                     <h4 className="font-bold text-lg text-primary_orange">
@@ -546,7 +546,7 @@ export default function Home() {
                   <p>February 13, 2022</p>
                 </div>
 
-                <div className="flex flex-1 flex-col space-y-10 px-12 py-10 lg:py-0 lg:px-0 lg:p-10 border border-stroke rounded-lg shadow-sm">
+                <div className="w-full flex flex-1 flex-col space-y-10 px-12 py-10 lg:py-0 lg:px-0 lg:p-10 border border-stroke rounded-lg shadow-sm">
                   <div className="flex flex-col">
                     <h4 className="font-bold text-lg text-primary_orange">
                       Logistis

@@ -99,7 +99,7 @@ export default function Layout({ children, style }) {
               : " "
           }`}
         >
-          <div className="w-full h-full flex items-center justify-between max-w-[1260px] mx-auto px-10 lg:px-6">
+          <div className="w-full h-full flex items-center justify-between max-w-[1260px] mx-auto md:px-10 lg:px-6">
             <Link to="/" className="flex items-center space-x-1 bg">
               <img src={logo} alt="card" className="h-18 w-18" />
               <h5 className="font-bold text-2xl">Theo Transporation</h5>
@@ -143,7 +143,7 @@ export default function Layout({ children, style }) {
                 <p className="text-lg font-bold">+123-456-7890</p>
               </div>
             </div>
-            <div className="lg:hidden">
+            <div className="lg:hidden pr-5 md:pr-0">
               <Bars3Icon className="w-7 h-7" />
             </div>
           </div>
