@@ -148,7 +148,7 @@ export default function Layout({ children, style }) {
             </div>
           </div>
         </section>
-        <main className="w-full h-full overflow-x-hidden">{children}</main>
+        <main className="w-full h-full ">{children}</main>
       </div>
     </div>
   );

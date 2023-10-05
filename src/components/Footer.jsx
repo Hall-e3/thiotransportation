@@ -1,5 +1,5 @@
 import React from "react";
-import { b1, logo, truck, truck1 } from "../constants";
+import { b1, logo,  truck1 } from "../constants";
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Input from "./Input";
 import { images } from "../data";
@@ -25,7 +25,7 @@ export default function Footer() {
           />
         </div>
       </div>
-      <div className="max-w-[1240px] mx-auto  h-full flex flex-col space-y-12 lg:space-y-30 lg:pt-30">
+      <div className="max-w-[1240px] mx-auto  h-full flex flex-col space-y-12 lg:space-y-30 pt-15 lg:pt-30">
         <div className="w-full flex flex-col space-y-12 lg:space-y-0 lg:flex-row  lg:space-x-8">
           <div className="flex flex-col md:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
             <div className="flex flex-col justify-between flex-1">
