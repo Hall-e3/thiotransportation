@@ -27,13 +27,13 @@ export default function Blog() {
           </div>
         </div>
       </div>
-      <div className="pt-20 mb-40">
+      <div className="py-15 mb-40 sm:py-20 lg:py-40 px-4 sm:px-20 md:px-10">
         <div className="max-w-[1240px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-9 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-9 gap-8">
             {blogs.map((blog) => (
               <div
                 key={blog.id}
-                className="col-span-1 sm:col-span-6 border border-stroke rounded-lg mb-6"
+                className="lg:col-span-6 border border-stroke rounded-lg mb-6"
               >
                 <div className="flex flex-col">
                   <div className="rounded-lg">
@@ -57,39 +57,39 @@ export default function Blog() {
                       </Carousel>
                     )}
                   </div>
-                  <div className="flex flex-col space-y-8 p-14">
-                    <div className="flex flex-row items-center space-x-6">
+                  <div className="flex flex-col space-y-8 lg:p-14 p-8">
+                    <div className="flex flex-col md:flex-row md:items-center md:space-x-6">
                       <div className="flex items-center space-x-1">
                         <UserIcon className="w-5 h-5 text-primary_green" />
-                        <p className="text-md font-medium text-grey_skip">
+                        <p className="text-grey_skip font-medium tracking-normal">
                           {blog.title}
                         </p>
                       </div>
                       <div className="flex items-center space-x-1">
                         <ClockIcon className="w-5 h-5 text-primary_green" />
-                        <p className="text-md font-medium text-grey_skip">
+                        <p className="text-grey_skip font-medium tracking-normal">
                           {blog.date}
                         </p>
                       </div>
                       <div className="flex items-center space-x-1">
                         <ChatBubbleLeftRightIcon className="w-5 h-5 text-primary_green" />
-                        <p className="text-md font-medium text-grey_skip">
+                        <p className="text-grey_skip font-medium tracking-normal">
                           {blog.comments}
                         </p>
                       </div>
                     </div>
                     <div className="flex flex-col space-y-8">
-                      <h3 className="text-4xl font-bold hover:text-[#005bac] cursor-pointer">
+                      <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold hover:text-[#005bac] cursor-pointer">
                         {blog.subtitle}
                       </h3>
-                      <p className="text-md font-medium text-grey_skip">
+                      <p className="text-grey_skip font-medium tracking-normal">
                         {blog.description}
                       </p>
                     </div>
-                    <div className="flex items-center justify-between">
+                    <div className="w-full flex flex-col space-y-8 md:space-y-0 md:flex-row md:items-center justify-between">
                       <Button
                         text="Read More"
-                        buttonStyle="w-[30%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
+                        buttonStyle=" sm:w-[50%] lg:w-[30%]  bg-gradient-to-r text-white  from-red-500  to-primary_orange py-2 sm:py-3 text-lg font-bold rounded-md"
                         icon={
                           <div className="bg-[#005bac] p-3 rounded-md">
                             <ChevronRightIcon className="w-5 h-5 text-white" />
@@ -107,7 +107,7 @@ export default function Blog() {
                 </div>
               </div>
             ))}
-            <div className="col-span-3">
+            <div className="lg:col-span-3">
               <div className="flex flex-col space-y-10">
                 <div className="rounded-lg bg-blue-gray-50 p-8 flex flex-col space-y-6">
                   <div className="flex items-center space-x-2">
@@ -227,7 +227,7 @@ export default function Blog() {
                     ].map((i) => (
                       <p
                         key={i}
-                        className="border border-stroke rounded-3xl px-6 py-2 font-thin text-sm hover:bg-primary_color hover:text-white cursor-pointer"
+                        className="border border-stroke rounded-3xl px-6 py-2 font-thin text-sm hover:bg-primary_color hover:text-white hover:font-bold cursor-pointer"
                       >
                         {i}
                       </p>
@@ -256,7 +256,7 @@ export default function Blog() {
                     ].map((c) => (
                       <div
                         key={c.id}
-                        className="p-6 bg-primary_color hover:bg-primary_orange rounded-full "
+                        className="p-3 sm:p-4 lg:p-6 bg-primary_color hover:bg-primary_orange rounded-full "
                       >
                         {c.icon}
                       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { b1, logo,  truck1 } from "../constants";
+import { b1, logo, truck1 } from "../constants";
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Input from "./Input";
 import { images } from "../data";
