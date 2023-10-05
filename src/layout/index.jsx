@@ -38,7 +38,7 @@ export default function Layout({ children, style }) {
     };
   }, []);
   return (
-    <div className="h-screen w-full transition overflow-hidden">
+    <div className="h-screen w-full transition overflow-x-hidden">
       <div className="h-full w-full">
         <div className="h-12 w-full bg-primary_color transition hidden xl:flex">
           <nav className="h-full max-w-[1240px] flex mx-auto">
