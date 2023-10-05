@@ -141,7 +141,7 @@ export default function Home() {
       </div>
       <div className="pt-16 lg:pb-30 pb-16  sm:py-20 md:py-40 px-4 sm:px-20 md:px-10 mb-60 lg:mb-90">
         <div className="max-w-[1240px] mx-auto">
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-10">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-10 md:space-x-30">
             <div className="hidden lg:flex md:col-span-5">
               <div className="h-full w-full flex justify-center relative">
                 <div className="bg-[#ff8485] rounded-lg absolute bottom-0 left-0 z-20">
