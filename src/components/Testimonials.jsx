@@ -1,5 +1,4 @@
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
-import { Carousel } from "@material-tailwind/react";
 import React from "react";
 import { reviews } from "../data";
 
@@ -41,16 +40,12 @@ export default function Testimonials() {
               </div>
             </div>
           </div>
-          <div className="md:col-span-3">
-            <div className="flex h-full">
-              <Carousel
-                className="rounded-xl grid-cols-2"
-                transition={{ duration: 2 }}
-              >
-                {reviews.map((rev) => (
+          <div className="md:col-span-3 overflow-hidden">
+            <div className="grid grid-cols-1 gap-4">
+            {reviews.map((rev) => (
                   <div
                     key={rev.id}
-                    className="bg-white shadow-lg rounded-lg p-10 flex flex-col space-y-8"
+                    className="bg-white shadow-lg border border-stroke rounded-lg md:w-[50%]  flex flex-col space-y-8"
                   >
                     {rev.icon}
                     <p className="text-grey_skip">{rev.description}</p>
@@ -67,7 +62,6 @@ export default function Testimonials() {
                     </div>
                   </div>
                 ))}
-              </Carousel>
             </div>
           </div>
         </div>

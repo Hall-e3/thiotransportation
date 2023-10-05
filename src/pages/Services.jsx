@@ -9,11 +9,9 @@ import {
 } from "../components";
 import {
   CheckIcon,
-  ChevronLeftIcon,
   ChevronRightIcon,
 } from "@heroicons/react/24/solid";
 import { cards, reviews, works } from "../data";
-import { Carousel } from "@material-tailwind/react";
 
 export default function Services() {
   const [currentSlide, setCurrentSlide] = useState(0);
