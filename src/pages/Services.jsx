@@ -7,10 +7,7 @@ import {
   SecondFooter,
   Testimonials,
 } from "../components";
-import {
-  CheckIcon,
-  ChevronRightIcon,
-} from "@heroicons/react/24/solid";
+import { CheckIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import { cards, reviews, works } from "../data";
 
 export default function Services() {
@@ -43,7 +40,7 @@ export default function Services() {
 
   return (
     <Layout>
-      <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-cyan-500 to-primary_green opacity-90">
+      <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-primary_color to-primary_green opacity-90">
         <div className="max-w-[1240px] mx-auto py-20">
           <div className="flex flex-col items-center justify-center space-y-7">
             <h4 className="text-white font-bold text-7xl">Services</h4>
@@ -62,7 +59,7 @@ export default function Services() {
             {cards.map((card) => (
               <div
                 key={card.id}
-                className="w-full group flex duration-300 ease-in hover:-translate-y-3 flex-col space-y-8 border border-stroke rounded-lg px-14 py-10 hover:bg-gradient-to-r from-cyan-500 to-primary_green"
+                className="w-full group flex duration-300 ease-in hover:-translate-y-3 flex-col space-y-8 border border-stroke rounded-lg px-14 py-10 hover:bg-gradient-to-r from-primary_color to-primary_green"
               >
                 <div className="flex items-center space-x-4">
                   <div className="group-hover:bg-gradient-to-r w-[30%] from-red-500 to-primary_orange p-4 rounded-lg bg-primary_color">
@@ -76,7 +73,7 @@ export default function Services() {
                     {card.title}
                   </h5>
                 </div>
-                <div className="border border-primary_green group-hover:border-white" />
+                <div className="border border-primary_color group-hover:border-white" />
                 <p className="group-hover:text-white text-md text text-grey_skip">
                   {card.description}
                 </p>
@@ -101,9 +98,9 @@ export default function Services() {
                   How it works
                 </h5>
                 <h3 className="font-bold text-3xl md:text-4xl lg:text-5xl text-white leading-normal">
-                  We <span className="text-[#1eae98]">Make</span> &{" "}
-                  <span className="text-[#1eae98]">Keep</span> it{" "}
-                  <span className="text-[#1eae98]">Simple</span> For You
+                  We <span className="text-primary_color">Make</span> &{" "}
+                  <span className="text-primary_color">Keep</span> it{" "}
+                  <span className="text-primary_color">Simple</span> For You
                 </h3>
               </div>
               <p className="flex-1 text-[#c7cdda] font-medium tracking-normal">
@@ -126,7 +123,7 @@ export default function Services() {
                         className="transition-transform transform group-hover:rotate-180"
                       />
                     </div>
-                    <div className="h-6 w-6 flex items-center justify-center rounded-full bg-[#1eae98] absolute top-0 group-hover:bg-primary_orange">
+                    <div className="text-white h-6 w-6 flex items-center justify-center rounded-full bg-primary_color absolute top-0 group-hover:bg-primary_orange">
                       {work.id}
                     </div>
                   </div>
@@ -151,7 +148,7 @@ export default function Services() {
                   Why Choose Us
                 </h5>
                 <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-black ">
-                  The <span className="text-[#1eae98]">Fastest Way</span> To
+                  The <span className="text-primary_color">Fastest Way</span> To
                   Send & Recieve We
                 </span>
               </div>

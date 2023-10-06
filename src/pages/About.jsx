@@ -120,8 +120,8 @@ export default function About() {
                   About Theo Transportation
                 </h5>
                 <h3 className="font-bold text-3xl md:text-4xl lg:text-5xl text-black leading-tight">
-                  World Class <span className="text-[#1eae98]">Logistic</span>{" "}
-                  and <span className="text-[#1eae98]">Transportation</span>
+                  World Class <span className="text-primary_color">Logistic</span>{" "}
+                  and <span className="text-primary_color">Transportation</span>
                 </h3>
                 <p className="flex-1 text-[#c7cdda] font-medium tracking-normal">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -241,8 +241,8 @@ export default function About() {
                   Frequently Asked Questions
                 </h5>
                 <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-black ">
-                  The <span className="text-[#1eae98]">Progressive</span> &{" "}
-                  <span className="text-[#1eae98]"> Flexible </span>Transport
+                  The <span className="text-primary_color">Progressive</span> &{" "}
+                  <span className="text-primary_color"> Flexible </span>Transport
                   coverage
                 </span>
               </div>
@@ -367,8 +367,8 @@ export default function About() {
                 History
               </h5>
               <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-black text-center leading-tight">
-                Know More <span className="text-[#1eae98]"> Detail </span> About
-                Our <span className="text-[#1eae98]">Company </span>
+                Know More <span className="text-primary_color"> Detail </span> About
+                Our <span className="text-primary_color">Company </span>
               </span>
             </div>
             <div className="flex-col items-center hidden lg:flex">
@@ -389,7 +389,7 @@ export default function About() {
                   </div>
                 }
                 rightTitle={
-                  <div className="rounded-3xl bg-[#1eae98] flex justify-center items-center w-[40%] py-3">
+                  <div className="rounded-3xl bg-primary_color flex justify-center items-center w-[40%] py-3">
                     <p className="font-bold text-white text-lg">Dec 23, 1983</p>
                   </div>
                 }
@@ -397,7 +397,7 @@ export default function About() {
               <CustomStep
                 leftTitle={
                   <div className="flex justify-end">
-                    <div className="rounded-3xl bg-[#1eae98] flex justify-center items-center w-[40%] py-3">
+                    <div className="rounded-3xl bg-primary_color flex justify-center items-center w-[40%] py-3">
                       <p className="font-bold text-white text-lg">
                         Jan 23, 1984
                       </p>
@@ -437,7 +437,7 @@ export default function About() {
                   </div>
                 }
                 rightTitle={
-                  <div className="rounded-3xl bg-[#1eae98] flex justify-center items-center w-[40%] py-3">
+                  <div className="rounded-3xl bg-primary_color flex justify-center items-center w-[40%] py-3">
                     <p className="font-bold text-white text-lg">Dec 23, 1983</p>
                   </div>
                 }
@@ -461,14 +461,14 @@ export default function About() {
                   </div>
                 }
                 top={
-                  <div className="rounded-3xl bg-[#1eae98] flex justify-center items-center py-3 px-7">
+                  <div className="rounded-3xl bg-primary_color flex justify-center items-center py-3 px-7">
                     <p className="font-bold text-white text-lg">Dec 23, 1983</p>
                   </div>
                 }
               />
               <CustomStepSmallDevice
                 top={
-                  <div className="rounded-3xl bg-[#1eae98] flex justify-center items-center py-3 px-7">
+                  <div className="rounded-3xl bg-primary_color flex justify-center items-center py-3 px-7">
                     <p className="font-bold text-white text-lg">Jan 23, 1984</p>
                   </div>
                 }
@@ -505,7 +505,7 @@ export default function About() {
                   </div>
                 }
                 top={
-                  <div className="rounded-3xl bg-[#1eae98] flex justify-center items-center py-3 px-7">
+                  <div className="rounded-3xl bg-primary_color flex justify-center items-center py-3 px-7">
                     <p className="font-bold text-white text-lg">Dec 23, 1983</p>
                   </div>
                 }
@@ -525,8 +525,8 @@ export default function About() {
                 Team Members
               </h5>
               <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-black text-center leading-tight pb-4">
-                The <span className="text-[#1eae98]"> Best </span> &{" "}
-                <span className="text-[#1eae98]">Skilled </span>People Together
+                The <span className="text-primary_color"> Best </span> &{" "}
+                <span className="text-primary_color">Skilled </span>People Together
               </span>
               <div className="py-[2.5px] px-[30px]  bg-primary_color" />
             </div>
@@ -573,8 +573,8 @@ export default function About() {
                     Testimonials
                   </h5>
                   <h3 className="font-bold text-3xl md:text-4xl lg:text-5xl text-black leading-tight">
-                    What<span className="text-[#1eae98]">Clients</span> it About
-                    <span className="text-[#1eae98]">Us</span>
+                    What<span className="text-primary_color">Clients</span> it About
+                    <span className="text-primary_color">Us</span>
                   </h3>
                 </div>
                 <p className="text-[#c7cdda] font-medium tracking-normal">

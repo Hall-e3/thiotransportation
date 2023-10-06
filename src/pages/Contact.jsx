@@ -6,7 +6,7 @@ import { Button, Footer, Input, TextArea } from "../components";
 export default function Contact() {
   return (
     <Layout>
-      <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-cyan-500 to-primary_green opacity-90">
+      <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-primary_color to-primary_green opacity-90">
         <div className="max-w-[1240px] mx-auto py-20">
           <div className="flex flex-col items-center justify-center space-y-7">
             <h4 className="text-white font-bold text-5xl md:text-6xl lg:text-6xl 2xl:text-7xl">
@@ -24,8 +24,8 @@ export default function Contact() {
       <div className="py-30 md:py-40 px-4 md:px-10">
         <div className="max-w-[1240px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-8">
           <div className="w-full rounded-md flex lg:flex-1 justify-center flex-col space-y-6 p-10 border bg-blue-gray-50 border-stroke relative">
-            <div className="bg-primary_green rounded-full flex items-center justify-center h-20 w-20 absolute -top-10 left-[40%] right-[40%] md:right-[50%] md:left-[40%]">
-              <MapPinIcon className="w-5 h-5 text-white" />
+            <div className="bg-primary_color rounded-full flex items-center justify-center h-20 w-20 absolute -top-10 left-[40%] right-[40%] md:right-[50%] md:left-[40%]">
+              <MapPinIcon className="w-7 h-7 text-white" />
             </div>
             <div className="flex flex-col space-y-4 items-center">
               <h6 className="text-xl font-bold">Address</h6>
@@ -33,17 +33,17 @@ export default function Contact() {
             </div>
           </div>
           <div className="w-full rounded-md flex lg:flex-1 justify-center flex-col space-y-6 p-10 border bg-blue-gray-50 border-stroke relative">
-            <div className="bg-primary_green rounded-full flex items-center justify-center h-20 w-20 absolute -top-10 left-[40%] right-[40%] md:right-[45%] md:left-[40%]">
-              <MapPinIcon className="w-5 h-5 text-white" />
+            <div className="bg-primary_color rounded-full flex items-center justify-center h-20 w-20 absolute -top-10 left-[40%] right-[40%] md:right-[45%] md:left-[40%]">
+              <MapPinIcon className="w-7 h-7 text-white" />
             </div>
             <div className="flex flex-col space-y-4 items-center">
               <h6 className="text-xl font-bold">Address</h6>
               <p className="text-lg">20, Bordeshi,New York,US</p>
             </div>
           </div>
-          <div className="w-full rounded-md flex lg:flex-1 justify-center flex-col space-y-6 p-10 border bg-blue-gray-50 border-stroke relative">
-            <div className="bg-primary_green rounded-full flex items-center justify-center h-20 w-20 absolute -top-10 left-[40%] right-[40%] md:right-[45%] md:left-[40%]">
-              <MapPinIcon className="w-5 h-5 text-white" />
+          <div className="w-full rounded-md flex lg:flex-1 justify-center flex-col space-y-6 p-10 border bg-blue-gray-70 border-stroke relative">
+            <div className="bg-primary_color rounded-full flex items-center justify-center h-20 w-20 absolute -top-10 left-[40%] right-[40%] md:right-[47%] md:left-[40%]">
+              <MapPinIcon className="w-7 h-7 text-white" />
             </div>
             <div className="flex flex-col space-y-4 items-center">
               <h6 className="text-xl font-bold">Address</h6>

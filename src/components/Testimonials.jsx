@@ -14,8 +14,8 @@ export default function Testimonials() {
                   Testimonials
                 </h5>
                 <h3 className="font-bold text-3xl md:text-4xl lg:text-5xl text-black leading-tight">
-                  What<span className="text-[#1eae98]"> Clients</span> it About
-                  <span className="text-[#1eae98]"> Us</span>
+                  What<span className="text-primary_color"> Clients</span> it About
+                  <span className="text-primary_color"> Us</span>
                 </h3>
               </div>
               <p className="text-[#c7cdda] font-medium tracking-normal">

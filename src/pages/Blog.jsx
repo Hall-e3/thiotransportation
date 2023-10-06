@@ -18,7 +18,7 @@ import { Carousel } from "@material-tailwind/react";
 export default function Blog() {
   return (
     <Layout>
-      <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-cyan-500 to-primary_green opacity-90">
+      <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-cyan-500 to-primary_color opacity-90">
         <div className="max-w-[1240px] mx-auto py-20">
           <div className="flex flex-col items-center justify-center space-y-7">
             <h4 className="text-white font-bold text-7xl">Blog</h4>
@@ -60,19 +60,19 @@ export default function Blog() {
                   <div className="flex flex-col space-y-8 lg:p-14 p-8">
                     <div className="flex flex-col md:flex-row md:items-center md:space-x-6">
                       <div className="flex items-center space-x-1">
-                        <UserIcon className="w-5 h-5 text-primary_green" />
+                        <UserIcon className="w-5 h-5 text-primary_color" />
                         <p className="text-grey_skip font-medium tracking-normal">
                           {blog.title}
                         </p>
                       </div>
                       <div className="flex items-center space-x-1">
-                        <ClockIcon className="w-5 h-5 text-primary_green" />
+                        <ClockIcon className="w-5 h-5 text-primary_color" />
                         <p className="text-grey_skip font-medium tracking-normal">
                           {blog.date}
                         </p>
                       </div>
                       <div className="flex items-center space-x-1">
-                        <ChatBubbleLeftRightIcon className="w-5 h-5 text-primary_green" />
+                        <ChatBubbleLeftRightIcon className="w-5 h-5 text-primary_color" />
                         <p className="text-grey_skip font-medium tracking-normal">
                           {blog.comments}
                         </p>
@@ -111,7 +111,7 @@ export default function Blog() {
               <div className="flex flex-col space-y-10">
                 <div className="rounded-lg bg-blue-gray-50 p-8 flex flex-col space-y-6">
                   <div className="flex items-center space-x-2">
-                    <PlayIcon className="text-primary_green h-4 w-4" />
+                    <PlayIcon className="text-primary_color h-4 w-4" />
                     <h5 className="font-semibold text-2xl">Search</h5>
                   </div>
                   <Input
@@ -121,7 +121,7 @@ export default function Blog() {
                 </div>
                 <div className="rounded-lg bg-blue-gray-50 p-8 flex flex-col space-y-8">
                   <div className="flex items-center space-x-2">
-                    <PlayIcon className="text-primary_green h-4 w-4" />
+                    <PlayIcon className="text-primary_color h-4 w-4" />
                     <h5 className="font-semibold text-2xl">Recent Posts</h5>
                   </div>
                   <div className="flex flex-col space-y-10">
@@ -156,7 +156,7 @@ export default function Blog() {
                 </div>
                 <div className="rounded-lg bg-blue-gray-50 p-8 flex flex-col space-y-6">
                   <div className="flex items-center space-x-2">
-                    <PlayIcon className="text-primary_green h-4 w-4" />
+                    <PlayIcon className="text-primary_color h-4 w-4" />
                     <h5 className="font-semibold text-2xl">Categories</h5>
                   </div>
                   <div className="flex items-center justify-between">
@@ -210,7 +210,7 @@ export default function Blog() {
                 </div>
                 <div className="rounded-lg bg-blue-gray-50 p-8 flex flex-col space-y-6">
                   <div className="flex items-center space-x-2">
-                    <PlayIcon className="text-primary_green h-4 w-4" />
+                    <PlayIcon className="text-primary_color h-4 w-4" />
                     <h5 className="font-semibold text-2xl">Tag Search</h5>
                   </div>
                   <div className="flex flex-wrap gap-2">
@@ -236,7 +236,7 @@ export default function Blog() {
                 </div>
                 <div className="rounded-lg bg-blue-gray-50 p-8 flex flex-col space-y-6">
                   <div className="flex items-center space-x-2">
-                    <PlayIcon className="text-primary_green h-4 w-4" />
+                    <PlayIcon className="text-primary_color h-4 w-4" />
                     <h5 className="font-semibold text-2xl">Social Link</h5>
                   </div>
                   <div className="flex space-x-8">

@@ -9,10 +9,10 @@ export default function QuoteForm() {
   return (
     <div className="border border-stroke rounded-lg px-7 lg:px-10 py-10 space-y-4 md:space-y-8 bg-white">
       <div className="flex flex-col space-y-2">
-        <h3 className="text-xl md:text-2xl font-bold text-[#ff6731]">
-          Know the price
+        <h3 className="text-xl md:text-2xl font-bold ">Know the price</h3>
+        <h3 className="text-3xl lg:text-4xl font-bold text-primary_color">
+          Get A Free Quote
         </h3>
-        <h3 className="text-3xl lg:text-4xl font-bold">Get A Free Quote</h3>
       </div>
       <div className="flex flex-col lg:flex-row lg:space-x-5">
         <Input placeholder="Your Name" styles="border rounded-md flex-1" />

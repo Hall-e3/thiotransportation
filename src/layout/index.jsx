@@ -14,9 +14,10 @@ import {
   Facebook,
   Instagram,
   LinkedIn,
-  Twitter,
   YouTube,
+  Close,
 } from "@mui/icons-material";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function Layout({ children, style }) {
   const [hoveredLinkId, setHoveredLinkId] = useState(0);
@@ -83,7 +84,7 @@ export default function Layout({ children, style }) {
                 className="text-white h-5 w-5"
                 style={{ height: "22px", width: "22px" }}
               />
-              <Twitter
+              <Close
                 className="text-white h-5 w-5"
                 style={{ height: "22px", width: "22px" }}
               />
@@ -168,7 +169,7 @@ export default function Layout({ children, style }) {
             </Link>
             <div
               onClick={() => setDrop(false)}
-              className="h-11 w-11 rounded-full bg-primary_green flex items-center justify-center"
+              className="h-11 w-11 rounded-full bg-primary_color flex items-center justify-center"
             >
               <XMarkIcon className="w-4 h-4 text-white" />
             </div>
@@ -235,20 +236,20 @@ export default function Layout({ children, style }) {
                 </p>
               </div>
               <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_color">
-                <EnvelopeIcon className="h-5 w-5" />
+                <EnvelopeIcon className="h-4 w-4" />
                 <p className="font-medium lg:text-lg">
                   hello@theotransportation.com
                 </p>
               </div>
               <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_color">
-                <PhoneIcon className="h-5 w-5" />
+                <PhoneIcon className="h-4 w-4" />
                 <p className="font-medium lg:text-lg">+88 01234 567 890</p>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-3 border-t border-t-stroke py-6">
             <Facebook className="text-black" />
-            <Twitter className="text-black" />
+            <Close className="text-black" />
             <Instagram className="text-black" />
             <LinkedIn className="text-black" />
           </div>

@@ -23,7 +23,6 @@ import {
 import { Carousel } from "@material-tailwind/react";
 import { abouts, cards } from "../data";
 
-
 export default function Home() {
   return (
     <Layout>
@@ -234,8 +233,9 @@ export default function Home() {
                   We are Theo Transportation
                 </h5>
                 <h3 className="font-bold text-3xl md:text-4xl lg:text-5xl text-black leading-tight">
-                  World Class <span className="text-[#1eae98]">Logistic</span>{" "}
-                  and <span className="text-[#1eae98]">Transportation</span>{" "}
+                  World Class{" "}
+                  <span className="text-primary_color">Logistic</span> and{" "}
+                  <span className="text-primary_color">Transportation</span>{" "}
                   Service
                 </h3>
                 <p className="flex-1 text-[#c7cdda] font-semibold tracking-normal">
@@ -326,8 +326,8 @@ export default function Home() {
               </h5>
               <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-black text-center leading-tight pb-4">
                 We Find the{" "}
-                <span className="text-[#1eae98]"> Destination </span> for Your{" "}
-                <span className="text-[#1eae98]">Product </span>
+                <span className="text-primary_color"> Destination </span> for
+                Your <span className="text-primary_color">Product </span>
               </span>
               <div className="py-[2.5px] px-[30px]  bg-primary_color" />
             </div>
@@ -336,7 +336,7 @@ export default function Home() {
             {cards.map((card) => (
               <div
                 key={card.id}
-                className="group flex duration-300 ease-in hover:-translate-y-3 flex-col space-y-8 border border-stroke rounded-lg px-14 py-10 hover:bg-gradient-to-r from-cyan-500 to-primary_green"
+                className="group flex duration-300 ease-in hover:-translate-y-3 flex-col space-y-8 border border-stroke rounded-lg px-14 py-10 hover:bg-gradient-to-r from-primary_color to-primary_green"
               >
                 <div className="flex items-center space-x-4">
                   <div className="group-hover:bg-gradient-to-r w-[30%] from-red-500 to-primary_orange p-4 rounded-lg bg-primary_color">
@@ -374,17 +374,18 @@ export default function Home() {
                 How it works
               </h5>
               <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-white text-center leading-tight pb-4">
-                World Class <span className="text-[#1eae98]"> Logistics </span>
-                and <span className="text-[#1eae98]">Transportation </span>
+                World Class{" "}
+                <span className="text-primary_color"> Logistics </span>
+                and <span className="text-primary_color">Transportation </span>
               </span>
-              <div className="py-[2.5px] px-[30px]  bg-primary_color" />
+              <div className="py-[2.5px] px-[30px]  bg-primary_orange" />
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12">
             <div className="lg:col-span-3 flex flex-col space-y-8 lg:space-y-30 mb-6 lg:mb-0">
               <div className="lg:relative">
                 <div className="flex flex-col lg:items-center justify-center h-[30vh] md:h-[25vh] px-8 space-y-4 bg-white rounded-lg shadow-sm">
-                  <p className="font-bold text-base rounded-full h-18 w-18 flex justify-center items-center bg-[#1eae98]">
+                  <p className="font-bold text-base text-white rounded-full h-18 w-18 flex justify-center items-center bg-primary_color">
                     01
                   </p>
                   <h4 className="font-bold text-2xl">Pick A Service</h4>
@@ -392,13 +393,13 @@ export default function Home() {
                     Ynim ad minim veniam ex ercitation pllamycp.
                   </p>
                 </div>
-                <p className="font-bold text-base absolute -top-7 -left-6.5 rounded-full p-6 bg-[#1eae98] hidden">
+                <p className="font-bold text-base absolute text-white -top-7 -left-6.5 rounded-full p-6 bg-primary_color  hidden">
                   01
                 </p>
               </div>
               <div className="relative">
                 <div className="flex flex-col lg:items-center justify-center h-[30vh] md:h-[25vh] px-8  space-y-4  bg-white rounded-lg shadow-sm">
-                  <p className="font-bold text-base rounded-full h-18 w-18 flex justify-center items-center bg-[#1eae98]">
+                  <p className="font-bold text-base text-white rounded-full h-18 w-18 flex justify-center items-center bg-primary_color ">
                     03
                   </p>
                   <h4 className="font-bold text-2xl">Pick A Service</h4>
@@ -406,7 +407,7 @@ export default function Home() {
                     Dim ad minim veniam ex ercitation cllamycd.
                   </p>
                 </div>
-                <p className="font-bold text-base absolute -top-7 -left-6.5 rounded-full p-6 bg-[#1eae98] hidden">
+                <p className="font-bold text-base absolute text-white -top-7 -left-6.5 rounded-full p-6 bg-primary_color  hidden">
                   03
                 </p>
               </div>
@@ -423,7 +424,7 @@ export default function Home() {
             <div className="col-span-3 flex flex-col space-y-8 lg:space-y-30">
               <div className="relative">
                 <div className="flex flex-col lg:items-center justify-center h-[30vh] md:h-[25vh] px-8 space-y-4 bg-white rounded-lg shadow-sm">
-                  <p className="font-bold text-base rounded-full h-18 w-18 flex justify-center items-center bg-[#1eae98]">
+                  <p className="font-bold text-base rounded-full text-white h-18 w-18 flex justify-center items-center bg-primary_color">
                     02
                   </p>
                   <h4 className="font-bold text-2xl">Send Product</h4>
@@ -431,13 +432,13 @@ export default function Home() {
                     Unim ad minim veniam ex ercitation illamyce.
                   </p>
                 </div>
-                <p className="font-bold text-base absolute -top-7 -left-6.5 rounded-full p-6 bg-[#1eae98] hidden">
+                <p className="font-bold text-base absolute -top-7 text-white -left-6.5 rounded-full p-6 bg-primary_color hidden">
                   02
                 </p>
               </div>
               <div className="relative">
                 <div className="flex flex-col lg:items-center justify-center h-[30vh] md:h-[25vh] px-8 space-y-4 bg-white rounded-lg shadow-sm">
-                  <p className="font-bold text-base rounded-full h-18 w-18 flex justify-center items-center bg-[#1eae98]">
+                  <p className="font-bold text-base rounded-full h-18 text-white w-18 flex justify-center items-center bg-primary_color">
                     03
                   </p>
                   <h4 className="font-bold text-2xl">Clear Payment</h4>
@@ -445,7 +446,7 @@ export default function Home() {
                     Onim ad minim veniam ex ercitation illamycy.
                   </p>
                 </div>
-                <p className="font-bold text-base absolute -top-7 -left-6.5 rounded-full p-6 bg-[#1eae98] hidden">
+                <p className="font-bold text-base absolute -top-7 text-white -left-6.5 rounded-full p-6 bg-primary_color hidden">
                   04
                 </p>
               </div>
@@ -484,8 +485,8 @@ export default function Home() {
                 From Our Blog
               </h5>
               <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-black text-center leading-tight pb-4">
-                Get latest <span className="text-[#1eae98]"> news </span> and
-                Your <span className="text-[#1eae98]">updates </span>
+                Get latest <span className="text-primary_color"> news </span>{" "}
+                and Your <span className="text-primary_color">updates </span>
               </span>
               <div className="py-[2.5px] px-[30px]  bg-primary_color" />
             </div>
