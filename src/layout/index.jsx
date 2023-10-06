@@ -17,7 +17,7 @@ import {
   YouTube,
   Close,
 } from "@mui/icons-material";
-import CloseIcon from "@mui/icons-material/Close";
+import { theo_blue_orange_logo } from "../constants/originals";
 
 export default function Layout({ children, style }) {
   const [hoveredLinkId, setHoveredLinkId] = useState(0);
@@ -108,7 +108,11 @@ export default function Layout({ children, style }) {
         >
           <div className="w-full h-full flex items-center justify-between max-w-[1260px] mx-auto md:px-10 lg:px-6">
             <Link to="/" className="flex items-center space-x-1 bg">
-              <img src={logo} alt="card" className="h-18 w-18" />
+              <img
+                src={theo_blue_orange_logo}
+                alt="card"
+                className="h-18 w-18"
+              />
               <h5 className="font-bold text-2xl">Theo Transporation</h5>
             </Link>
             <div className="lg:flex space-x-14 h-full transition hidden">

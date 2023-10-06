@@ -2,8 +2,9 @@ import React from "react";
 
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Input from "./Input";
-import { b1, logo, truck1 } from "../constants";
+import { b1, truck1 } from "../constants";
 import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import { theo_white_blue_logo } from "../constants/originals";
 
 export default function SecondFooter() {
   return (
@@ -13,7 +14,11 @@ export default function SecondFooter() {
           <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-10">
             <div className="flex flex-col space-y-6  lg:space-y-8 flex-1">
               <div className="flex items-center space-x-3">
-                <img src={logo} alt="logo" className="h-10 w-10" />
+                <img
+                  src={theo_white_blue_logo}
+                  alt="logo"
+                  className="h-20 w-20"
+                />
                 <h5 className="font-bold text-2xl">Theo Transportation</h5>
               </div>
               <p className="text-[#c7cdda] font-medium tracking-normal">

@@ -1,8 +1,9 @@
 import React from "react";
-import { b1, logo, truck1 } from "../constants";
+import { b1, truck1 } from "../constants";
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Input from "./Input";
 import { images } from "../data";
+import { theo_white_orange_logo } from "../constants/originals";
 
 export default function Footer() {
   return (
@@ -31,7 +32,11 @@ export default function Footer() {
             <div className="flex flex-col justify-between flex-1">
               <div className="flex flex-col space-y-3 md:space-y-5">
                 <div className="flex items-center space-x-3">
-                  <img src={logo} alt="logo" className="h-20 w-20" />
+                  <img
+                    src={theo_white_orange_logo}
+                    alt="logo"
+                    className="h-20 w-20"
+                  />
                   <h5 className="font-bold text-3xl">Theo Transport</h5>
                 </div>
                 <div className="flex items-center space-x-4 cursor-pointer">
