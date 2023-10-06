@@ -14,16 +14,21 @@ import { Button, Footer, Input } from "../components";
 import { LinkedIn, Twitter, Facebook, YouTube } from "@mui/icons-material";
 import { blogs } from "../data";
 import { Carousel } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 export default function Blog() {
   return (
     <Layout>
-      <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-cyan-500 to-primary_color opacity-90">
+      <div className="py-18 bg-no-repeat bg-cover bg-background4 bg-center opacity-90">
         <div className="max-w-[1240px] mx-auto py-20">
           <div className="flex flex-col items-center justify-center space-y-7">
             <h4 className="text-white font-bold text-7xl">Blog</h4>
 
-            <p className="text-white font-normal text-sm">Home</p>
+            <Link to="/">
+              <p className="text-white font-semibold text-sm hover:text-primary_orange cursor-pointer">
+                Home
+              </p>
+            </Link>
           </div>
         </div>
       </div>

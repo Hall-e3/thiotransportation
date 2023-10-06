@@ -101,8 +101,10 @@ module.exports = withMT({
     },
     extend: {
       backgroundImage: {
-        background_truck: "url('/src/assets/images/truck.jpeg')",
-        background_truck2: "url('/src/assets/images/truck2.jpeg')",
+        background1: "url('/src/assets/orignals/background.jpeg')",
+        background2: "url('/src/assets/orignals/background1.jpeg')",
+        background3: "url('/src/assets/orignals/background2.jpeg')",
+        background4: "url('/src/assets/orignals/background3.jpeg')",
       },
       fontSize: {
         "title-xxl": ["44px", "55px"],

@@ -26,18 +26,23 @@ import {
 } from "../components";
 import { abouts, members, reviews } from "../data";
 import { Facebook, LinkedIn, Twitter } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 export default function About() {
   const [activeTab, setActiveTab] = useState(1);
   return (
     <Layout>
-      <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-cyan-500 to-primary_green opacity-90">
+      <div className="py-18 bg-no-repeat bg-cover bg-background1 bg-center opacity-90">
         <div className="max-w-[1240px] mx-auto py-20">
           <div className="flex flex-col items-center justify-center space-y-7">
             <h4 className="text-white font-bold text-7xl">About</h4>
 
             <p className="flex items-center space-x-3">
-              <p className="text-white font-normal text-sm">Home</p>
+              <Link to="/">
+                <p className="text-white font-semibold text-sm hover:text-primary_orange cursor-pointer">
+                  Home
+                </p>
+              </Link>
               <ChevronRightIcon className="w-4 h-4 text-white" />
               <p className="text-white font-normal text-sm">About Us</p>
             </p>
@@ -120,8 +125,9 @@ export default function About() {
                   About Theo Transportation
                 </h5>
                 <h3 className="font-bold text-3xl md:text-4xl lg:text-5xl text-black leading-tight">
-                  World Class <span className="text-primary_color">Logistic</span>{" "}
-                  and <span className="text-primary_color">Transportation</span>
+                  World Class{" "}
+                  <span className="text-primary_color">Logistic</span> and{" "}
+                  <span className="text-primary_color">Transportation</span>
                 </h3>
                 <p className="flex-1 text-[#c7cdda] font-medium tracking-normal">
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -242,8 +248,8 @@ export default function About() {
                 </h5>
                 <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-black ">
                   The <span className="text-primary_color">Progressive</span> &{" "}
-                  <span className="text-primary_color"> Flexible </span>Transport
-                  coverage
+                  <span className="text-primary_color"> Flexible </span>
+                  Transport coverage
                 </span>
               </div>
               <p className="text-grey_skip font-normal tracking-normal text-lg">
@@ -367,8 +373,8 @@ export default function About() {
                 History
               </h5>
               <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-black text-center leading-tight">
-                Know More <span className="text-primary_color"> Detail </span> About
-                Our <span className="text-primary_color">Company </span>
+                Know More <span className="text-primary_color"> Detail </span>{" "}
+                About Our <span className="text-primary_color">Company </span>
               </span>
             </div>
             <div className="flex-col items-center hidden lg:flex">
@@ -526,7 +532,8 @@ export default function About() {
               </h5>
               <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-black text-center leading-tight pb-4">
                 The <span className="text-primary_color"> Best </span> &{" "}
-                <span className="text-primary_color">Skilled </span>People Together
+                <span className="text-primary_color">Skilled </span>People
+                Together
               </span>
               <div className="py-[2.5px] px-[30px]  bg-primary_color" />
             </div>
@@ -573,7 +580,8 @@ export default function About() {
                     Testimonials
                   </h5>
                   <h3 className="font-bold text-3xl md:text-4xl lg:text-5xl text-black leading-tight">
-                    What<span className="text-primary_color">Clients</span> it About
+                    What<span className="text-primary_color">Clients</span> it
+                    About
                     <span className="text-primary_color">Us</span>
                   </h3>
                 </div>

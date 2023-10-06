@@ -2,11 +2,12 @@ import React from "react";
 import Layout from "../layout";
 import { ChevronRightIcon, MapPinIcon } from "@heroicons/react/24/solid";
 import { Button, Footer, Input, TextArea } from "../components";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
     <Layout>
-      <div className="py-16 bg-no-repeat bg-cover bg-gradient-to-r from-primary_color to-primary_green opacity-90">
+      <div className="bg-background2 py-18 bg-no-repeat bg-cover bg-center opacity-90 ">
         <div className="max-w-[1240px] mx-auto py-20">
           <div className="flex flex-col items-center justify-center space-y-7">
             <h4 className="text-white font-bold text-5xl md:text-6xl lg:text-6xl 2xl:text-7xl">
@@ -14,7 +15,11 @@ export default function Contact() {
             </h4>
 
             <p className="flex items-center space-x-3">
-              <p className="text-white font-normal text-sm">Home</p>
+              <Link to="/home">
+                <p className="text-white font-semibold text-sm hover:text-primary_orange cursor-pointer">
+                  Home
+                </p>
+              </Link>
               <ChevronRightIcon className="w-4 h-4 text-white" />
               <p className="text-white font-normal text-sm">Contact Us</p>
             </p>
