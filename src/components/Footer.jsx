@@ -1,9 +1,8 @@
 import React from "react";
-import { b1, truck1 } from "../constants";
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Input from "./Input";
 import { images } from "../data";
-import { theo_white_orange_logo } from "../constants/originals";
+import { staff2, theo_white_orange_logo, trackie } from "../constants/originals";
 
 export default function Footer() {
   return (
@@ -100,7 +99,7 @@ export default function Footer() {
               <p className="font-bold text-2xl">Latest Posts</p>
               <div className="flex items-center space-x-3">
                 <img
-                  src={b1}
+                  src={staff2}
                   alt="truck"
                   className="rounded-lg object-cover h-15 w-15"
                 />
@@ -115,7 +114,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <img
-                  src={truck1}
+                  src={trackie}
                   alt="truck1"
                   className="rounded-lg object-cover h-15 w-15"
                 />

@@ -4,7 +4,7 @@ import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Input from "./Input";
 import { b1, truck1 } from "../constants";
 import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
-import { theo_white_blue_logo } from "../constants/originals";
+import { staff3, theo_white_blue_logo, trackie1 } from "../constants/originals";
 
 export default function SecondFooter() {
   return (
@@ -46,8 +46,8 @@ export default function SecondFooter() {
               <p className="font-semibold text-2xl">Recent Posts</p>
               <div className="flex items-center space-x-3">
                 <img
-                  src={b1}
-                  alt="truck"
+                  src={staff3}
+                  alt="staff"
                   className="rounded-lg object-cover h-15 w-15"
                 />
                 <div>
@@ -59,8 +59,8 @@ export default function SecondFooter() {
               </div>
               <div className="flex items-center space-x-3">
                 <img
-                  src={truck1}
-                  alt="truck1"
+                  src={trackie1}
+                  alt="trackie1"
                   className="rounded-lg object-cover h-15 w-15"
                 />
                 <div>

@@ -8,8 +8,6 @@ import {
   doe,
   hardboard,
   harrison,
-  home1,
-  home2,
   home_delivery,
   img4,
   johnson,
@@ -24,6 +22,7 @@ import {
   tracking,
   transport,
 } from "../constants";
+import { staff, staff1, staff2, staff3, storage } from "../constants/originals";
 
 export const links = [
   {
@@ -59,7 +58,7 @@ export const blogs = [
     title: "Theo Transportation",
     date: "June 4, 2023",
     comments: "No Comments",
-    image: b1,
+    image: staff,
     subtitle: "Why Transport is Key in Logistics?",
     description:
       "Kobita mnis iste natus error sit voluptatem acycu sa mnis iste nat Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in […]",
@@ -69,7 +68,7 @@ export const blogs = [
     title: "Theo Transportation",
     date: "June 4, 2023",
     comments: "No Comments",
-    image: b2,
+    image: staff2,
     subtitle: "Can You Transport Furniture In Uber?",
     description:
       "Kobita mnis iste natus error sit voluptatem acycu sa mnis iste nat Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in […]",
@@ -90,7 +89,7 @@ export const blogs = [
     date: "June 4, 2023",
     comments: "No Comments",
     subtitle: "Bus To Borristown Transportation Center",
-    image: bdetials,
+    image: staff1,
     description:
       "Kobita mnis iste natus error sit voluptatem acycu sa mnis iste nat Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in […]",
   },
@@ -99,7 +98,7 @@ export const blogs = [
     title: "Theo Transportation",
     date: "June 4, 2023",
     comments: "No Comments",
-    image: b5,
+    image: staff,
     subtitle: "New York Door To Door Transportation",
     description:
       "Kobita mnis iste natus error sit voluptatem acycu sa mnis iste nat Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in […]",
@@ -314,23 +313,23 @@ export const members = [
 export const images = [
   {
     id: 1,
-    image: b1,
+    image: staff,
   },
   {
     id: 2,
-    image: b2,
+    image: staff1,
   },
   {
     id: 3,
-    image: b5,
+    image: staff2,
   },
   {
     id: 4,
-    image: home1,
+    image: staff3,
   },
   {
     id: 5,
-    image: home2,
+    image: storage,
   },
   {
     id: 6,

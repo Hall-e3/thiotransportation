@@ -24,8 +24,6 @@ export default function Layout({ children, style }) {
   const [show, setShow] = useState(false);
   const [drop, setDrop] = useState(false);
 
-  console.log(drop);
-
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 10) {
@@ -100,7 +98,7 @@ export default function Layout({ children, style }) {
           </nav>
         </div>
         <section
-          className={`border-b border-stroke lg:py-6 ${
+          className={`border-b border-stroke p-4 lg:py-6 ${
             show
               ? "md:fixed fixed top-0 w-screen lg:h-[90px]  bg-white drop-shadow-lg duration-700 z-99"
               : " "
@@ -111,9 +109,11 @@ export default function Layout({ children, style }) {
               <img
                 src={theo_blue_orange_logo}
                 alt="card"
-                className="h-18 w-18"
+                className="h-10 w-10 lg:h-18 lg:w-18"
               />
-              <h5 className="font-bold text-2xl">Theo Transporation</h5>
+              <h5 className="font-bold text-2xl hidden lg:block">
+                Theo Transporation
+              </h5>
             </Link>
             <div className="lg:flex space-x-14 h-full transition hidden">
               {links.map((link) => (
@@ -168,8 +168,12 @@ export default function Layout({ children, style }) {
           }`}
         >
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center bg">
-              <h5 className="font-bold text-3xl">Theo</h5>
+            <Link to="/" className="flex items-center space-x-1 bg">
+              <img
+                src={theo_blue_orange_logo}
+                alt="card"
+                className="h-18 w-18"
+              />
             </Link>
             <div
               onClick={() => setDrop(false)}

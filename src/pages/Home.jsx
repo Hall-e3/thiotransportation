@@ -18,33 +18,35 @@ import {
   track,
   tropy,
   truck,
-  videoImage,
 } from "../constants";
 import { Carousel } from "@material-tailwind/react";
 import { abouts, cards } from "../data";
+import { staff1 } from "../constants/originals";
 
 export default function Home() {
   return (
     <Layout>
-      <div className="py-16">
+      <div className="">
         <Carousel
+          style={{ height: "100vh" }}
           transition={{ duration: 2 }}
           navigation={({ setActiveIndex, activeIndex, length }) => (
-            <div className="absolute bottom-4 left-2/4 z-50 flex bg-black -translate-x-2/4 gap-2">
+            <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
               {new Array(length).fill("").map((_, i) => (
-                <span
+                <div
                   key={i}
-                  className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                    activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-                  }`}
                   onClick={() => setActiveIndex(i)}
+                  className={`p-2 bg-grey_skip rounded-full ${
+                    activeIndex === i && "border-2 border-primary_color"
+                  }`}
                 />
               ))}
             </div>
           )}
         >
-          <div className=" bg-no-repeat bg-cover bg-gradient-to-r from-cyan-500 to-primary_green opacity-90">
-            <div className="max-w-[1240px] mx-auto py-20">
+          <div className="h-full bg-no-repeat bg-cover bg-gradient-to-r from-primary_color to-primary_green  relative">
+            <div className="bg-no-repeat bg-cover bg-background2 bg-center h-full absolute inset-0 opacity-10"></div>
+            <div className="h-full flex items-center justify-center max-w-[1240px] mx-auto py-20">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="flex flex-col space-y-8 px-8 justify-center order-last lg:order-none">
                   <h5 className="font-semibold text-2xl text-white">
@@ -68,14 +70,15 @@ export default function Home() {
                     }
                   />
                 </div>
-                <div className="order-first lg:order-none flex items-center justify-center">
-                  <img src={truck} className="object-contain" />
+                <div className="order-first lg:order-none flex items-center justify-center pr-15 sm:pr-0">
+                  <img src={truck} className="object-contain" alt="truck" />
                 </div>
               </div>
             </div>
           </div>
-          <div className=" bg-no-repeat bg-cover bg-gradient-to-r from-cyan-500 to-primary_green opacity-90">
-            <div className="max-w-[1240px] mx-auto py-20">
+          <div className="h-full bg-no-repeat bg-cover bg-gradient-to-r from-primary_color to-primary_green opacity-90 relative">
+            <div className="bg-no-repeat bg-cover bg-background3 bg-center h-full absolute inset-0 opacity-10"></div>
+            <div className="h-full flex items-center justify-center max-w-[1240px] mx-auto py-20">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="flex flex-col space-y-8 px-8 justify-center">
                   <h5 className="font-semibold text-2xl text-white">
@@ -100,13 +103,14 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <img src={person} />
+                  <img src={person} alt="person" />
                 </div>
               </div>
             </div>
           </div>
-          <div className=" bg-no-repeat bg-cover bg-gradient-to-r from-primary_green to-cyan-500 opacity-90">
-            <div className="max-w-[1240px] mx-auto py-20">
+          <div className="h-full bg-no-repeat bg-cover bg-gradient-to-r from-primary_green to-primary_color relative">
+            <div className="bg-no-repeat bg-cover bg-background4 bg-center h-full absolute inset-0 opacity-10"></div>
+            <div className="h-full flex items-center justify-center max-w-[1240px] mx-auto py-20">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="flex flex-col space-y-8 px-8 justify-center order-last lg:order-none">
                   <h5 className="font-semibold text-2xl text-white">
@@ -131,14 +135,15 @@ export default function Home() {
                   />
                 </div>
                 <div className="order-first lg:order-none">
-                  <img src={person1} />
+                  <img src={person1} alt="person1" />
                 </div>
               </div>
             </div>
           </div>
         </Carousel>
       </div>
-      <div className="sm:pt-15 lg:pb-30 sm:pb-16  sm:py-20 md:py-40 px-4 sm:px-20 md:px-10 mb-60 lg:mb-90">
+
+      <div className="sm:pt-15 lg:pb-30 sm:pb-16  sm:py-20 md:py-40 px-4 sm:px-20 md:px-10 mb-60 lg:mb-115">
         <div className="max-w-[1240px] mx-auto">
           <div className="w-full grid grid-cols-1 lg:grid-cols-10 space-y-20 sm:space-y-0 lg:space-x-30">
             <div className="hidden lg:flex md:col-span-5">
@@ -278,21 +283,11 @@ export default function Home() {
         </div>
       </div>
       <div className="py-10 sm:py-20 md:py-30 lg:py-40 px-4 sm:px-20 md:px-10 bg-gradient-to-r from-[#003869] to-primary_color opacity-90 relative">
-        <div className="border-8 border-white absolute -top-80 right-[20%] rounded-lg hidden ">
+        <div className="2xl:w-[60%] h-[25%] w-[90%] lg:h-[80%] 2xl:-top-95 2xl:right-[15%] 2xl:left-[20%] border-8 border-white absolute rounded-lg -top-40 lg:-top-90 right-2 mx-4">
           <img
-            src={videoImage}
-            alt="videoImage"
-            className="object-contain w-full h-full rounded-lg"
-          />
-          <div className="bg-gradient-to-r from-[#005bac] to-primary_green motion-safe:animate-ping-once text-white h-40 w-40 rounded-full absolute flex flex-col space-y-5 z-20 bottom-50 left-[42%] items-center justify-center">
-            <PlayIcon className="w-7 h-7" />
-          </div>
-        </div>
-        <div className="2xl:w-[60%] 2xl:-top-95 2xl:right-[15%] 2xl:left-[20%] border-8 border-white absolute rounded-lg -top-40 lg:-top-90 right-2 mx-4">
-          <img
-            src={videoImage}
-            alt="videoImage"
-            className="object-contain w-full h-full rounded-lg"
+            src={staff1}
+            alt="staff1"
+            className="object-cover w-full h-full rounded-lg"
           />
           <div className="bg-gradient-to-r lg:bottom-60 lg:right-[40%] lg:left-[45%] from-[#005bac] to-primary_green motion-safe:animate-ping-once text-white h-25 w-25 rounded-full absolute flex flex-col space-y-5 z-20 bottom-[25%] left-[35%] right-[45%] items-center justify-center">
             <PlayIcon className="w-7 h-7" />

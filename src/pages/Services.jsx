@@ -9,7 +9,7 @@ import {
 } from "../components";
 import { CheckIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import { cards, reviews, works } from "../data";
-import { background3 } from "../constants/originals";
+import { background3, staff2 } from "../constants/originals";
 import { Link } from "react-router-dom";
 
 export default function Services() {
@@ -222,8 +222,8 @@ export default function Services() {
             </div>
             <div className="md:col-span-2">
               <img
-                src={service}
-                alt="service"
+                src={staff2}
+                alt="staff"
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>

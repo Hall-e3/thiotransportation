@@ -45,7 +45,7 @@ export default function Blog() {
                     {blog.image ? (
                       <img
                         src={blog.image}
-                        alt="b1"
+                        alt={blog.title}
                         className="w-full object-contain rounded-t-lg"
                       />
                     ) : (

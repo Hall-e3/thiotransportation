@@ -6,17 +6,7 @@ import {
   ChevronRightIcon,
   PlayIcon,
 } from "@heroicons/react/24/solid";
-import {
-  b2,
-  b5,
-  bdetials,
-  boxes,
-  containers,
-  delivery_courier,
-  img1,
-  img3,
-  img4,
-} from "../constants";
+import { boxes, delivery_courier, img1, img3, img4 } from "../constants";
 import { Carousel, Progress, Typography } from "@material-tailwind/react";
 import {
   Button,
@@ -27,6 +17,7 @@ import {
 import { abouts, members, reviews } from "../data";
 import { Facebook, LinkedIn, Twitter } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import { back, staff, staff3, storage, trackie1 } from "../constants/originals";
 
 export default function About() {
   const [activeTab, setActiveTab] = useState(1);
@@ -62,11 +53,11 @@ export default function About() {
                   />
                 </div>
 
-                <div className="bg-[#9cc4f5] absolute rounded-lg top-0 left-4 z-20">
+                <div className="absolute rounded-lg top-0 left-4 z-20">
                   <img
-                    src={img1}
+                    src={storage}
                     alt="student"
-                    className="object-cover lg:h-full rounded-lg "
+                    className="object-contain w-[80%] lg:h-full rounded-lg "
                   />
                 </div>
 
@@ -80,7 +71,7 @@ export default function About() {
 
                 <div className="bg-gradient-to-r text-white h-40 w-40 px-5  from-red-500  to-primary_orange absolute flex flex-col space-y-5 z-40 bottom-35 motion-safe:animate-bounce items-center justify-center -left-10 rounded-lg">
                   <h6 className="text-white font-bold text-6xl">7K</h6>
-                  <p className="text-white font-bold text-lg">
+                  <p className="text-white font-bold text-lg text-center">
                     Product Delivered
                   </p>
                 </div>
@@ -300,7 +291,7 @@ export default function About() {
                   </div>
                   <div className="order-first pb-4 lg:pb-0 lg:order-none">
                     <img
-                      src={b2}
+                      src={back}
                       alt="b2"
                       className="rounded-sm w-full lg:rounded-xl object-contain"
                     />
@@ -322,7 +313,7 @@ export default function About() {
                   </div>
                   <div className="order-first pb-4 lg:pb-0 lg:order-none">
                     <img
-                      src={b5}
+                      src={staff3}
                       alt="b2"
                       className="rounded-sm w-full lg:rounded-xl object-contain"
                     />
@@ -344,7 +335,7 @@ export default function About() {
                   </div>
                   <div className="order-first pb-4 lg:pb-0 lg:order-none">
                     <img
-                      src={bdetials}
+                      src={staff}
                       alt="b2"
                       className="rounded-sm w-full lg:rounded-xl object-contain"
                     />
@@ -354,11 +345,11 @@ export default function About() {
             </div>
             <div className="md:col-span-2 relative">
               <img
-                src={containers}
+                src={trackie1}
                 alt="service"
                 className="w-full h-full object-cover rounded-xl"
               />
-              <div className="bg-gradient-to-r text-white lg:h-30 lg:w-30 h-15 w-15 rounded-full  from-red-500  to-primary_orange absolute flex flex-col space-y-5 z-20 bottom-70 right-[43%] left-[43%] lg:-left-15  items-center justify-center">
+              <div className="bg-gradient-to-r text-white lg:h-30 lg:w-30 h-15 w-15 rounded-full  from-red-500  to-primary_orange absolute flex flex-col space-y-5 z-20 bottom-70 sm:bottom-80 right-[43%] left-[43%] lg:-left-15  items-center justify-center">
                 <PlayIcon className="lg:w-7 lg:h-7 h-6 w-6" />
               </div>
             </div>
