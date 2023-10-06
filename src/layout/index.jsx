@@ -241,7 +241,7 @@ export default function Layout({ children, style }) {
               <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_color">
                 <EnvelopeIcon className="h-4 w-4" />
                 <p className="font-medium lg:text-lg">
-                  hello@theotransportation.com
+                  info@theotransportation.com
                 </p>
               </div>
               <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_color">
