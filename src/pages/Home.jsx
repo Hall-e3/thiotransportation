@@ -30,24 +30,26 @@ export default function Home() {
     <Layout>
       <div className="relative">
         <Carousel
+          autoplay={true}
+          autoplayDelay={3000}
           style={{ height: "100vh" }}
           transition={{ duration: 2 }}
           prevArrow={() => {
             return (
-              <div className="absolute top-2/4 left-20 -translate-y-2/4 flex flex-col space-y-8 transition">
+              <div className="hidden absolute md:bottom-30 md:left-10 lg:top-2/4 lg:left-20 lg:-translate-y-2/4 md:flex md:flex-row lg:flex-col space-x-8 lg:space-x-0 md:space-y-0 lg:space-y-8 transition">
                 <YouTube
-                  className="text-white -rotate-90 hover:-rotate-0 hover:text-primary_orange ease-in-out duration-700"
+                  className="text-white lg:-rotate-90 hover:-rotate-0 hover:text-primary_orange ease-in-out duration-700"
                   style={{ fontSize: 30 }}
                 />
-                <LinkedIn className="text-white -rotate-90 hover:-rotate-0 hover:text-primary_orange ease-in-out duration-700" />
-                <Twitter className="text-white -rotate-90 hover:-rotate-0 hover:text-primary_orange ease-in-out duration-700" />
-                <Facebook className="text-white -rotate-90 hover:rotate-0 hover:text-primary_orange ease-in-out duration-700" />
+                <LinkedIn className="text-white lg:-rotate-90 hover:-rotate-0 hover:text-primary_orange ease-in-out duration-700" />
+                <Twitter className="text-white lg:-rotate-90 hover:-rotate-0 hover:text-primary_orange ease-in-out duration-700" />
+                <Facebook className="text-white lg:-rotate-90 hover:rotate-0 hover:text-primary_orange ease-in-out duration-700" />
               </div>
             );
           }}
           nextArrow={() => {}}
           navigation={({ setActiveIndex, activeIndex, length }) => (
-            <div className="absolute bottom-[45%] right-12 z-20 flex flex-col gap-y-4">
+            <div className="hidden absolute bottom-[45%] right-12 z-20 md:flex flex-col gap-y-4">
               {new Array(length).fill("").map((_, i) => (
                 <div
                   key={i}
@@ -66,21 +68,21 @@ export default function Home() {
             <div className="bg-no-repeat bg-cover bg-background2 bg-center h-full absolute inset-0 opacity-10"></div>
             <div className="h-full flex items-center justify-center max-w-[1240px] mx-auto py-20">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div className="flex flex-col space-y-8 px-8 justify-center order-last lg:order-none">
-                  <h5 className="font-semibold text-2xl text-white">
+                <div className="flex flex-col space-y-8 px-8 justify-center items-center sm:items-start order-last lg:order-none sm:px-10">
+                  <h5 className="font-semibold text-2xl text-white text-center sm:text-start">
                     We are Theo Transportation
                   </h5>
-                  <h2 className="font-bold text-4xl md:text-5xl lg:text-7xl  text-white">
+                  <h2 className="font-bold text-4xl md:text-5xl lg:text-7xl  text-white text-center sm:text-start">
                     World Class Transportation Service
                   </h2>
-                  <p className="text-white font-normal text-base">
+                  <p className="text-white font-normal text-base text-center sm:text-start">
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse cillum dolore eu fugiat nulla pariatur.
                   </p>
 
                   <Button
                     text="Read More"
-                    buttonStyle="w-[70%] md:w-[45%]  bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
+                    buttonStyle="w-[70%] lg:w-[45%]  bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
                     icon={
                       <div className="bg-primary_color p-3 rounded-md">
                         <ChevronRightIcon className="w-5 h-5 text-white" />
@@ -102,21 +104,21 @@ export default function Home() {
             <div className="bg-no-repeat bg-cover bg-background3 bg-center h-full absolute inset-0 opacity-10"></div>
             <div className="h-full flex items-center justify-center max-w-[1240px] mx-auto py-20">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div className="flex flex-col space-y-8 px-8 justify-center">
-                  <h5 className="font-semibold text-2xl text-white">
+                <div className="flex flex-col space-y-8 px-8 justify-center items-center sm:items-start">
+                  <h5 className="font-semibold text-2xl text-white text-center sm:text-start">
                     Tansport with Theo Transportation
                   </h5>
                   <h2 className="font-bold text-4xl md:text-5xl lg:text-7xl  text-white">
                     Transport Safely
                   </h2>
-                  <p className="text-white font-normal text-base">
+                  <p className="text-white font-normal text-base text-center sm:text-start">
                     Experience hassle-free journeys with our efficient transport
                     solutions that prioritize your comfort.
                   </p>
 
                   <Button
                     text="Read More"
-                    buttonStyle="w-[70%] md:w-[45%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
+                    buttonStyle="w-[70%] lg:w-[45%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
                     icon={
                       <div className="bg-primary_color p-3 rounded-md">
                         <ChevronRightIcon className="w-5 h-5 text-white" />
@@ -134,21 +136,21 @@ export default function Home() {
             <div className="bg-no-repeat bg-cover bg-background4 bg-center h-full absolute inset-0 opacity-10"></div>
             <div className="h-full flex items-center justify-center max-w-[1240px] mx-auto py-20">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div className="flex flex-col space-y-8 px-8 justify-center order-last lg:order-none">
-                  <h5 className="font-semibold text-2xl text-white">
+                <div className="flex flex-col space-y-8 px-8 justify-center order-last lg:order-none items-center sm:items-start">
+                  <h5 className="font-semibold text-2xl text-white text-center sm:text-start">
                     Your Business Partner
                   </h5>
                   <h2 className="font-bold text-4xl md:text-5xl lg:text-7xl  text-white">
                     Transportation Made Simple
                   </h2>
-                  <p className="text-white font-normal text-base">
+                  <p className="text-white font-normal text-base text-center sm:text-start">
                     Optimize your supply chain with our streamlined
                     transporation solution reducing production costs.
                   </p>
 
                   <Button
                     text="Read More"
-                    buttonStyle="w-[70%] md:w-[45%]  bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
+                    buttonStyle="w-[70%] lg:w-[45%]  bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
                     icon={
                       <div className="bg-primary_color p-3 rounded-md">
                         <ChevronRightIcon className="w-5 h-5 text-white" />
@@ -165,39 +167,36 @@ export default function Home() {
         </Carousel>
       </div>
 
-      <div className="sm:pt-15 lg:pb-30 lg:pt-150 sm:pb-16 sm:py-20 md:py-40 px-4 sm:px-20 md:px-10 mb-60 lg:mb-115 relative">
-        <div className="w-[90%] h-[35%] md:right-10 lg:right-[15%] lg:w-[70%] absolute lg:-top-20 lg:max-w-[1440px] lg:mx-auto shadow-lg rounded-xl bg-white  flex md:flex-row flex-col justify-between items-center">
-          <div className="w-full h-full flex items-center justify-center">
+      <div className="sm:pt-15 lg:pb-30 xl:pt-150 sm:pb-16 sm:py-20 px-4 sm:px-20 md:px-10 mb-60 lg:mb-115 relative">
+        <div className="lg:h-[35%] mt-10 sm:mt-0 sm:mb-30 sm:right-8 sm:left-8 xl:right-[1%] xl:w-[70%] xl:absolute lg:-top-20 xl:max-w-[1440px] xl:mx-auto lg:shadow-md xl:shadow-lg rounded-xl bg-white  flex md:flex-row flex-col justify-between items-center">
+          <div className="w-full h-full grid grid-cols-1 px-2 sm:px-0 lg:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-0 lg:px-30 xl:px-0">
             {homes.map((home) => (
-              <>
-                <div
-                  key={home.id}
-                  className="flex-1 h-full rounded-lg px-10 py-10"
-                >
-                  <div className="flex flex-col space-y-8">
-                    <img
-                      src={home.icon}
-                      alt={home.name}
-                      className="h-15 w-15 object-contain"
-                    />
-                    <h5 className="text-2xl font-bold text-black">
-                      {home.title}
-                    </h5>
-                    <p className="font-md text-base text-grey_skip">
-                      {home.description}
-                    </p>
-                    <div className="flex items-center space-x-4 group transition duration-300 ease-in cursor-pointer">
-                      <div className="border-2 flex items-center border-primary_orange justify-center h-8 w-8 rounded-full group-hover:bg-primary_orange">
-                        <ChevronRightIcon className="h-4 w-4 text-primary_color font-bold group-hover:text-white" />
-                      </div>
-                      <h6 className="font-bold group-hover:text-primary_color">
-                        Read More
-                      </h6>
+              <div
+                key={home.id}
+                className="flex-1 h-full rounded-lg xl:px-10 sm:py-8 sm:px-4 xl:py-10 p-4  sm:p-0 shadow-md md:shadow-lg lg:shadow-1"
+              >
+                <div className="flex flex-col space-y-8">
+                  <img
+                    src={home.icon}
+                    alt={home.name}
+                    className="h-15 w-15 object-contain"
+                  />
+                  <h5 className=" sm:text-lg lg:text-xl xl:text-2xl font-bold text-black">
+                    {home.title}
+                  </h5>
+                  <p className="font-md text-base text-grey_skip">
+                    {home.description}
+                  </p>
+                  <div className="flex items-center space-x-4 group transition duration-300 ease-in cursor-pointer">
+                    <div className="border-2 flex items-center border-primary_orange justify-center h-8 w-8 rounded-full group-hover:bg-primary_orange">
+                      <ChevronRightIcon className="h-4 w-4 text-primary_color font-bold group-hover:text-white" />
                     </div>
+                    <h6 className="font-bold group-hover:text-primary_color">
+                      Read More
+                    </h6>
                   </div>
                 </div>
-                <div className="border border-stroke h-[80%]" />
-              </>
+              </div>
             ))}
           </div>
         </div>
@@ -289,7 +288,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-1 pt-20 md:pt-45 lg:pt-0 md:col-span-5">
+            <div className="flex flex-1 pt-10 sm:pt-20 md:pt-45 lg:pt-0 md:col-span-5">
               <div className="flex flex-col space-y-6">
                 <h5 className="text-primary_orange font-bold text-xl md:text-2xl lg:text-3xl">
                   We are Theo Transportation
@@ -340,13 +339,13 @@ export default function Home() {
         </div>
       </div>
       <div className="py-10 sm:py-20 md:py-30 lg:py-40 px-4 sm:px-20 md:px-10 bg-gradient-to-r from-[#003869] to-primary_color opacity-90 relative">
-        <div className="2xl:w-[60%] h-[25%] w-[90%] lg:h-[80%] 2xl:-top-95 2xl:right-[18%] 2xl:left-[18%] border-8 border-white absolute rounded-lg -top-40 lg:-top-90 right-2 mx-4">
+        <div className="xl:w-[60%] h-[25%] w-[90%] sm:right-[4%] lg:h-[80%] xl:-top-95 xl:right-[18%] xl:left-[18%] border-8 border-white absolute rounded-lg -top-40 lg:-top-90 right-2 mx-4">
           <img
             src={staff1}
             alt="staff1"
             className="object-cover w-full h-full rounded-lg"
           />
-          <div className="bg-gradient-to-r lg:bottom-50 lg:right-[40%] lg:left-[45%] from-[#005bac] to-primary_green motion-safe:animate-ping-once text-white h-25 w-25 rounded-full absolute flex flex-col space-y-5 z-20 bottom-[25%] left-[35%] right-[45%] items-center justify-center">
+          <div className="bg-gradient-to-r md:bottom-60 md:left-[50%] xl:bottom-50 xl:right-[40%] xl:left-[45%] from-[#005bac] to-primary_green motion-safe:animate-ping-once text-white h-25 w-25 rounded-full absolute flex flex-col space-y-5 z-20 bottom-[25%] left-[35%] right-[45%] items-center justify-center">
             <PlayIcon className="w-7 h-7" />
           </div>
         </div>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { logo } from "../constants";
 import { Link } from "react-router-dom";
 import {
   Bars3Icon,
@@ -112,7 +111,7 @@ export default function Layout({ children, style }) {
                 className="h-10 w-10 lg:h-18 lg:w-18"
               />
               <h5 className="font-bold text-2xl hidden lg:block">
-                Theo Transporation
+                Transporation
               </h5>
             </Link>
             <div className="lg:flex space-x-14 h-full transition hidden">
