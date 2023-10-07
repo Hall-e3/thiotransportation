@@ -15,11 +15,12 @@ import {
   SecondFooter,
 } from "../components";
 import { abouts, members, reviews } from "../data";
-import { Facebook, LinkedIn, Twitter } from "@mui/icons-material";
+import { Facebook, LinkedIn } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import {
   back,
   staff,
+  staff1,
   staff3,
   storage,
   trackie1,
@@ -30,10 +31,10 @@ export default function About() {
   const [activeTab, setActiveTab] = useState(1);
   return (
     <Layout>
-      <div className="py-18 bg-no-repeat bg-cover bg-background1 bg-center opacity-90">
+      <div className="py-18 bg-no-repeat bg-cover bg-background1 bg-center bg-opacity-60">
         <div className="max-w-[1240px] mx-auto py-20">
           <div className="flex flex-col items-center justify-center space-y-7">
-            <h4 className="text-black font-bold text-7xl">About</h4>
+            <h4 className="text-white font-bold text-7xl">About</h4>
 
             <p className="flex items-center space-x-3">
               <Link to="/">
@@ -47,7 +48,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="pt-125 pb-30  sm:py-20 md:py-40 px-4 sm:px-20 md:px-10 ">
+      <div className="pt-125 sm:pt-150 md:pt-180 lg:pt-40 pb-30  sm:py-20 md:py-40 px-4 sm:px-20 md:px-10">
         <div className="max-w-[1240px] mx-auto">
           <div className="w-full grid grid-cols-1 lg:grid-cols-2">
             <div className="hidden lg:flex flex-1 ">
@@ -85,7 +86,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="lg:hidden pb-15 px-30">
+            <div className="lg:hidden pb-20 px-30">
               <div className="h-full w-full flex justify-center relative">
                 <div className="absolute rounded-lg bottom-0 -left-30">
                   <img
@@ -94,21 +95,21 @@ export default function About() {
                     className="object-cover h-full rounded-lg"
                   />
                 </div>
-                <div className="bg-[#9cc4f5] absolute rounded-lg bottom-20 -left-10 z-20">
+                <div className="bg-[#9cc4f5] absolute rounded-lg bottom-50 sm:bottom-20 -left-10 z-20">
                   <img
                     src={img1}
                     alt="student"
                     className="object-cover h-full rounded-lg "
                   />
                 </div>
-                <div className="bg-[#ff8485] h-[38.5vh] w-[50vw] rounded-lg absolute -bottom-15 -right-25 z-50">
+                <div className="bg-[#ff8485] h-[38.5vh] w-[50vw] rounded-lg absolute -bottom-15 -right-25 z-40">
                   <img
                     src={img4}
                     alt="nin4"
                     className="object-cover h-full w-full rounded-lg"
                   />
                 </div>
-                <div className="bg-gradient-to-r text-white h-40 w-40 px-5  from-red-500  to-primary_orange absolute flex flex-col space-y-5 z-40 bottom-10 motion-safe:animate-bounce items-center justify-center -left-25 rounded-lg">
+                <div className="bg-gradient-to-r text-white h-40 sm:w-40   px-2 sm:px-5   from-red-500  to-primary_orange absolute flex flex-col space-y-5 z-50 bottom-10 motion-safe:animate-bounce items-center justify-center -left-25 rounded-lg">
                   <h6 className="text-white font-bold text-6xl">7K</h6>
                   <p className="text-white font-bold text-lg">
                     Product Delivered
@@ -196,9 +197,9 @@ export default function About() {
                   </div>
                   <div className="order-first sm:order-none w-full flex-1">
                     <img
-                      src={img4}
+                      src={staff1}
                       alt="image4"
-                      className="rounded-lg h-50 w-full sm:w-40"
+                      className="rounded-lg object-cover h-50 w-full "
                     />
                   </div>
                 </div>

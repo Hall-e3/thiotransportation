@@ -100,13 +100,13 @@ export default function Services() {
           <div className="flex flex-col space-y-20">
             <div className="flex flex-col md:space-y-6 px-4 lg:px-0">
               <div className="flex flex-col space-y-3 md:space-y-6  flex-1">
-                <h5 className="text-primary_orange font-bold text-xl md:text-2xl lg:text-3xl">
+                <h5 className="text-white font-bold text-xl md:text-2xl lg:text-3xl">
                   How it works
                 </h5>
                 <h3 className="font-bold text-3xl md:text-4xl lg:text-5xl text-white leading-normal">
-                  We <span className="text-primary_color">Make</span> &{" "}
-                  <span className="text-primary_color">Keep</span> it{" "}
-                  <span className="text-primary_color">Simple</span> For You
+                  We <span className="text-primary_orange">Make</span> &{" "}
+                  <span className="text-primary_orange">Keep</span> it{" "}
+                  <span className="text-primary_orange">Simple</span> For You
                 </h3>
               </div>
               <p className="flex-1 text-[#c7cdda] font-medium tracking-normal">

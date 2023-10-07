@@ -232,20 +232,18 @@ export default function Layout({ children, style }) {
           <div className="flex flex-col space-y-4">
             <h5 className="text-2xl font-bold ">Contact Info</h5>
             <div className="flex flex-col space-y-2">
-              <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_color">
-                <MapPinIcon className="h-5 w-5" />
+              <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_orange">
+                <MapPinIcon className="h-4 w-4 text-primary_color" />
                 <p className="font-medium lg:text-lg">
-                  22/1 Bardeshi, Amin Bazar Dhaka
+                  22/1 Bardeshi, Bazar Dhaka
                 </p>
               </div>
-              <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_color">
-                <EnvelopeIcon className="h-4 w-4" />
-                <p className="font-medium lg:text-lg">
-                  info@theotransportation.com
-                </p>
+              <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_orange">
+                <EnvelopeIcon className="h-4 w-4 text-primary_color" />
+                <p className="font-medium lg:text-lg">info@theotransport.com</p>
               </div>
-              <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_color">
-                <PhoneIcon className="h-4 w-4" />
+              <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_orange">
+                <PhoneIcon className="h-4 w-4 text-primary_color" />
                 <p className="font-medium lg:text-lg">+88 01234 567 890</p>
               </div>
             </div>
