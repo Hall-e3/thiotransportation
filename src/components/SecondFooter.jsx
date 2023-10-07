@@ -39,7 +39,11 @@ export default function SecondFooter() {
                 />
                 <div className="flex items-center space-x-4">
                   <Facebook className="text-white" />
-                  <img src={twitter} alt="twitter" className="h-8 w-8" />
+                  <img
+                    src={twitter}
+                    alt="twitter"
+                    className="h-6 w-6 bg-primary_orange text-primary_orange rounded-lg"
+                  />
                   <Instagram className="text-white" />
                   <LinkedIn className="text-white" />
                 </div>
@@ -55,7 +59,7 @@ export default function SecondFooter() {
                 />
                 <div>
                   <p className="font-normal text-sm">June 04, 2023</p>
-                  <h5 className="text-md font-bold hover:text-primary_color cursor-pointer">
+                  <h5 className="text-md font-bold hover:text-primary_orange cursor-pointer">
                     Why Transport Is Key In Logistics?
                   </h5>
                 </div>
@@ -68,7 +72,7 @@ export default function SecondFooter() {
                 />
                 <div>
                   <p className="font-normal text-sm">June 04, 2023</p>
-                  <h5 className="text-md font-bold hover:text-primary_color cursor-pointer">
+                  <h5 className="text-md font-bold hover:text-primary_orange cursor-pointer">
                     Can You Transport Furniture In Uber?
                   </h5>
                 </div>
@@ -77,34 +81,34 @@ export default function SecondFooter() {
             <div className=" flex flex-col space-y-5 flex-none">
               <p className="font-semibold text-2xl">Links</p>
               <div className="flex flex-row items-center space-x-6">
-                <p className="flex-1 md:flex-none  font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer ">
+                <p className="flex-1 md:flex-none  font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer ">
                   World Travelling
                 </p>
-                <p className="flex-1 md:flex-none  font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="flex-1 md:flex-none  font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Product Delivery
                 </p>
               </div>
               <div className="flex flex-row items-center space-x-6">
-                <p className="flex-1 md:flex-none font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="flex-1 md:flex-none font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Logistic Support
                 </p>
-                <p className="flex-1 md:flex-none  font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="flex-1 md:flex-none  font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Transportation
                 </p>
               </div>
               <div className="flex flex-row items-center space-x-6">
-                <p className="flex-1 md:flex-none  font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="flex-1 md:flex-none  font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Train Freight
                 </p>
-                <p className=" flex-1 md:flex-none font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className=" flex-1 md:flex-none font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   World Travelling
                 </p>
               </div>
               <div className="flex flex-row items-center space-x-6">
-                <p className="flex-1 md:flex-none font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="flex-1 md:flex-none font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   World Travelling
                 </p>
-                <p className="flex-1 md:flex-none font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="flex-1 md:flex-none font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Product Delivery
                 </p>
               </div>
@@ -115,19 +119,19 @@ export default function SecondFooter() {
               <h5 className="font-bold text-2xl">Dhaka Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
-                <MapPinIcon className="h-5 w-5" />
+                <MapPinIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
                   22/1 Bardeshi, Amin Bazar Dhaka 1348
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
-                <EnvelopeIcon className="h-5 w-5" />
+                <EnvelopeIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
                   hello@theotransportation.com
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
-                <PhoneIcon className="h-5 w-5" />
+                <PhoneIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
                   +88 01234 567 890
                 </p>
@@ -138,19 +142,19 @@ export default function SecondFooter() {
               <h5 className="font-bold text-2xl">New York Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
-                <MapPinIcon className="h-5 w-5" />
+                <MapPinIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
                   22/1 Bardeshi, Amin Bazar Dhaka 1348
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
-                <EnvelopeIcon className="h-5 w-5" />
+                <EnvelopeIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
                   hello@theotransportation.com
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
-                <PhoneIcon className="h-5 w-5" />
+                <PhoneIcon className="h-5 w-5 text-primary_orange " />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
                   +88 01234 567 890
                 </p>
@@ -160,19 +164,19 @@ export default function SecondFooter() {
               <h5 className="font-bold text-2xl">London Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
-                <MapPinIcon className="h-5 w-5" />
+                <MapPinIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
                   22/1 Bardeshi, Amin Bazar Dhaka 1348
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
-                <EnvelopeIcon className="h-5 w-5" />
+                <EnvelopeIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
                   hello@theotransportation.com
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
-                <PhoneIcon className="h-5 w-5" />
+                <PhoneIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
                   +88 01234 567 890
                 </p>
@@ -182,19 +186,19 @@ export default function SecondFooter() {
               <h5 className="font-bold text-2xl">Cape Town Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
-                <MapPinIcon className="h-5 w-5" />
+                <MapPinIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
                   22/1 Bardeshi, Amin Bazar Dhaka 1348
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
-                <EnvelopeIcon className="h-5 w-5" />
+                <EnvelopeIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
                   hello@theotransportation.com
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
-                <PhoneIcon className="h-5 w-5" />
+                <PhoneIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
                   +88 01234 567 890
                 </p>

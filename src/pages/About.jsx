@@ -33,7 +33,7 @@ export default function About() {
       <div className="py-18 bg-no-repeat bg-cover bg-background1 bg-center opacity-90">
         <div className="max-w-[1240px] mx-auto py-20">
           <div className="flex flex-col items-center justify-center space-y-7">
-            <h4 className="text-white font-bold text-7xl">About</h4>
+            <h4 className="text-black font-bold text-7xl">About</h4>
 
             <p className="flex items-center space-x-3">
               <Link to="/">

@@ -42,19 +42,19 @@ export default function Footer() {
                   />
                 </div>
                 <div className="flex items-center space-x-4 cursor-pointer">
-                  <MapPinIcon className="h-5 w-5" />
+                  <MapPinIcon className="h-5 w-5 text-primary_orange" />
                   <p className="font-normal lg:text-lg text-[#c7cdda]">
                     22/1 Bardeshi, Amin Bazar Dhaka 1348
                   </p>
                 </div>
                 <div className="flex items-center space-x-4 cursor-pointer">
-                  <EnvelopeIcon className="h-5 w-5" />
-                  <p className="ffont-normal lg:text-lg text-[#c7cdda]">
-                    hello@theotransportation.com
+                  <EnvelopeIcon className="h-5 w-5 text-primary_orange" />
+                  <p className="font-normal lg:text-lg text-[#c7cdda]">
+                    info@theotransportation.com
                   </p>
                 </div>
                 <div className="flex items-center space-x-4 cursor-pointer">
-                  <PhoneIcon className="h-5 w-5" />
+                  <PhoneIcon className="h-5 w-5 text-primary_orange" />
                   <p className="font-normal lg:text-lg text-[#c7cdda]">
                     +88 01234 567 890
                   </p>
@@ -64,34 +64,34 @@ export default function Footer() {
             <div className="flex flex-row flex-1 lg:space-x-8">
               <div className="flex-1 flex flex-col space-y-3 md:space-y-5">
                 <p className="font-bold text-2xl">Links</p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   World Travelling
                 </p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Product Delivery
                 </p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Logistic Support
                 </p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Transportation
                 </p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Train Freight
                 </p>
               </div>
               <div className="flex-1 flex flex-col space-y-3 md:space-y-5">
                 <p className="font-bold text-2xl">Help</p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Marketing
                 </p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Warehouse
                 </p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Air Freight
                 </p>
-                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
                   Sea Freight
                 </p>
               </div>
@@ -107,10 +107,10 @@ export default function Footer() {
                   className="rounded-lg object-cover h-15 w-15"
                 />
                 <div>
-                  <p className="font-normal text-md text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                  <p className="font-normal text-md text-[#c7cdda]  cursor-pointer">
                     June 04, 2023
                   </p>
-                  <h5 className="font-bold text-md hover:text-primary_color cursor-pointer">
+                  <h5 className="font-bold text-md hover:text-primary_orange cursor-pointer">
                     Why Transport Is Key In Logistics?
                   </h5>
                 </div>
@@ -122,10 +122,10 @@ export default function Footer() {
                   className="rounded-lg object-cover h-15 w-15"
                 />
                 <div>
-                  <p className="font-normal text-md text-[#c7cdda] hover:text-primary_color cursor-pointer">
+                  <p className="font-normal text-md text-[#c7cdda]  cursor-pointer">
                     June 04, 2023
                   </p>
-                  <h5 className="font-bold text-md hover:text-primary_color cursor-pointer">
+                  <h5 className="font-bold text-md hover:text-primary_orange cursor-pointer">
                     Can You Transport Furniture In Uber?
                   </h5>
                 </div>
@@ -149,13 +149,13 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-between items-center">
           <h4>Copyright ©2023 Transco. All Rights Reserved</h4>
           <div className="flex items-center space-x-5 md:space-x-10">
-            <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+            <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
               World Travelling
             </p>
-            <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+            <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
               Product Delivery
             </p>
-            <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
+            <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_orange cursor-pointer">
               Marketing
             </p>
           </div>

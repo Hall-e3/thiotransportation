@@ -15,6 +15,7 @@ import { LinkedIn, Twitter, Facebook, YouTube } from "@mui/icons-material";
 import { blogs } from "../data";
 import { Carousel } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import { twitter } from "../constants/originals";
 
 export default function Blog() {
   return (
@@ -104,8 +105,12 @@ export default function Blog() {
                       <div className="flex items-center space-x-3">
                         <h6>SHARE</h6>
                         <Facebook className="text-[#005bac]" />
-                        <Twitter className="text-[#0693e3]" />
-                        <LinkedIn className="text-primary_color" />
+                        <img
+                          src={twitter}
+                          alt="twitter"
+                          className="h-5 w-5 bg-white text-primary_orange rounded-md"
+                        />
+                        <LinkedIn className="text-[#0072b1]" />
                       </div>
                     </div>
                   </div>
@@ -252,7 +257,13 @@ export default function Blog() {
                       },
                       {
                         id: 2,
-                        icon: <Twitter className="text-white" />,
+                        icon: (
+                          <img
+                            src={twitter}
+                            alt="twitter"
+                            className="h-5 w-5 bg-white text-primary_orange rounded-md"
+                          />
+                        ),
                       },
                       {
                         id: 3,
@@ -261,7 +272,7 @@ export default function Blog() {
                     ].map((c) => (
                       <div
                         key={c.id}
-                        className="p-3 sm:p-4 lg:p-6 bg-primary_color hover:bg-primary_orange rounded-full "
+                        className="h-10 w-10 sm:h-15 sm:w-15 lg:h-20 lg:w-20 bg-primary_color hover:bg-primary_orange rounded-full flex items-center justify-center"
                       >
                         {c.icon}
                       </div>
