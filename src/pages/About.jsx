@@ -26,6 +26,7 @@ import {
   trackie1,
   twitter,
 } from "../constants/originals";
+import CountUp from "react-countup";
 
 export default function About() {
   const [activeTab, setActiveTab] = useState(1);
@@ -226,7 +227,14 @@ export default function About() {
                 className="flex flex-col space-y-4 items-center justify-center lg:space-y-8 flex-1"
               >
                 <h4 className="text-[#ff6731] font-bold text-5xl">
-                  {about.number}
+                    <CountUp
+                    start={0}
+                    end={about.number}
+                    duration={5}
+                    separator=","
+                  />
+                  {about.id === 4 && <span>M</span>}
+                  {about.id === 3 && <span>+</span>}
                 </h4>
                 <h2 className="text-white font-bold text-2xl">{about.title}</h2>
                 <p className="text-[#c7cdda] font-medium tracking-normal text-center">
