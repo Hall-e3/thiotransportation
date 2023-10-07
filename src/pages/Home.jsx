@@ -20,26 +20,44 @@ import {
   truck,
 } from "../constants";
 import { Carousel } from "@material-tailwind/react";
-import { abouts, cards } from "../data";
-import { staff1, trackie } from "../constants/originals";
+import { abouts, cards, homes } from "../data";
+import { staff1 } from "../constants/originals";
+import { Facebook, LinkedIn, Twitter, YouTube } from "@mui/icons-material";
+import CountUp from "react-countup";
 
 export default function Home() {
   return (
     <Layout>
-      <div className="">
+      <div className="relative">
         <Carousel
           style={{ height: "100vh" }}
           transition={{ duration: 2 }}
+          prevArrow={() => {
+            return (
+              <div className="absolute top-2/4 left-20 -translate-y-2/4 flex flex-col space-y-8 transition">
+                <YouTube
+                  className="text-white -rotate-90 hover:-rotate-0 hover:text-primary_orange ease-in-out duration-700"
+                  style={{ fontSize: 30 }}
+                />
+                <LinkedIn className="text-white -rotate-90 hover:-rotate-0 hover:text-primary_orange ease-in-out duration-700" />
+                <Twitter className="text-white -rotate-90 hover:-rotate-0 hover:text-primary_orange ease-in-out duration-700" />
+                <Facebook className="text-white -rotate-90 hover:rotate-0 hover:text-primary_orange ease-in-out duration-700" />
+              </div>
+            );
+          }}
+          nextArrow={() => {}}
           navigation={({ setActiveIndex, activeIndex, length }) => (
-            <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+            <div className="absolute bottom-[45%] right-12 z-20 flex flex-col gap-y-4">
               {new Array(length).fill("").map((_, i) => (
                 <div
                   key={i}
                   onClick={() => setActiveIndex(i)}
-                  className={`p-2 bg-grey_skip rounded-full ${
-                    activeIndex === i && "border-2 border-primary_color"
+                  className={`rounded-full p-1 ${
+                    activeIndex === i && "border border-primary_orange"
                   }`}
-                />
+                >
+                  <div className="h-3 w-3 rounded-full bg-grey" />
+                </div>
               ))}
             </div>
           )}
@@ -71,7 +89,11 @@ export default function Home() {
                   />
                 </div>
                 <div className="order-first lg:order-none flex items-center justify-center pr-15 sm:pr-0">
-                  <img src={trackie} className="object-contain rounded-full" alt="truck" />
+                  <img
+                    src={truck}
+                    className="object-contain rounded-full"
+                    alt="truck"
+                  />
                 </div>
               </div>
             </div>
@@ -143,7 +165,42 @@ export default function Home() {
         </Carousel>
       </div>
 
-      <div className="sm:pt-15 lg:pb-30 sm:pb-16  sm:py-20 md:py-40 px-4 sm:px-20 md:px-10 mb-60 lg:mb-115">
+      <div className="sm:pt-15 lg:pb-30 lg:pt-150 sm:pb-16 sm:py-20 md:py-40 px-4 sm:px-20 md:px-10 mb-60 lg:mb-115 relative">
+        <div className="w-[90%] h-[35%] md:right-10 lg:right-[15%] lg:w-[70%] absolute lg:-top-20 lg:max-w-[1440px] lg:mx-auto shadow-lg rounded-xl bg-white  flex md:flex-row flex-col justify-between items-center">
+          <div className="w-full h-full flex items-center justify-center">
+            {homes.map((home) => (
+              <>
+                <div
+                  key={home.id}
+                  className="flex-1 h-full rounded-lg px-10 py-10"
+                >
+                  <div className="flex flex-col space-y-8">
+                    <img
+                      src={home.icon}
+                      alt={home.name}
+                      className="h-15 w-15 object-contain"
+                    />
+                    <h5 className="text-2xl font-bold text-black">
+                      {home.title}
+                    </h5>
+                    <p className="font-md text-base text-grey_skip">
+                      {home.description}
+                    </p>
+                    <div className="flex items-center space-x-4 group transition duration-300 ease-in cursor-pointer">
+                      <div className="border-2 flex items-center border-primary_orange justify-center h-8 w-8 rounded-full group-hover:bg-primary_orange">
+                        <ChevronRightIcon className="h-4 w-4 text-primary_color font-bold group-hover:text-white" />
+                      </div>
+                      <h6 className="font-bold group-hover:text-primary_color">
+                        Read More
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div className="border border-stroke h-[80%]" />
+              </>
+            ))}
+          </div>
+        </div>
         <div className="max-w-[1240px] mx-auto">
           <div className="w-full grid grid-cols-1 lg:grid-cols-10 space-y-20 sm:space-y-0 lg:space-x-30">
             <div className="hidden lg:flex md:col-span-5">
@@ -283,13 +340,13 @@ export default function Home() {
         </div>
       </div>
       <div className="py-10 sm:py-20 md:py-30 lg:py-40 px-4 sm:px-20 md:px-10 bg-gradient-to-r from-[#003869] to-primary_color opacity-90 relative">
-        <div className="2xl:w-[60%] h-[25%] w-[90%] lg:h-[80%] 2xl:-top-95 2xl:right-[15%] 2xl:left-[20%] border-8 border-white absolute rounded-lg -top-40 lg:-top-90 right-2 mx-4">
+        <div className="2xl:w-[60%] h-[25%] w-[90%] lg:h-[80%] 2xl:-top-95 2xl:right-[18%] 2xl:left-[18%] border-8 border-white absolute rounded-lg -top-40 lg:-top-90 right-2 mx-4">
           <img
             src={staff1}
             alt="staff1"
             className="object-cover w-full h-full rounded-lg"
           />
-          <div className="bg-gradient-to-r lg:bottom-60 lg:right-[40%] lg:left-[45%] from-[#005bac] to-primary_green motion-safe:animate-ping-once text-white h-25 w-25 rounded-full absolute flex flex-col space-y-5 z-20 bottom-[25%] left-[35%] right-[45%] items-center justify-center">
+          <div className="bg-gradient-to-r lg:bottom-50 lg:right-[40%] lg:left-[45%] from-[#005bac] to-primary_green motion-safe:animate-ping-once text-white h-25 w-25 rounded-full absolute flex flex-col space-y-5 z-20 bottom-[25%] left-[35%] right-[45%] items-center justify-center">
             <PlayIcon className="w-7 h-7" />
           </div>
         </div>
@@ -301,7 +358,14 @@ export default function Home() {
                 className="flex flex-col items-center justify-center space-y-6 flex-1"
               >
                 <h4 className="text-[#ff6731] font-bold text-5xl">
-                  {about.number}
+                  <CountUp
+                    start={0}
+                    end={about.number}
+                    duration={5}
+                    separator=","
+                  />
+                  {about.id === 4 && <span>M</span>}
+                  {about.id === 3 && <span>+</span>}
                 </h4>
                 <h2 className="text-white font-bold text-2xl">{about.title}</h2>
                 <p className="text-[#c7cdda] font-medium tracking-normal text-center">
@@ -365,9 +429,7 @@ export default function Home() {
         <div className="max-w-[1240px] mx-auto flex flex-col space-y-20">
           <div className="flex flex-col items-center justify-center space-y-4">
             <div className="flex flex-col items-center justify-center space-y-4 px-80 mb-10">
-              <h5 className="text-white font-bold text-2xl">
-                How it works
-              </h5>
+              <h5 className="text-white font-bold text-2xl">How it works</h5>
               <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-white text-center leading-tight pb-4">
                 World Class{" "}
                 <span className="text-primary_orange"> Logistics </span>

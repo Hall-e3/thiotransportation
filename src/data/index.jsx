@@ -5,6 +5,7 @@ import {
   b5,
   bdetials,
   call_center,
+  courier,
   doe,
   hardboard,
   harrison,
@@ -19,8 +20,11 @@ import {
   process_3,
   process_4,
   search,
+  support1,
   tracking,
   transport,
+  unboxing,
+  world_distribution,
 } from "../constants";
 import { staff, staff1, staff2, staff3, storage } from "../constants/originals";
 
@@ -247,25 +251,25 @@ export const reviews = [
 export const abouts = [
   {
     id: 1,
-    number: " 33",
+    number: "24",
     title: "Total Countries",
     description: "accusa mnis iste natus error sit vol uptatem accusa nulla",
   },
   {
     id: 2,
-    number: "82",
+    number: "62",
     title: "Worldwide Cities",
     description: "kccusa mnis iste natus error sit vol uptatem accusa oulla",
   },
   {
     id: 3,
-    number: "180+",
+    number: "136",
     title: "People Engaged",
     description: "pccusa mnis iste natus error sit vol uptatem accusa iulles",
   },
   {
     id: 4,
-    number: "3M",
+    number: "2",
     title: "Package Delivery",
     description: "dccusa mnis iste natus error sit vol uptatem accusa yulls",
   },
@@ -334,5 +338,36 @@ export const images = [
   {
     id: 6,
     image: img4,
+  },
+];
+
+export const homes = [
+  {
+    id: 1,
+    icon: support1,
+    title: "Premium Logistics Support",
+    description:
+      "Knim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
+  {
+    id: 2,
+    icon: world_distribution,
+    title: "Worldwide Product Delivery",
+    description:
+      "Cnim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo ponsequat.",
+  },
+  {
+    id: 3,
+    icon: courier,
+    title: "Highly Skilled Logistics Parnters",
+    description:
+      "Pnim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo jonsequat.",
+  },
+  {
+    id: 4,
+    icon: unboxing,
+    title: "Safe & Secure Product Delivery",
+    description:
+      "Qnim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo aonsequat.",
   },
 ];

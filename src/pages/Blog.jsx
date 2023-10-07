@@ -11,7 +11,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { Button, Footer, Input } from "../components";
 
-import { LinkedIn, Twitter, Facebook, YouTube } from "@mui/icons-material";
+import { LinkedIn, Facebook, YouTube } from "@mui/icons-material";
 import { blogs } from "../data";
 import { Carousel } from "@material-tailwind/react";
 import { Link } from "react-router-dom";

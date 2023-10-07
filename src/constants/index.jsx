@@ -39,6 +39,11 @@ const home2 = require("../assets/images/home2.webp");
 const videoImage = require("../assets/images/videoImage.webp");
 const bike = require("../assets/images/bike.webp");
 const best_truck = require("../assets/images/best_truck.webp");
+const courier = require("../assets/images/courier.webp");
+const support1 = require("../assets/images/support1.webp");
+const unboxing = require("../assets/images/unboxing.webp");
+const world_distribution = require("../assets/images/world-distribution.webp");
+
 export {
   logo,
   another_logo,
@@ -81,4 +86,8 @@ export {
   videoImage,
   bike,
   best_truck,
+  support1,
+  unboxing,
+  world_distribution,
+  courier,
 };
