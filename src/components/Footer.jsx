@@ -2,7 +2,11 @@ import React from "react";
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import Input from "./Input";
 import { images } from "../data";
-import { staff2, theo_white_orange_logo, trackie } from "../constants/originals";
+import {
+  staff2,
+  theo_white_orange_logo,
+  trackie,
+} from "../constants/originals";
 
 export default function Footer() {
   return (
@@ -36,7 +40,6 @@ export default function Footer() {
                     alt="logo"
                     className="h-20 w-20"
                   />
-                  <h5 className="font-bold text-3xl">Theo Transport</h5>
                 </div>
                 <div className="flex items-center space-x-4 cursor-pointer">
                   <MapPinIcon className="h-5 w-5" />

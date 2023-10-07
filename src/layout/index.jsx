@@ -17,7 +17,7 @@ import {
   YouTube,
   Close,
 } from "@mui/icons-material";
-import { theo_blue_orange_logo } from "../constants/originals";
+import { theo_blue_orange_logo, twitter } from "../constants/originals";
 
 export default function Layout({ children, style }) {
   const [hoveredLinkId, setHoveredLinkId] = useState(0);
@@ -137,7 +137,7 @@ export default function Layout({ children, style }) {
               ))}
             </div>
             <div className="xl:flex space-x-3 items-center hidden">
-              <div className="rounded-full border border-primary_green p-1 delay-300 transition opacity-75">
+              <div className="rounded-full border border-primary_color p-1 delay-300 transition opacity-75">
                 <div className="rounded-full p-4 bg-primary_orange">
                   <PhoneIcon className="w-5 h-5 text-white" />
                 </div>
@@ -252,7 +252,7 @@ export default function Layout({ children, style }) {
           </div>
           <div className="flex items-center space-x-3 border-t border-t-stroke py-6">
             <Facebook className="text-black" />
-            <Close className="text-black" />
+            <img src={twitter} alt="twitter" className="h-8 w-8" />
             <Instagram className="text-black" />
             <LinkedIn className="text-black" />
           </div>

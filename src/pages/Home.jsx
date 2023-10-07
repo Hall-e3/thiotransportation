@@ -21,7 +21,7 @@ import {
 } from "../constants";
 import { Carousel } from "@material-tailwind/react";
 import { abouts, cards } from "../data";
-import { staff1 } from "../constants/originals";
+import { staff1, trackie } from "../constants/originals";
 
 export default function Home() {
   return (
@@ -71,7 +71,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="order-first lg:order-none flex items-center justify-center pr-15 sm:pr-0">
-                  <img src={truck} className="object-contain" alt="truck" />
+                  <img src={trackie} className="object-contain rounded-full" alt="truck" />
                 </div>
               </div>
             </div>
@@ -365,13 +365,13 @@ export default function Home() {
         <div className="max-w-[1240px] mx-auto flex flex-col space-y-20">
           <div className="flex flex-col items-center justify-center space-y-4">
             <div className="flex flex-col items-center justify-center space-y-4 px-80 mb-10">
-              <h5 className="text-primary_orange font-bold text-2xl">
+              <h5 className="text-white font-bold text-2xl">
                 How it works
               </h5>
               <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-white text-center leading-tight pb-4">
                 World Class{" "}
-                <span className="text-primary_color"> Logistics </span>
-                and <span className="text-primary_color">Transportation </span>
+                <span className="text-primary_orange"> Logistics </span>
+                and <span className="text-primary_orange">Transportation </span>
               </span>
               <div className="py-[2.5px] px-[30px]  bg-primary_orange" />
             </div>

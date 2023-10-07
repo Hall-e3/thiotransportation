@@ -17,7 +17,14 @@ import {
 import { abouts, members, reviews } from "../data";
 import { Facebook, LinkedIn, Twitter } from "@mui/icons-material";
 import { Link } from "react-router-dom";
-import { back, staff, staff3, storage, trackie1 } from "../constants/originals";
+import {
+  back,
+  staff,
+  staff3,
+  storage,
+  trackie1,
+  twitter,
+} from "../constants/originals";
 
 export default function About() {
   const [activeTab, setActiveTab] = useState(1);
@@ -553,7 +560,7 @@ export default function About() {
                 </div>
                 <div className="flex items-center justify-center space-x-4 bg-[#ff6731] w-[65%] absolute -bottom-9 py-8">
                   <Facebook className="text-white" />
-                  <Twitter className="text-white" />
+                  <img src={twitter} alt="twitter" className="h-8 w-8" />
                   <LinkedIn className="text-white" />
                 </div>
               </div>

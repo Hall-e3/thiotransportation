@@ -14,6 +14,7 @@ const background = require("../assets/orignals/background.jpeg");
 const background1 = require("../assets/orignals/background1.jpeg");
 const background2 = require("../assets/orignals/background2.jpeg");
 const background3 = require("../assets/orignals/background3.jpeg");
+const twitter = require("../assets/orignals/twitter.png");
 
 export {
   theo_white_logo,
@@ -32,4 +33,5 @@ export {
   theo_blue_orange_logo,
   theo_white_blue_logo,
   theo_white_orange_logo,
+  twitter,
 };
