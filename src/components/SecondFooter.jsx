@@ -9,6 +9,8 @@ import {
   trackie1,
   twitter,
 } from "../constants/originals";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
 export default function SecondFooter() {
   return (
@@ -23,6 +25,9 @@ export default function SecondFooter() {
                   alt="logo"
                   className="h-20 w-20"
                 />
+                <h4 className="font-bold text-3xl md:text-4xl lg:text-5xl text-white leading-normal">
+                  Transportation
+                </h4>
               </div>
               <p className="text-[#c7cdda] font-medium tracking-normal">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -204,6 +209,23 @@ export default function SecondFooter() {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="rounded-lg hidden sm:block">
+            <MapContainer
+              center={[51.505, -0.09]}
+              zoom={13}
+              style={{ height: "35vh", borderRadius: "12px" }}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={[51.505, -0.09]}>
+                <Popup>
+                  A pretty CSS3 popup. <br /> Easily customizable.
+                </Popup>
+              </Marker>
+            </MapContainer>
           </div>
           <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-between items-center">
             <h4>Copyright ©2023 Transco. All Rights Reserved</h4>

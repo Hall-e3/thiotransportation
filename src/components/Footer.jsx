@@ -40,6 +40,9 @@ export default function Footer() {
                     alt="logo"
                     className="h-20 w-20"
                   />
+                  <h4 className="font-bold text-xl lg:text-2xl text-white leading-normal">
+                    Transportation
+                  </h4>
                 </div>
                 <div className="flex items-center space-x-4 cursor-pointer">
                   <MapPinIcon className="h-5 w-5 text-primary_orange" />
