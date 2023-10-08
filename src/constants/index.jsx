@@ -43,9 +43,16 @@ const courier = require("../assets/images/courier.webp");
 const support1 = require("../assets/images/support1.webp");
 const unboxing = require("../assets/images/unboxing.webp");
 const world_distribution = require("../assets/images/world-distribution.webp");
-
+const xpo_logo = require("../assets/images/xpo_logo.webp");
+const amazon = require("../assets/images/amazon.webp");
+const rl_carriers_logo = require("../assets/images/rl_carriers_logo.png");
+const rl_carriers = require("../assets/images/rl_carriers.png");
 export {
   logo,
+  amazon,
+  xpo_logo,
+  rl_carriers_logo,
+  rl_carriers,
   another_logo,
   truck,
   truck1,

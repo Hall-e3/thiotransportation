@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Layout from "../layout";
+import React, { useEffect, useState } from "react";
 import {
   Button,
   DisclosureComponent,
@@ -13,7 +12,6 @@ import {
   ChevronRightIcon,
   EnvelopeIcon,
   MapPinIcon,
-  PhoneIcon,
   PlayIcon,
 } from "@heroicons/react/24/solid";
 import {
@@ -28,16 +26,23 @@ import {
   truck,
 } from "../constants";
 import { Carousel } from "@material-tailwind/react";
-import { abouts, cards, homes } from "../data";
+import { abouts, cards, homes, who_we_work_with } from "../data";
 import { staff1 } from "../constants/originals";
 import { Facebook, LinkedIn, Twitter, YouTube } from "@mui/icons-material";
 import CountUp from "react-countup";
 
 export default function Home() {
-  const [drop, setDrop] = useState(false);
-  const handleDrop = () => {
-    setDrop(true);
-  };
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % who_we_work_with.length);
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const currentItem = who_we_work_with[currentIndex];
   return (
     <div className="h-screen w-full transition overflow-x-hidden relative">
       <div className="h-full w-full">
@@ -71,7 +76,7 @@ export default function Home() {
         </div>
 
         <div className="xl:hidden">
-          <Navbar handleDrop={handleDrop} />
+          <Navbar />
         </div>
         <div className="relative">
           <Carousel
@@ -581,6 +586,20 @@ export default function Home() {
                   <DisclosureComponent />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="py-15 sm:py-20 px-4 sm:px-20 md:px-10 bg-[#1eae98]">
+          <div className="max-w-[1240px] mx-auto">
+            <div>
+              {currentItem ? (
+                <img
+                  key={currentItem.id}
+                  src={currentItem.image}
+                  alt={`images + ${currentItem.id}`}
+                  className="h-50 w-full object-contain"
+                />
+              ) : null}
             </div>
           </div>
         </div>

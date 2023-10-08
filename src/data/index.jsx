@@ -1,5 +1,6 @@
 import { FormatQuote } from "@mui/icons-material";
 import {
+  amazon,
   b1,
   b2,
   b5,
@@ -19,12 +20,15 @@ import {
   process_2,
   process_3,
   process_4,
+  rl_carriers,
+  rl_carriers_logo,
   search,
   support1,
   tracking,
   transport,
   unboxing,
   world_distribution,
+  xpo_logo,
 } from "../constants";
 import { staff, staff1, staff2, staff3, storage } from "../constants/originals";
 
@@ -369,5 +373,20 @@ export const homes = [
     title: "Safe & Secure Product Delivery",
     description:
       "Qnim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo aonsequat.",
+  },
+];
+
+export const who_we_work_with = [
+  {
+    id: 1,
+    image: rl_carriers,
+  },
+  {
+    id: 2,
+    image: xpo_logo,
+  },
+  {
+    id: 3,
+    image: amazon,
   },
 ];
