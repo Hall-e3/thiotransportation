@@ -227,7 +227,7 @@ export default function About() {
                 className="flex flex-col space-y-4 items-center justify-center lg:space-y-8 flex-1"
               >
                 <h4 className="text-[#ff6731] font-bold text-5xl">
-                    <CountUp
+                  <CountUp
                     start={0}
                     end={about.number}
                     duration={5}
@@ -579,7 +579,7 @@ export default function About() {
       </div>
       <div className="py-15 sm:py-20 md:py-40 px-4 sm:px-20 md:px-10 bg-[#f3f7fc]">
         <div className="max-w-[1240px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 transition">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 transition relative">
             <div className="md:col-span-2">
               <div className="flex flex-col  space-y-8">
                 <div className="flex flex-col space-y-8">
@@ -587,9 +587,9 @@ export default function About() {
                     Testimonials
                   </h5>
                   <h3 className="font-bold text-3xl md:text-4xl lg:text-5xl text-black leading-tight">
-                    What<span className="text-primary_color">Clients</span> it
+                    What<span className="text-primary_color"> Clients</span> it
                     About
-                    <span className="text-primary_color">Us</span>
+                    <span className="text-primary_color"> Us</span>
                   </h3>
                 </div>
                 <p className="text-[#c7cdda] font-medium tracking-normal">
@@ -598,7 +598,7 @@ export default function About() {
                   exercita tion ullamco laboris nisi ut aliquip ex ea commodo
                 </p>
 
-                <div className="flex space-x-8 items-center">
+                <div className="md:flex space-x-8 items-center hidden">
                   <div
                     className="group hover:bg-[#ff6731] rounded-full p-5 border border-stroke transition "
                     onClick={() => {}}
@@ -617,13 +617,30 @@ export default function About() {
             <div className="md:col-span-3">
               <div className="flex h-full">
                 <Carousel
-                  className="rounded-xl grid-cols-2"
+                  className=""
                   transition={{ duration: 2 }}
+                  prevArrow={({ handlePrev }) => {}}
+                  nextArrow={({ handleNext }) => {}}
+                  navigation={({ setActiveIndex, activeIndex, length }) => (
+                    <div className="absolute bottom-[45%] right-4 z-20 md:flex flex-col gap-y-4">
+                      {new Array(length).fill("").map((_, i) => (
+                        <div
+                          key={i}
+                          onClick={() => setActiveIndex(i)}
+                          className={`rounded-full p-1 ${
+                            activeIndex === i && "border border-primary_orange"
+                          }`}
+                        >
+                          <div className="h-3 w-3 rounded-full bg-grey" />
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 >
                   {reviews.map((rev) => (
                     <div
                       key={rev.id}
-                      className="bg-white shadow-lg rounded-lg p-10 flex flex-col space-y-8"
+                      className="bg-white shadow-lg rounded-lg p-10 flex flex-col space-y-8 m-12"
                     >
                       {rev.icon}
                       <p className="text-grey_skip">{rev.description}</p>
