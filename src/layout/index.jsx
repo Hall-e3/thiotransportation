@@ -1,29 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import {
   EnvelopeIcon,
   MapPinIcon,
   PhoneIcon,
-  PlusIcon,
-  XMarkIcon,
 } from "@heroicons/react/24/solid";
 import {
   Facebook,
-  Instagram,
   LinkedIn,
   YouTube,
   Twitter,
 } from "@mui/icons-material";
-import { theo_blue_orange_logo, twitter } from "../constants/originals";
 import { Button, Navbar } from "../components";
 
 export default function Layout({ children }) {
-  const [drop, setDrop] = useState(false);
   const [show, setShow] = useState(false);
-
-  const handleDrop = () => {
-    setDrop(true);
-  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -112,8 +102,7 @@ export default function Layout({ children }) {
             </nav>
           </div> */}
 
-        <Navbar handleDrop={handleDrop} show={show} />
-       
+        <Navbar show={show} />
         <main className="w-full h-full">{children}</main>
       </div>
     </div>

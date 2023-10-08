@@ -11,7 +11,7 @@ import {
 export default function Footer() {
   return (
     <section className="w-full text-white pt-40 pb-10 bg-[#31373f] relative px-4 lg:px-0">
-      <div className="w-[90%] -top-40 right-5 md:right-10 lg:right-[15%]  lg:w-[70%] absolute py-10 px-10 lg:-top-30   lg:max-w-[1440px] lg:mx-auto rounded-xl bg-gradient-to-r text-white lg:space-x-8 from-primary_orange  to-primary_orange flex md:flex-row flex-col justify-between lg:px-20 lg:py-15 items-center">
+      <div className="w-[90%] -top-40 right-5 md:right-10 lg:right-[15%]  lg:w-[70%] absolute py-10 px-10 lg:-top-30 lg:max-w-[1440px] lg:mx-auto rounded-xl bg-gradient-to-r text-white lg:space-x-8 from-primary_orange  to-primary_orange flex md:flex-row flex-col justify-between lg:px-20 lg:py-15 items-center">
         <div className="flex flex-col space-y-5 flex-1">
           <h5 className="text-2xl font-bold text-white">Get regular updates</h5>
           <h3 className="font-bold text-4xl lg:text-5xl text-white">

@@ -13,6 +13,7 @@ import Divider from "./Divider";
 import SecondFooter from "./SecondFooter";
 import Testimonials from "./Testimonials";
 import Navbar from "./Navbar";
+import NavBar2 from "./NavBar2";
 export {
   Loader,
   Supensing,
@@ -30,4 +31,5 @@ export {
   Testimonials,
   CustomStepSmallDevice,
   Navbar,
+  NavBar2,
 };

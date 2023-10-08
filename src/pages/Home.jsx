@@ -4,6 +4,7 @@ import {
   Button,
   DisclosureComponent,
   Footer,
+  NavBar2,
   Navbar,
   QuoteForm,
   Testimonials,
@@ -38,7 +39,7 @@ export default function Home() {
     setDrop(true);
   };
   return (
-    <div className="h-screen w-full transition overflow-x-hidden">
+    <div className="h-screen w-full transition overflow-x-hidden relative">
       <div className="h-full w-full">
         <div className="h-12 w-full bg-primary_color transition hidden lg:block">
           <nav className="h-full flex w-[1240px] mx-auto  items-center">
@@ -47,9 +48,7 @@ export default function Home() {
               <div className="flex items-center space-x-4">
                 <div className="flex items-center space-x-2">
                   <MapPinIcon className="w-5 h-5 text-white" />
-                  <p className="text-white text-base">
-                    20,Bordeshi
-                  </p>
+                  <p className="text-white text-base">20,Bordeshi</p>
                 </div>
                 <div className="w-0.5 w h-5 bg-stroke" />
                 <div className="flex items-center space-x-2">
@@ -66,7 +65,14 @@ export default function Home() {
             </div>
           </nav>
         </div>
-        <Navbar handleDrop={handleDrop} />
+
+        <div className="hidden xl:block">
+          <NavBar2 />
+        </div>
+
+        <div className="xl:hidden">
+          <Navbar handleDrop={handleDrop} />
+        </div>
         <div className="relative">
           <Carousel
             autoplay={true}
@@ -205,7 +211,6 @@ export default function Home() {
             </div>
           </Carousel>
         </div>
-
         <div className="sm:pt-15 lg:pb-30 xl:pt-150 sm:pb-16 sm:py-20 px-4 sm:px-20 md:px-10 mb-60 lg:mb-115 relative">
           <div className="lg:h-[35%] mt-10 sm:mt-0 sm:mb-30 sm:right-8 sm:left-8 xl:right-[1%] xl:w-[70%] xl:absolute lg:-top-20 xl:max-w-[1440px] xl:mx-auto lg:shadow-md xl:shadow-lg rounded-xl bg-white  flex md:flex-row flex-col justify-between items-center">
             <div className="w-full h-full grid grid-cols-1 px-2 sm:px-0 lg:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-0 lg:px-30 xl:px-0">
