@@ -227,7 +227,7 @@ export default function SecondFooter() {
               </Marker>
             </MapContainer>
           </div>
-          <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-between items-center">
+          <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-between sm:items-center">
             <h4>Copyright ©2023 Transco. All Rights Reserved</h4>
             <div className="flex items-center space-x-5 lg:space-x-10">
               <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">

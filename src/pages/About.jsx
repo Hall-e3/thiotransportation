@@ -87,7 +87,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="lg:hidden pb-20 px-30">
+            <div className="lg:hidden pb-20 pt-10 sm:pt-30 sm:py-40 px-30">
               <div className="h-full w-full flex justify-center relative">
                 <div className="absolute rounded-lg bottom-0 -left-30">
                   <img
