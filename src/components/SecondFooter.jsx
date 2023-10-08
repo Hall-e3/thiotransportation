@@ -17,7 +17,7 @@ export default function SecondFooter() {
     <section className="py-20 md:py-30 lg:py-40 px-10 sm:px-20 md:px-10 text-white bg-[#31373f]">
       <div className="max-w-[1240px] mx-auto">
         <div className="flex flex-col space-y-10 lg:space-y-25">
-          <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-10">
+          <div className="grid grid-cols-1 space-y-8  md:grid-cols-2 lg:grid-cols-3  md:gap-x-10">
             <div className="flex flex-col space-y-6  lg:space-y-8 flex-1">
               <div className="flex items-center space-x-3">
                 <img
@@ -25,7 +25,7 @@ export default function SecondFooter() {
                   alt="logo"
                   className="h-20 w-20"
                 />
-                <h4 className="font-bold text-3xl md:text-4xl lg:text-5xl text-white leading-normal">
+                <h4 className="font-bold text-xl sm:text-3xl text-white leading-normal">
                   Transportation
                 </h4>
               </div>
@@ -119,7 +119,7 @@ export default function SecondFooter() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col space-y-8 lg:space-y-0 lg:flex-row  lg:space-x-10">
+          <div className="grid grid-cols-1 space-y-8 xl:space-y-0  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-x-10">
             <div className="flex flex-col space-y-5 lg:space-y-6">
               <h5 className="font-bold text-2xl">Dhaka Office</h5>
 
