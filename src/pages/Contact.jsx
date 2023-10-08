@@ -96,12 +96,14 @@ export default function Contact() {
                   placeholder="Your Name"
                   name="user_name"
                   styles="border rounded-md flex-1"
+                  required={true}
                 />
                 <Input
                   type="email"
                   placeholder="Your Email*"
                   name="user_email"
                   styles="border rounded-md flex-1"
+                  required={true}
                 />
               </div>
               <div className="flex lg:flex-row flex-col lg:space-x-5 md:space-y-4 lg:space-y-0">
@@ -110,12 +112,14 @@ export default function Contact() {
                   placeholder="Your Phone"
                   name="user_phone"
                   styles="border rounded-md"
+                  required={true}
                 />
                 <Input
                   type="text"
                   placeholder="Subject"
                   name="subject"
                   styles="border rounded-md"
+                  required={true}
                 />
               </div>
               <div>
@@ -124,6 +128,7 @@ export default function Contact() {
                   placeholder="Start writing your message"
                   styles="border rounded-md"
                   name="message"
+                  required={true}
                 />
               </div>
               <Button

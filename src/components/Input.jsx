@@ -12,6 +12,7 @@ export default function Input({
   disabled,
   error,
   onFocus,
+  required,
 }) {
   return (
     <div className="flex-1">
@@ -37,6 +38,7 @@ export default function Input({
             placeholder={placeholder}
             disabled={disabled}
             onChange={onChange}
+            required={required}
           />
           {icon && icon}
         </div>
