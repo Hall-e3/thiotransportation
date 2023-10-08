@@ -27,7 +27,7 @@ import {
 } from "../constants";
 import { Carousel } from "@material-tailwind/react";
 import { abouts, cards, homes, who_we_work_with } from "../data";
-import { staff1 } from "../constants/originals";
+import { staff1, staff5, staff6, staff8, staff9 } from "../constants/originals";
 import { Facebook, LinkedIn, Twitter, YouTube } from "@mui/icons-material";
 import CountUp from "react-countup";
 
@@ -175,8 +175,12 @@ export default function Home() {
                       }
                     />
                   </div>
-                  <div>
-                    <img src={person} alt="person" />
+                  <div className="h-[35vh] px-6 sm:h-[45vh] md:h-[55vh] xl:h-[60vh]">
+                    <img
+                      src={staff6}
+                      alt="person"
+                      className="rounded-full h-full w-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -207,8 +211,12 @@ export default function Home() {
                       }
                     />
                   </div>
-                  <div className="order-first lg:order-none">
-                    <img src={person1} alt="person1" />
+                  <div className="order-first lg:order-none px-6 h-[35vh] sm:h-[45vh] md:h-[55vh] xl:h-[60vh]">
+                    <img
+                      src={staff5}
+                      alt="person1 "
+                      className="rounded-full h-full w-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
