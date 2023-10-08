@@ -15,5 +15,12 @@
   "editor.formatOnSave": true,
   "editor.fontWeight": "normal",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": ["abouts", "heroicons", "orignals", "Theo", "trackie"]
+  "cSpell.words": [
+    "abouts",
+    "heroicons",
+    "orignals",
+    "Supensing",
+    "Theo",
+    "trackie"
+  ]
 }
