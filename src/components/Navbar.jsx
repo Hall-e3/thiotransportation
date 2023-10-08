@@ -69,7 +69,7 @@ export default function Navbar({ show }) {
               <p className="text-md text-grey_black_3 font-medium">
                 Got A Question?
               </p>
-              <p className="text-lg font-bold">+123-456-7890</p>
+              <p className="text-md font-bold">+123-456-7890</p>
             </div>
           </div>
           <div onClick={handleDrop} className="lg:hidden pr-5 md:pr-0">
@@ -151,16 +151,18 @@ export default function Navbar({ show }) {
             <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_orange">
               <MapPinIcon className="h-4 w-4 text-primary_color" />
               <p className="font-medium lg:text-lg">
-                22/1 Bardeshi, Bazar Dhaka
+                Framingham MA 8 GREENVIEW street Framingham MA 01701
               </p>
             </div>
             <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_orange">
               <EnvelopeIcon className="h-4 w-4 text-primary_color" />
-              <p className="font-medium lg:text-lg">info@theotransport.com</p>
+              <p className="font-medium lg:text-lg">
+                info@theotransportations.com
+              </p>
             </div>
             <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_orange">
               <PhoneIcon className="h-4 w-4 text-primary_color" />
-              <p className="font-medium lg:text-lg">+88 01234 567 890</p>
+              <p className="font-medium lg:text-lg">+1 (708) 351-5786</p>
             </div>
           </div>
         </div>

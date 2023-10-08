@@ -50,15 +50,17 @@ export default function Home() {
             <div className="flex items-center space-x-4 flex-1"></div>
             <div className="flex items-center space-x-8 shrink-0">
               <div className="flex items-center space-x-4">
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 w-full">
                   <MapPinIcon className="w-5 h-5 text-white" />
-                  <p className="text-white text-base">20,Bordeshi</p>
+                  <p className="text-white text-sm">
+                    Framingham MA 8 GREENVIEW
+                  </p>
                 </div>
                 <div className="w-0.5 w h-5 bg-stroke" />
                 <div className="flex items-center space-x-2">
                   <EnvelopeIcon className="w-5 h-5 text-white" />
-                  <p className="text-white text-base">
-                    info@theotransportation.com
+                  <p className="text-white text-sm">
+                    info@theotransportations.com
                   </p>
                 </div>
               </div>

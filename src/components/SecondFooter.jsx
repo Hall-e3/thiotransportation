@@ -124,21 +124,21 @@ export default function SecondFooter() {
               <h5 className="font-bold text-2xl">Dhaka Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
-                <MapPinIcon className="h-5 w-5 text-primary_orange" />
-                <p className="font-normal lg:text-lg text-[#c7cdda]">
-                  22/1 Bardeshi, Amin Bazar Dhaka 1348
+                <MapPinIcon className="h-10 w-10 text-primary_orange" />
+                <p className="font-normal text-md text-[#c7cdda]">
+                  Framingham MA 8 GREENVIEW street Framingham MA 01701
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <EnvelopeIcon className="h-5 w-5 text-primary_orange" />
-                <p className="font-normal lg:text-lg text-[#c7cdda]">
-                  hello@theotransportation.com
+                <p className="font-normal text-md text-[#c7cdda]">
+                  info@theotransportations.com
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <PhoneIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
-                  +88 01234 567 890
+                  +1 (708) 351-5786
                 </p>
               </div>
             </div>
@@ -147,21 +147,21 @@ export default function SecondFooter() {
               <h5 className="font-bold text-2xl">New York Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
-                <MapPinIcon className="h-5 w-5 text-primary_orange" />
-                <p className="font-normal lg:text-lg text-[#c7cdda]">
-                  22/1 Bardeshi, Amin Bazar Dhaka 1348
+                <MapPinIcon className="h-10 w-10 text-primary_orange" />
+                <p className="font-normal text-md text-[#c7cdda]">
+                  Framingham MA 8 GREENVIEW street Framingham MA 01701
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <EnvelopeIcon className="h-5 w-5 text-primary_orange" />
-                <p className="font-normal lg:text-lg text-[#c7cdda]">
-                  hello@theotransportation.com
+                <p className="font-normal text-md text-[#c7cdda]">
+                  info@theotransportations.com
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <PhoneIcon className="h-5 w-5 text-primary_orange " />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
-                  +88 01234 567 890
+                  +1 (708) 351-5786
                 </p>
               </div>
             </div>
@@ -169,21 +169,21 @@ export default function SecondFooter() {
               <h5 className="font-bold text-2xl">London Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
-                <MapPinIcon className="h-5 w-5 text-primary_orange" />
-                <p className="font-normal lg:text-lg text-[#c7cdda]">
-                  22/1 Bardeshi, Amin Bazar Dhaka 1348
+                <MapPinIcon className="h-10 w-10 text-primary_orange" />
+                <p className="font-normal text-md text-[#c7cdda]">
+                  Framingham MA 8 GREENVIEW street Framingham MA 01701
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <EnvelopeIcon className="h-5 w-5 text-primary_orange" />
-                <p className="font-normal lg:text-lg text-[#c7cdda]">
-                  hello@theotransportation.com
+                <p className="font-normal text-md text-[#c7cdda]">
+                  info@theotransportations.com
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <PhoneIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
-                  +88 01234 567 890
+                  +1 (708) 351-5786
                 </p>
               </div>
             </div>
@@ -191,21 +191,21 @@ export default function SecondFooter() {
               <h5 className="font-bold text-2xl">Cape Town Office</h5>
 
               <div className="flex items-center space-x-4 cursor-pointer">
-                <MapPinIcon className="h-5 w-5 text-primary_orange" />
-                <p className="font-normal lg:text-lg text-[#c7cdda]">
-                  22/1 Bardeshi, Amin Bazar Dhaka 1348
+                <MapPinIcon className="h-10 w-10 text-primary_orange" />
+                <p className="font-normal text-md text-[#c7cdda]">
+                  Framingham MA 8 GREENVIEW street Framingham MA 01701
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <EnvelopeIcon className="h-5 w-5 text-primary_orange" />
-                <p className="font-normal lg:text-lg text-[#c7cdda]">
-                  hello@theotransportation.com
+                <p className="font-normal text-md text-[#c7cdda]">
+                  info@theotransportations.com
                 </p>
               </div>
               <div className="flex items-center space-x-4 cursor-pointer">
                 <PhoneIcon className="h-5 w-5 text-primary_orange" />
                 <p className="font-normal lg:text-lg text-[#c7cdda]">
-                  +88 01234 567 890
+                  +1 (708) 351-5786
                 </p>
               </div>
             </div>
@@ -228,10 +228,10 @@ export default function SecondFooter() {
             </MapContainer>
           </div>
           <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-between sm:items-center">
-            <h4>Copyright ©2023 Transco. All Rights Reserved</h4>
+            <h4>Copyright ©2023 Theo Transportation. All Rights Reserved</h4>
             <div className="flex items-center space-x-5 lg:space-x-10">
               <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
-                World Travelling
+                World Traveling
               </p>
               <p className="font-normal lg:text-lg text-[#c7cdda] hover:text-primary_color cursor-pointer">
                 Product Delivery

@@ -1,15 +1,6 @@
 import React, { useEffect, useState } from "react";
-import {
-  EnvelopeIcon,
-  MapPinIcon,
-  PhoneIcon,
-} from "@heroicons/react/24/solid";
-import {
-  Facebook,
-  LinkedIn,
-  YouTube,
-  Twitter,
-} from "@mui/icons-material";
+import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
+import { Facebook, LinkedIn, YouTube, Twitter } from "@mui/icons-material";
 import { Button, Navbar } from "../components";
 
 export default function Layout({ children }) {
@@ -32,25 +23,25 @@ export default function Layout({ children }) {
     <div className="h-screen w-full transition overflow-x-hidden">
       <div className="h-full w-full">
         <div className="h-12 w-full bg-primary_color transition hidden lg:block">
-          <nav className="h-full flex w-[1240px] mx-auto px-8 items-center justify-between">
+          <nav className="h-full flex w-[1240px] mx-auto items-center justify-between">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 <MapPinIcon className="w-5 h-5 text-white" />
-                <p className="text-white text-base">
-                  20,Bordeshi, New York, US
+                <p className="text-white text-sm">
+                  Framingham MA 8 GREENVIEW street Framingham MA 01701
                 </p>
               </div>
               <div className="w-0.5 w h-5 bg-stroke" />
               <div className="flex items-center space-x-2">
                 <EnvelopeIcon className="w-5 h-5 text-white" />
-                <p className="text-white text-base">
-                  info@theotransportation.com
+                <p className="text-white text-sm">
+                  info@theotransportations.com
                 </p>
               </div>
               <div className="w-0.5 w h-5 bg-stroke" />
               <div className="flex items-center space-x-2">
                 <PhoneIcon className="w-4 h-4 text-white" />
-                <p className="text-white text-base">+123-895-6147</p>
+                <p className="text-white text-sm">+1 (708) 351-5786</p>
               </div>
             </div>
             <div className="flex items-center space-x-8">

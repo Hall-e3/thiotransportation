@@ -47,19 +47,19 @@ export default function Footer() {
                 <div className="flex items-center space-x-4 cursor-pointer">
                   <MapPinIcon className="h-5 w-5 text-primary_orange" />
                   <p className="font-normal lg:text-lg text-[#c7cdda]">
-                    22/1 Bardeshi, Amin Bazar Dhaka 1348
+                    Framingham MA 8 GREENVIEW street Framingham MA 01701
                   </p>
                 </div>
                 <div className="flex items-center space-x-4 cursor-pointer">
                   <EnvelopeIcon className="h-5 w-5 text-primary_orange" />
                   <p className="font-normal lg:text-lg text-[#c7cdda]">
-                    info@theotransportation.com
+                    info@theotransportations.com
                   </p>
                 </div>
                 <div className="flex items-center space-x-4 cursor-pointer">
                   <PhoneIcon className="h-5 w-5 text-primary_orange" />
                   <p className="font-normal lg:text-lg text-[#c7cdda]">
-                    +88 01234 567 890
+                    +1 5083456355
                   </p>
                 </div>
               </div>

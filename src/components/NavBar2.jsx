@@ -78,7 +78,7 @@ export default function NavBar2({ show }) {
               <p className="text-md text-grey_black_3 font-medium">
                 Got A Question?
               </p>
-              <p className="text-lg font-bold">+123-456-7890</p>
+              <p className="text-md font-bold">+1 (708) 351-5786</p>
             </div>
           </div>
           <div onClick={handleDrop} className="lg:hidden pr-5 md:pr-0">
