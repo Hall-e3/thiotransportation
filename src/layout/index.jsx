@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   Bars3Icon,
   EnvelopeIcon,
@@ -18,10 +18,13 @@ import {
 } from "@mui/icons-material";
 import { theo_blue_orange_logo, twitter } from "../constants/originals";
 
-export default function Layout({ children, style }) {
+export default function Layout({ children }) {
   const [hoveredLinkId, setHoveredLinkId] = useState(0);
   const [show, setShow] = useState(false);
   const [drop, setDrop] = useState(false);
+
+  const location = useLocation();
+  console.log(location);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

@@ -106,7 +106,7 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="flex flex-col space-y-8 px-8 justify-center items-center sm:items-start">
                   <h5 className="font-semibold text-2xl text-white text-center sm:text-start">
-                    Tansport with Theo Transportation
+                    Transport with Theo Transportation
                   </h5>
                   <h2 className="font-bold text-4xl md:text-5xl lg:text-7xl  text-white">
                     Transport Safely
@@ -140,12 +140,12 @@ export default function Home() {
                   <h5 className="font-semibold text-2xl text-white text-center sm:text-start">
                     Your Business Partner
                   </h5>
-                  <h2 className="font-bold text-4xl md:text-5xl lg:text-7xl  text-white">
+                  <h2 className="font-bold text-4xl md:text-5xl lg:text-7xl  text-white text-center sm:text-start">
                     Transportation Made Simple
                   </h2>
                   <p className="text-white font-normal text-base text-center sm:text-start">
                     Optimize your supply chain with our streamlined
-                    transporation solution reducing production costs.
+                    transportation solution reducing production costs.
                   </p>
 
                   <Button
