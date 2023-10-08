@@ -30,7 +30,18 @@ import {
   world_distribution,
   xpo_logo,
 } from "../constants";
-import { staff, staff1, staff2, staff3, storage } from "../constants/originals";
+import {
+  staff,
+  staff1,
+  staff2,
+  staff3,
+  staff5,
+  staff6,
+  staff7,
+  staff8,
+  staff9,
+  storage,
+} from "../constants/originals";
 
 export const links = [
   {
@@ -87,7 +98,7 @@ export const blogs = [
     date: "June 4, 2023",
     comments: "No Comments",
     subtitle: "Acadian Non Emergency Transport",
-    images: [b1, b2, bdetials, b5],
+    images: [staff5, staff8, staff9, staff6],
     description:
       "Kobita mnis iste natus error sit voluptatem acycu sa mnis iste nat Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in […]",
   },
@@ -284,37 +295,37 @@ export const members = [
     id: 1,
     name: "John Doe",
     position: "Founder & CEO",
-    image: doe,
+    image: staff2,
   },
   {
     id: 2,
     name: "Peter Make",
     position: "General Manager",
-    image: peter,
+    image: staff5,
   },
   {
     id: 3,
     name: "Harrison Lake",
     position: "Delivery Head",
-    image: harrison,
+    image: staff7,
   },
   {
     id: 4,
     name: "Parker Lambark",
     position: "Founder & CEO",
-    image: parker,
+    image: staff9,
   },
   {
     id: 5,
     name: "Paul Combs",
     position: "Delivery Head",
-    image: paul,
+    image: staff8,
   },
   {
     id: 6,
     name: "Johnson Blake",
     position: "General Manager",
-    image: johnson,
+    image: staff6,
   },
 ];
 

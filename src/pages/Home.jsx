@@ -33,7 +33,6 @@ import CountUp from "react-countup";
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [show, setShow] = useState(false);
 
   useEffect(() => {
     const intervalId = setInterval(() => {

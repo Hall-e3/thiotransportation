@@ -22,6 +22,9 @@ import {
   staff,
   staff1,
   staff3,
+  staff6,
+  staff7,
+  staff8,
   storage,
   trackie1,
   twitter,
@@ -105,7 +108,7 @@ export default function About() {
                 </div>
                 <div className="bg-[#ff8485] h-[38.5vh] w-[50vw] rounded-lg absolute -bottom-15 -right-25 z-40">
                   <img
-                    src={img4}
+                    src={staff8}
                     alt="nin4"
                     className="object-cover h-full w-full rounded-lg"
                   />
@@ -351,7 +354,7 @@ export default function About() {
                   </div>
                   <div className="order-first pb-4 lg:pb-0 lg:order-none">
                     <img
-                      src={staff}
+                      src={staff8}
                       alt="b2"
                       className="rounded-sm w-full lg:rounded-xl object-contain"
                     />
@@ -550,13 +553,13 @@ export default function About() {
             {members.map((member) => (
               <div
                 key={member.id}
-                className="rounded-lg relative flex flex-col justify-center items-center group transition duration-700 ease-in-out"
+                className="rounded-lg h-[50vh] relative flex flex-col justify-center items-center group transition duration-700 ease-in-out"
               >
-                <div>
+                <div className="h-full w-full">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="rounded-lg duration-1000 ease-in transform group-hover:scale-105"
+                    className="rounded-lg object-cover w-full h-full duration-1000 ease-in transform group-hover:scale-105"
                   />
                 </div>
                 <div className="flex flex-col space-y-3 items-center justify-center absolute -bottom-7 bg-[#005bac] w-[70%] py-8 z-20 group-hover:-translate-y-18 duration-700 ease-in-out dura">
