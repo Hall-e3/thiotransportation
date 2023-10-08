@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   EnvelopeIcon,
@@ -19,10 +19,24 @@ import { Button, Navbar } from "../components";
 
 export default function Layout({ children }) {
   const [drop, setDrop] = useState(false);
+  const [show, setShow] = useState(false);
 
   const handleDrop = () => {
     setDrop(true);
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 10) {
+        setShow(true);
+      } else {
+        setShow(false);
+      }
+    });
+    return () => {
+      window.removeEventListener("scroll", () => {});
+    };
+  }, []);
 
   return (
     <div className="h-screen w-full transition overflow-x-hidden">
@@ -98,105 +112,8 @@ export default function Layout({ children }) {
             </nav>
           </div> */}
 
-        <Navbar handleDrop={handleDrop} />
-        <div
-          className={`flex flex-col space-y-10 md:hidden p-6 fixed top-0 right-0 w-[80%] sm:w-[70%] h-full z-999 bg-white drop-shadow-lg ${
-            drop ? "translate-x-2" : "translate-x-125"
-          }`}
-        >
-          <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center space-x-1 bg">
-              <img
-                src={theo_blue_orange_logo}
-                alt="card"
-                className="h-18 w-18"
-              />
-            </Link>
-            <div
-              onClick={() => setDrop(false)}
-              className="h-11 w-11 rounded-full bg-primary_color flex items-center justify-center"
-            >
-              <XMarkIcon className="w-4 h-4 text-white" />
-            </div>
-          </div>
-          <div className="flex flex-col space-y-4">
-            <Link
-              to="/home"
-              onClick={() => setDrop(false)}
-              className="flex items-center justify-between border-b border-b-stroke py-2"
-            >
-              <p className="font-medium text-md">Home</p>
-              <div className="border border-stroke rounded-sm p-2">
-                <PlusIcon className="w-4 h-4" />
-              </div>
-            </Link>
-            <Link
-              to="/about"
-              onClick={() => setDrop(false)}
-              className="flex items-center justify-between border-b border-b-stroke py-2"
-            >
-              <p className="font-medium text-md">About</p>
-              <div className="border border-stroke rounded-sm p-2">
-                <PlusIcon className="w-4 h-4" />
-              </div>
-            </Link>
-            <Link
-              to="/services"
-              onClick={() => setDrop(false)}
-              className="flex items-center justify-between border-b border-b-stroke py-2"
-            >
-              <p className="font-medium text-md">Services</p>
-              <div className="border border-stroke rounded-sm p-2">
-                <PlusIcon className="w-4 h-4" />
-              </div>
-            </Link>
-            <Link
-              to="/blog"
-              onClick={() => setDrop(false)}
-              className="flex items-center justify-between border-b border-b-stroke py-2"
-            >
-              <p className="font-medium text-md">Blog</p>
-              <div className="border border-stroke rounded-sm p-2">
-                <PlusIcon className="w-4 h-4" />
-              </div>
-            </Link>
-            <Link
-              to="/contact"
-              onClick={() => setDrop(false)}
-              className="flex items-center justify-between"
-            >
-              <p className="font-medium text-md">Contact</p>
-              <div className="border border-stroke rounded-sm p-2">
-                <PlusIcon className="w-4 h-4" />
-              </div>
-            </Link>
-          </div>
-          <div className="flex flex-col space-y-4">
-            <h5 className="text-2xl font-bold ">Contact Info</h5>
-            <div className="flex flex-col space-y-2">
-              <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_orange">
-                <MapPinIcon className="h-4 w-4 text-primary_color" />
-                <p className="font-medium lg:text-lg">
-                  22/1 Bardeshi, Bazar Dhaka
-                </p>
-              </div>
-              <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_orange">
-                <EnvelopeIcon className="h-4 w-4 text-primary_color" />
-                <p className="font-medium lg:text-lg">info@theotransport.com</p>
-              </div>
-              <div className="flex items-center space-x-3 cursor-pointer hover:text-primary_orange">
-                <PhoneIcon className="h-4 w-4 text-primary_color" />
-                <p className="font-medium lg:text-lg">+88 01234 567 890</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex items-center space-x-3 border-t border-t-stroke py-6">
-            <Facebook className="text-black" />
-            <img src={twitter} alt="twitter" className="h-8 w-8" />
-            <Instagram className="text-black" />
-            <LinkedIn className="text-black" />
-          </div>
-        </div>
+        <Navbar handleDrop={handleDrop} show={show} />
+       
         <main className="w-full h-full">{children}</main>
       </div>
     </div>

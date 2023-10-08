@@ -42,7 +42,7 @@ export default function Home() {
       <div className="h-full w-full">
         <div className="h-12 w-full bg-primary_color transition hidden lg:block">
           <nav className="h-full flex w-[1240px] mx-auto  items-center">
-            <div className="flex items-center space-x-4 flex-1">heoro</div>
+            <div className="flex items-center space-x-4 flex-1"></div>
             <div className="flex items-center space-x-8 shrink-0">
               <div className="flex items-center space-x-4">
                 <div className="flex items-center space-x-2">
