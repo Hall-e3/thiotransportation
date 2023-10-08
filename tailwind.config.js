@@ -105,6 +105,9 @@ module.exports = withMT({
         background2: "url('/src/assets/orignals/background1.jpeg')",
         background3: "url('/src/assets/orignals/background2.jpeg')",
         background4: "url('/src/assets/orignals/background3.jpeg')",
+        background5: "url('/src/assets/orignals/background5.jpeg')",
+        background6: "url('/src/assets/orignals/background6.jpeg')",
+        background7: "url('/src/assets/orignals/background7.jpeg')",
       },
       fontSize: {
         "title-xxl": ["44px", "55px"],

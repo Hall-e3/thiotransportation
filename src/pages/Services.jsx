@@ -41,7 +41,7 @@ export default function Services() {
 
   return (
     <Layout>
-      <div className="py-18 bg-no-repeat bg-cover bg-background3 bg-center opacity-90">
+      <div className="py-18 bg-no-repeat bg-cover bg-background7 bg-center opacity-90">
         <div className="max-w-[1240px] mx-auto py-20">
           <div className="flex flex-col items-center justify-center space-y-7">
             <h4 className="text-white font-bold text-7xl">Services</h4>

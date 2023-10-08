@@ -20,7 +20,7 @@ import { twitter } from "../constants/originals";
 export default function Blog() {
   return (
     <Layout>
-      <div className="py-18 bg-no-repeat bg-cover bg-background4 bg-center opacity-90">
+      <div className="py-18 bg-no-repeat bg-cover bg-background6 bg-center opacity-90">
         <div className="max-w-[1240px] mx-auto py-20">
           <div className="flex flex-col items-center justify-center space-y-7">
             <h4 className="text-white font-bold text-7xl">Blog</h4>

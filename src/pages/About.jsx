@@ -19,11 +19,8 @@ import { Facebook, LinkedIn } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import {
   back,
-  staff,
   staff1,
   staff3,
-  staff6,
-  staff7,
   staff8,
   storage,
   trackie1,
@@ -35,7 +32,7 @@ export default function About() {
   const [activeTab, setActiveTab] = useState(1);
   return (
     <Layout>
-      <div className="py-18 bg-no-repeat bg-cover bg-background1 bg-center bg-opacity-60">
+      <div className="py-18 bg-no-repeat bg-cover bg-background5 bg-center bg-opacity-60">
         <div className="max-w-[1240px] mx-auto py-20">
           <div className="flex flex-col items-center justify-center space-y-7">
             <h4 className="text-white font-bold text-7xl">About</h4>
