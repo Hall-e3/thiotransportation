@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 import Layout from "../layout";
 import { ChevronRightIcon, MapPinIcon } from "@heroicons/react/24/solid";
 import { Button, Footer, Input, TextArea } from "../components";
 import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_viavl1i",
+        "template_1up13qh",
+        form.current,
+        "Jm-pgXWGjR-suQozK"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <Layout>
       <div className="bg-background2 py-18 bg-no-repeat bg-cover bg-center opacity-90 ">
@@ -63,29 +85,49 @@ export default function Contact() {
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">
               Send Us A Message
             </h3>
-            <div className="border border-stroke rounded-md px-4 py-6 lg:px-20 lg:py-15 md:space-y-4 lg:space-y-8 space-y-8">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="border border-stroke rounded-md px-4 py-6 lg:px-20 lg:py-15 md:space-y-4 lg:space-y-8 space-y-8"
+            >
               <div className="flex lg:flex-row flex-col lg:space-x-5 md:space-y-4 lg:space-y-0">
                 <Input
+                  type="text"
                   placeholder="Your Name"
+                  name="user_name"
                   styles="border rounded-md flex-1"
                 />
                 <Input
+                  type="email"
                   placeholder="Your Email*"
+                  name="user_email"
                   styles="border rounded-md flex-1"
                 />
               </div>
               <div className="flex lg:flex-row flex-col lg:space-x-5 md:space-y-4 lg:space-y-0">
-                <Input placeholder="Your Phone" styles="border rounded-md" />
-                <Input placeholder="Subject" styles="border rounded-md" />
+                <Input
+                  type="text"
+                  placeholder="Your Phone"
+                  name="user_phone"
+                  styles="border rounded-md"
+                />
+                <Input
+                  type="text"
+                  placeholder="Subject"
+                  name="subject"
+                  styles="border rounded-md"
+                />
               </div>
               <div>
                 <TextArea
                   rows={10}
                   placeholder="Start writing your message"
                   styles="border rounded-md"
+                  name="message"
                 />
               </div>
               <Button
+                type="submit"
                 text="Submit Now"
                 buttonStyle="lg:w-[30%] bg-gradient-to-r text-white  from-red-500  to-primary_orange py-3 text-lg font-bold rounded-md"
                 icon={
@@ -94,7 +136,7 @@ export default function Contact() {
                   </div>
                 }
               />
-            </div>
+            </form>
           </div>
         </div>
       </div>
