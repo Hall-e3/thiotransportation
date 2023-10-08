@@ -1,164 +1,104 @@
-import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
-  Bars3Icon,
   EnvelopeIcon,
   MapPinIcon,
   PhoneIcon,
   PlusIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
-import { links } from "../data";
 import {
   Facebook,
   Instagram,
   LinkedIn,
   YouTube,
-  Close,
+  Twitter,
 } from "@mui/icons-material";
 import { theo_blue_orange_logo, twitter } from "../constants/originals";
+import { Button, Navbar } from "../components";
 
 export default function Layout({ children }) {
-  const [hoveredLinkId, setHoveredLinkId] = useState(0);
-  const [show, setShow] = useState(false);
   const [drop, setDrop] = useState(false);
 
-  const location = useLocation();
-  console.log(location);
+  const handleDrop = () => {
+    setDrop(true);
+  };
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 10) {
-        setShow(true);
-      } else {
-        setShow(false);
-      }
-    });
-    return () => {
-      window.removeEventListener("scroll", () => {});
-    };
-  }, []);
   return (
     <div className="h-screen w-full transition overflow-x-hidden">
       <div className="h-full w-full">
-        <div className="h-12 w-full bg-primary_color transition hidden xl:flex">
-          <nav className="h-full max-w-[1240px] flex mx-auto">
-            <div className="h-full w-full flex items-center justify-between">
-              <div></div>
-              <div className="flex items-center space-x-8 pr-50">
-                <div className="flex items-center space-x-2 pr-7 border-r border-r-stroke">
-                  <MapPinIcon className="w-5 h-5 text-white" />
-                  <p>20,Bordeshi, New York, US</p>
-                </div>
-
-                <div className="flex items-center space-x-2">
-                  <EnvelopeIcon className="w-5 h-5 text-white" />
-                  <p>info@theotransportation.com</p>
-                </div>
-              </div>
-              <div className="py-5 px-10 flex items-center justify-center bg-primary_orange z-20 cursor-pointer duration-300 ease-out right-75 rounded-b-lg hover:bg-primary_green">
-                <h4 className="font-bold text-white text-lg">Get A Quote</h4>
-              </div>
-            </div>
-          </nav>
-        </div>
-        <div className="h-10 w-full bg-primary_color transition hidden lg:block xl:hidden">
-          <nav className="h-full max-w-[1240px] flex items-center justify-between mx-auto px-10">
-            <div className="flex items-center space-x-2 pr-7 border-r border-r-stroke">
-              <MapPinIcon className="w-5 h-5 text-white" />
-              <p className="text-white text-base">20,Bordeshi, New York, US</p>
-            </div>
-
-            <div className="flex items-center space-x-2 pr-7 border-r border-r-stroke">
-              <EnvelopeIcon className="w-4 h-4 text-white" />
-              <p className="text-white text-base">
-                info@theotransportation.com
-              </p>
-            </div>
-            <div className="flex items-center space-x-2">
-              <PhoneIcon className="w-4 h-4 text-white" />
-              <p className="text-white text-base">+123-895-6147</p>
-            </div>
+        <div className="h-12 w-full bg-primary_color transition hidden lg:block">
+          <nav className="h-full flex w-[1240px] mx-auto px-8 items-center justify-between">
             <div className="flex items-center space-x-4">
-              <Facebook
-                className="text-white h-5 w-5"
-                style={{ height: "22px", width: "22px" }}
-              />
-              <Close
-                className="text-white h-5 w-5"
-                style={{ height: "22px", width: "22px" }}
-              />
-              <LinkedIn
-                className="text-white h-5 w-5"
-                style={{ height: "22px", width: "22px" }}
-              />
-              <YouTube
-                className="text-white h-5 w-5"
-                style={{ height: "22px", width: "22px" }}
+              <div className="flex items-center space-x-2">
+                <MapPinIcon className="w-5 h-5 text-white" />
+                <p className="text-white text-base">
+                  20,Bordeshi, New York, US
+                </p>
+              </div>
+              <div className="w-0.5 w h-5 bg-stroke" />
+              <div className="flex items-center space-x-2">
+                <EnvelopeIcon className="w-5 h-5 text-white" />
+                <p className="text-white text-base">
+                  info@theotransportation.com
+                </p>
+              </div>
+              <div className="w-0.5 w h-5 bg-stroke" />
+              <div className="flex items-center space-x-2">
+                <PhoneIcon className="w-4 h-4 text-white" />
+                <p className="text-white text-base">+123-895-6147</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-8">
+              <div className="flex items-center space-x-4">
+                <Facebook
+                  className="text-white h-5 w-5"
+                  style={{ height: "22px", width: "22px" }}
+                />
+                <Twitter
+                  className="text-white h-5 w-5"
+                  style={{ height: "22px", width: "22px" }}
+                />
+                <LinkedIn
+                  className="text-white h-5 w-5"
+                  style={{ height: "22px", width: "22px" }}
+                />
+                <YouTube
+                  className="text-white h-5 w-5"
+                  style={{ height: "22px", width: "22px" }}
+                />
+              </div>
+              <Button
+                text="Get A Quote"
+                buttonStyle="w-[50%] py-2.5  bg-gradient-to-r text-white  from-red-500  to-primary_orange text-lg font-bold rounded-md hover:bg-primary_green"
               />
             </div>
           </nav>
         </div>
-        <section
-          className={`border-b border-stroke p-4 lg:py-6 ${
-            show
-              ? "md:fixed fixed top-0 w-screen lg:h-[90px]  bg-white drop-shadow-lg duration-700 z-99"
-              : " "
-          }`}
-        >
-          <div className="w-full h-full flex items-center justify-between max-w-[1260px] mx-auto md:px-10 lg:px-6">
-            <Link to="/" className="flex items-center space-x-1 bg">
-              <img
-                src={theo_blue_orange_logo}
-                alt="card"
-                className="h-10 w-10 lg:h-18 lg:w-18"
-              />
-              <h5 className="font-bold text-2xl hidden lg:block">
-                Transporation
-              </h5>
-            </Link>
-            <div className="lg:flex space-x-14 h-full transition hidden">
-              {links.map((link) => (
-                <Link
-                  to={link.link}
-                  key={link.id}
-                  className="flex flex-col justify-between h-full cursor-pointer"
-                  onMouseEnter={() => setHoveredLinkId(link.id)}
-                  onMouseLeave={() => setHoveredLinkId(null)}
-                >
-                  <p
-                    className={`cursor-pointer font-bold text-md ${
-                      hoveredLinkId === link.id
-                        ? "hover:text-primary_orange"
-                        : ""
-                    }`}
-                  >
-                    {link.name}
-                  </p>
-                </Link>
-              ))}
-            </div>
-            <div className="xl:flex space-x-3 items-center hidden">
-              <div className="rounded-full border border-primary_color p-1 delay-300 transition opacity-75">
-                <div className="rounded-full p-4 bg-primary_orange">
-                  <PhoneIcon className="w-5 h-5 text-white" />
+
+        {/* <div className="h-12 w-full bg-primary_color transition hidden xl:flex">
+            <nav className="h-full max-w-[1240px] flex mx-auto">
+              <div className="h-full w-full flex items-center justify-between">
+                <div></div>
+                <div className="flex items-center space-x-8 pr-50">
+                  <div className="flex items-center space-x-2 pr-7 border-r border-r-stroke">
+                    <MapPinIcon className="w-5 h-5 text-white" />
+                    <p>20,Bordeshi, New York, US</p>
+                  </div>
+
+                  <div className="flex items-center space-x-2">
+                    <EnvelopeIcon className="w-5 h-5 text-white" />
+                    <p>info@theotransportation.com</p>
+                  </div>
+                </div>
+                <div className="py-5 px-10 flex items-center justify-center bg-primary_orange z-20 cursor-pointer duration-300 ease-out right-75 rounded-b-lg hover:bg-primary_green">
+                  <h4 className="font-bold text-white text-lg">Get A Quote</h4>
                 </div>
               </div>
-              <div className="flex flex-col space-y-1">
-                <p className="text-md text-grey_black_3 font-medium">
-                  Got A Question?
-                </p>
-                <p className="text-lg font-bold">+123-456-7890</p>
-              </div>
-            </div>
-            <div
-              onClick={() => setDrop(true)}
-              className="lg:hidden pr-5 md:pr-0"
-            >
-              <Bars3Icon className="w-7 h-7" />
-            </div>
-          </div>
-        </section>
+            </nav>
+          </div> */}
+
+        <Navbar handleDrop={handleDrop} />
         <div
           className={`flex flex-col space-y-10 md:hidden p-6 fixed top-0 right-0 w-[80%] sm:w-[70%] h-full z-999 bg-white drop-shadow-lg ${
             drop ? "translate-x-2" : "translate-x-125"

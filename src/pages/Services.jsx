@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../layout";
-import { service } from "../constants";
 import {
   DisclosureComponent,
   QuoteForm,
@@ -9,7 +8,7 @@ import {
 } from "../components";
 import { CheckIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import { cards, reviews, works } from "../data";
-import { background3, staff2 } from "../constants/originals";
+import { staff2 } from "../constants/originals";
 import { Link } from "react-router-dom";
 
 export default function Services() {
