@@ -119,45 +119,52 @@ export const blogs = [
 export const cards = [
   {
     id: 1,
-    title: "Product Transportation",
+    title: "Airport Transfers",
     image: transport,
     description:
-      "Rus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+      "We provide reliable and comfortable transportation to and from airports, ensuring a hassle-free start or end to your journey.",
   },
   {
     id: 2,
-    title: "Wirehouse Storage",
+    title: "Corporate Transportation",
     image: home_delivery,
     description:
-      "Kus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in neprehenderit",
+      "Our corporate transportation services are tailored to meet the needs of businesses. We offer timely and professional transportation for executives, clients, and employees.",
   },
   {
     id: 3,
-    title: "Product Packaging",
+    title: "Event Transportation",
     image: tracking,
     description:
-      "Dus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in ceprehenderit",
+      "Whether it's a wedding, conference, or any other special event, we can provide transportation solutions to ensure smooth logistics and a memorable experience.",
   },
   {
     id: 4,
-    title: "Source Optimization",
+    title: "City Tours",
     image: payment,
     description:
-      "Qus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in deprehenderit",
+      "Explore the city in style with our city tour services. Our knowledgeable drivers will take you to popular attractions and hidden gems, providing a personalized and informative experience.",
   },
   {
     id: 5,
-    title: "Lost Product Recovery",
+    title: "Special Occasions",
     image: search,
     description:
-      "Mus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in yeprehenderit",
+      "Celebrate your special occasions with Theo Transportation. We offer transportation services for birthdays, anniversaries, proms, and other memorable events.",
   },
   {
     id: 6,
-    title: "Logistic Consultancy",
+    title: "Medical Transportation",
     image: call_center,
     description:
-      "Yus error sit voluptatem accusa mnis iste natus error sit volup ris niesisi ut ali quip ex ea commodo consequat. Duis aute irure dolor in ueprehenderit",
+      "We understand the importance of reliable transportation for medical appointments. Our trained drivers provide safe and comfortable transportation for patients to hospitals, clinics, and other healthcare facilities.",
+  },
+  {
+    id: 7,
+    title: "Hourly Charters",
+    image: call_center,
+    description:
+      " If you need transportation for a specific period of time, our hourly charter service is the perfect option. Enjoy flexibility and convenience as you travel to multiple destinations or attend meetings throughout the day.",
   },
 ];
 

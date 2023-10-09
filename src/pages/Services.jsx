@@ -58,8 +58,16 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className="py-15 sm:py-20 lg:py-40 px-4 sm:px-20 md:px-10">
-        <div className="max-w-[1240px] mx-auto">
+      <div className="py-10 sm:py-20 lg:py-40 px-4 sm:px-20 md:px-10">
+        <div className="max-w-[1240px] mx-auto flex flex-col space-y-6">
+          <div>
+            <p className="flex-1 text-black font-bold tracking-normal text-center">
+              These are just a few examples of the services we offer at Theo
+              Transportation. We pride ourselves on delivering exceptional
+              customer service and ensuring a comfortable and reliable
+              transportation experience for all our clients.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition">
             {cards.map((card) => (
               <div
@@ -230,7 +238,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="py-15 sm:py-20 md:py-30 lg:py-40 px-4 sm:px-20 md:px-10 bg-[#003869CC] bg-background1 bg-no-repeat bg-cover bg-center">
+      <div className="py-15 sm:py-20 md:py-30 lg:py-40 px-4 sm:px-20 md:px-10 bg-[#003869CC] opacity-95 bg-background3 bg-no-repeat bg-cover bg-center">
         <div className="max-w-[1240px] mx-auto">
           <div className="flex flex-col lg:flex-row ">
             <div className="flex flex-col justify-center lg:flex-1">
@@ -252,7 +260,6 @@ export default function Services() {
           </div>
         </div>
       </div>
-
       <Testimonials />
       <SecondFooter />
     </Layout>
