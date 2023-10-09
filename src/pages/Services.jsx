@@ -230,9 +230,9 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="py-15 sm:py-20 md:py-30 lg:py-40 px-4 sm:px-20 md:px-10 bg-[#003869CC]">
+      <div className="py-15 sm:py-20 md:py-30 lg:py-40 px-4 sm:px-20 md:px-10 bg-[#003869CC] bg-background1 bg-no-repeat bg-cover bg-center">
         <div className="max-w-[1240px] mx-auto">
-          <div className="flex flex-col lg:flex-row lg:space-x-8">
+          <div className="flex flex-col lg:flex-row ">
             <div className="flex flex-col justify-center lg:flex-1">
               <QuoteForm />
             </div>

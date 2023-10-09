@@ -24,9 +24,15 @@ const background6 = require("../assets/orignals/background6.jpeg");
 const background7 = require("../assets/orignals/background7.jpeg");
 
 const twitter = require("../assets/orignals/twitter.png");
+const xpo = require("../assets/orignals/xpo.png");
+const amazon = require("../assets/orignals/amazon.png");
+const rl_carriers = require("../assets/orignals/rl_carriers.png");
 
 export {
   theo_white_logo,
+  xpo,
+  amazon,
+  rl_carriers,
   trackie,
   trackie1,
   staff,

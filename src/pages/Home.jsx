@@ -599,14 +599,17 @@ export default function Home() {
           </div>
         </div>
         <div className="py-15 sm:py-20 px-4 sm:px-20 md:px-10 bg-[#1eae98]">
-          <div className="max-w-[1240px] mx-auto">
+          <div className="max-w-[1240px] mx-auto flex flex-col space-y-8">
+            <h5 className="font-semibold text-2xl text-white text-center">
+              Who Theo Transportation Works with 
+            </h5>
             <div>
               {currentItem ? (
                 <img
                   key={currentItem.id}
                   src={currentItem.image}
                   alt={`images + ${currentItem.id}`}
-                  className="h-50 w-full object-contain"
+                  className="h-40 w-full object-contain"
                 />
               ) : null}
             </div>

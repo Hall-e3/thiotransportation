@@ -37,7 +37,7 @@ export default function Navbar({ show }) {
               className="h-10 w-10 lg:h-18 lg:w-18"
             />
             <h5 className="font-bold text-2xl hidden lg:block">
-              Transporation
+              Transportation
             </h5>
           </Link>
           <div className="lg:flex space-x-14 h-full transition hidden">

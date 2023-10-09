@@ -1,6 +1,5 @@
 import { FormatQuote } from "@mui/icons-material";
 import {
-  amazon,
   b1,
   b2,
   b5,
@@ -13,16 +12,16 @@ import {
   process_2,
   process_3,
   process_4,
-  rl_carriers,
   search,
   support1,
   tracking,
   transport,
   unboxing,
   world_distribution,
-  xpo_logo,
 } from "../constants";
 import {
+  amazon,
+  rl_carriers,
   staff,
   staff1,
   staff2,
@@ -33,6 +32,7 @@ import {
   staff8,
   staff9,
   storage,
+  xpo,
 } from "../constants/originals";
 
 export const links = [
@@ -382,14 +382,14 @@ export const homes = [
 export const who_we_work_with = [
   {
     id: 1,
-    image: rl_carriers,
+    image: amazon,
   },
   {
     id: 2,
-    image: xpo_logo,
+    image: xpo,
   },
   {
     id: 3,
-    image: amazon,
+    image: rl_carriers,
   },
 ];

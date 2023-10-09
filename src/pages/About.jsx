@@ -384,7 +384,7 @@ export default function About() {
                 About Our <span className="text-primary_color">Company </span>
               </span>
             </div>
-            <div className="flex-col items-center hidden lg:flex">
+            <div className="flex-col  items-center hidden lg:flex">
               <CustomStep
                 leftTitle={
                   <div className="border border-stroke rounded-lg h-[25vh] bg-white mr-1.5">
@@ -456,7 +456,7 @@ export default function About() {
                 }
               />
             </div>
-            <div className="w-full flex flex-col space-y-8 items-center lg:hidden">
+            <div className="w-full flex flex-col space-y-30 items-center lg:hidden">
               <CustomStepSmallDevice
                 bottom={
                   <div className="border border-stroke rounded-lg h-[25vh] bg-white mr-1.5">
