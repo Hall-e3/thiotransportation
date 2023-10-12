@@ -130,10 +130,9 @@ export default function About() {
                   <span className="text-primary_color">Transportation</span>
                 </h3>
                 <p className="flex-1 text-[#c7cdda] font-medium tracking-normal">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiatmnis iste natus error sit voluptatem
-                  accusa mnis iste natus error sit voluptatem accusa nulla
-                  pariatur.
+                  we also provide premium logistics support to meet the unique
+                  transportation requirements of businesses. Our premium
+                  logistics services offer the following benefits.
                 </p>
 
                 <div className="flex items-center">
@@ -141,10 +140,13 @@ export default function About() {
                     <img src={boxes} alt="boxes" className="mb-8" />
                     <div className="flex flex-col space-y-2">
                       <h5 className="font-bold text-lg text-black">
-                        24 Hours Service
+                        Supply Chain Management
                       </h5>
                       <p className="text-grey_skip">
-                        Sit voluptatem accusa nulla pariatur.
+                        We understand the importance of an efficient supply
+                        chain for businesses. Our logistics support ensures
+                        smooth coordination and timely delivery of goods,
+                        helping streamline your operations.
                       </p>
                     </div>
                   </div>
@@ -152,10 +154,12 @@ export default function About() {
                     <img src={delivery_courier} alt="boxes" className="mb-8" />
                     <div className="flex flex-col space-y-2">
                       <h5 className="font-bold text-lg text-black">
-                        Expert Team
+                        Warehousing and Distribution
                       </h5>
                       <p className="text-grey_skip">
-                        Dit voluptatem accusa nulla pariatur.
+                        We offer secure warehousing facilities and reliable
+                        distribution services to ensure that your goods are
+                        stored and delivered with utmost care and efficiency.
                       </p>
                     </div>
                   </div>
@@ -165,7 +169,7 @@ export default function About() {
                     <div className="w-full">
                       <div className="mb-2 flex items-center justify-between gap-4">
                         <Typography color="primary_green" variant="h6">
-                          Service
+                          Freight Forwarding
                         </Typography>
                         <Typography color="primary_green" variant="h6">
                           50%
@@ -176,7 +180,7 @@ export default function About() {
                     <div className="w-full">
                       <div className="mb-2 flex items-center justify-between gap-4">
                         <Typography color="primary_green" variant="h6">
-                          Marketing
+                          Last-Mile Delivery
                         </Typography>
                         <Typography color="primary_green" variant="h6">
                           80%
@@ -187,7 +191,7 @@ export default function About() {
                     <div className="w-full">
                       <div className="mb-2 flex items-center justify-between gap-4">
                         <Typography color="primary_green" variant="h6">
-                          Support
+                          Inventory Management
                         </Typography>
                         <Typography color="primary_green" variant="h6">
                           90%
@@ -260,30 +264,32 @@ export default function About() {
                 </span>
               </div>
               <p className="text-grey_skip font-normal tracking-normal text-lg">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugi atmnis ist met, consectetur adipisicing
-                elit, sed do eiusmod tempor incididunt ut labore when the musics
-                over turn off the light
+                Our premium logistics support is designed to cater to the
+                specific needs of businesses, providing reliable and
+                comprehensive solutions to enhance your supply chain management.
+                We strive to deliver excellence in logistics, offering
+                personalized services that meet your requirements and contribute
+                to the growth of your business.
               </p>
               <div className="transition flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:items-center lg:space-x-14 cursor-pointer  h-15 lg:border-b lg:border-b-stroke">
                 {[
                   {
                     id: 1,
-                    title: "Our Mission",
+                    title: "Freight Forwarding",
                   },
                   {
                     id: 2,
-                    title: " Our Vision",
+                    title: "Last-Mile Delivery",
                   },
                   {
                     id: 3,
-                    title: "Our Principle",
+                    title: "Inventory Management",
                   },
                 ].map((cb) => (
                   <h4
                     onClick={() => setActiveTab(cb.id)}
                     key={cb.id}
-                    className={`font-bold text-xl h-full flex items-center lg:justify-center ${
+                    className={`font-bold text-lg h-full flex items-center lg:justify-center ${
                       activeTab === cb.id &&
                       "text-primary_orange border-b border-b-primary_orange duration-700 ease-in-out"
                     }`}
@@ -296,13 +302,13 @@ export default function About() {
                 <div className="flex flex-col space-y-5 lg:flex-row lg:items-center lg:space-x-6 pt-4 lg:pt-0">
                   <div className="flex flex-col space-y-4 lg:space-y-6 order-last pb-6 lg:pb-0 lg:order-none">
                     <p className="text-grey_skip font-normal tracking-normal text-lg">
-                      Evsed do eiusmod tempor incididunt ut lab ore when the
-                      musics over turn
+                      Freight Forwarding
                     </p>
                     <p className="text-grey_skip font-normal tracking-normal text-lg">
-                      Kobita off the light when the musics over turn off the
-                      light said by JIm Morrison tumi sopno charini hoye khobor
-                      nio pa.
+                      Our experienced team can handle all aspects of freight
+                      forwarding, including documentation, customs clearance,
+                      and transportation of goods across different modes,
+                      whether it's air, sea, or land.
                     </p>
                   </div>
                   <div className="order-first pb-4 lg:pb-0 lg:order-none">
@@ -318,13 +324,13 @@ export default function About() {
                 <div className="flex flex-col space-y-5 lg:flex-row lg:items-center lg:space-x-6 pt-4 lg:pt-0">
                   <div className="flex flex-col space-y-4 lg:space-y-6 order-last pb-6 lg:pb-0 lg:order-none">
                     <p className="text-grey_skip font-normal tracking-normal text-lg">
-                      Dvsed do eiusmod tempor incididunt ut lab ore when the
-                      musics over turn
+                      Last-Mile Delivery
                     </p>
                     <p className="text-grey_skip font-normal tracking-normal text-lg">
-                      Qobita off the light when the musics over turn off the
-                      light said by JIm Morrison tumi sopno charini hoye khobor
-                      nio la.
+                      We specialize in last-mile delivery, ensuring that your
+                      products reach the customers' doorsteps in a timely and
+                      professional manner. Our advanced tracking systems provide
+                      real-time updates to keep you and your customers informed.
                     </p>
                   </div>
                   <div className="order-first pb-4 lg:pb-0 lg:order-none">
@@ -340,13 +346,13 @@ export default function About() {
                 <div className="flex flex-col space-y-5 lg:flex-row lg:items-center lg:space-x-6 pt-4 lg:pt-0">
                   <div className="flex flex-col space-y-4 lg:space-y-6 order-last pb-6 lg:pb-0 lg:order-none">
                     <p className="text-grey_skip font-normal tracking-normal text-lg">
-                      Mvsed do eiusmod tempor incididunt ut lab ore when the
-                      musics over turn
+                      Inventory Management
                     </p>
                     <p className="text-grey_skip font-normal tracking-normal text-lg">
-                      Yobita off the light when the musics over turn off the
-                      light said by JIm Morrison tumi sopno charini hoye khobor
-                      nio da.
+                      With our logistics support, you can effectively manage
+                      your inventory, minimizing stockouts and optimizing
+                      storage space. This helps improve overall operational
+                      efficiency and reduces costs.
                     </p>
                   </div>
                   <div className="order-first pb-4 lg:pb-0 lg:order-none">
