@@ -1,41 +1,54 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Input from "./Input";
 import SelectField from "./SelectField";
 import CheckBox from "./CheckBox";
 import Button from "./Button";
 import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
-// const values={
-//   name:'',
-//   email:'',
-//   phone:'',
-//   subject:'',
-//   pickup_city:'',
-//   delivery_city:'',
-//   freight_type:'',
-//   incoterms:'',
-//   width:'',
-//   height:'',
-//   length:'',
-//   weight:'',
-// }
+const initialValues = {
+  full_name: "",
+  email: "",
+  phone: "",
+  subject: "",
+  pickup_city: "",
+  delivery_city: "",
+  freight_type: "",
+  incoterms: "",
+  width: "",
+  height: "",
+  length: "",
+  weight: "",
+};
 
 export default function QuoteForm() {
+  const [values, setValues] = useState(initialValues);
+  const [errors, setErrors] = useState({});
   const form = useRef();
 
-  // const validateLogin = () => {
-  //   let temp = {};
-  //   temp.password =
-  //     values.password && values.password.length < 6
-  //       ? "Password should contain at least 6 characters"
-  //       : "";
-  //   temp.input = values.input ? "" : "Email or phone number is required";
-  //   setErrors({ ...temp });
-  //   return Object.values(temp).every((x) => x === "");
-  // };
+  const validateLogin = () => {
+    let temp = {};
+    temp.email = values.email ? "" : "Email is required";
+    temp.phone = values.phone ? "" : "Phone number is required";
+    temp.subject = values.subject ? "" : "Subject is required";
+    temp.full_name = values.full_name ? "" : "Full Name is required";
+    setErrors({ ...temp });
+    return Object.values(temp).every((x) => x === "");
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setValues({
+      ...values,
+      [name]: value,
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (validateLogin()) {
+      // console.log(validateLogin());
+      console.log("incomplete form");
+    }
   };
   return (
     <form
@@ -53,25 +66,36 @@ export default function QuoteForm() {
         <Input
           placeholder="Your Name"
           styles="border rounded-md flex-1"
-          required={true}
-          va
+          value={values.full_name}
+          error={errors?.full_name}
+          name="full_name"
+          onChange={handleInputChange}
         />
         <Input
           placeholder="Your Email address"
           styles="border rounded-md flex-1"
-          required={true}
+          value={values.email}
+          error={errors?.email}
+          name="email"
+          onChange={handleInputChange}
         />
       </div>
       <div className="flex flex-col lg:flex-row lg:space-x-5">
         <Input
           placeholder="Your Phone number"
           styles="border rounded-md"
-          required={true}
+          value={values.phone}
+          error={errors?.phone}
+          name="phone"
+          onChange={handleInputChange}
         />
         <Input
           placeholder="Subject"
           styles="border rounded-md"
-          required={true}
+          value={values.subject}
+          error={errors?.subject}
+          name="subject"
+          onChange={handleInputChange}
         />
       </div>
       <div className="flex flex-col lg:flex-row lg:space-x-5">
@@ -135,6 +159,7 @@ export default function QuoteForm() {
       <Button
         type="submit"
         text="Get A Quote"
+        onClick={handleSubmit}
         buttonStyle="lg:w-[40%] bg-gradient-to-r text-white from-red-500  to-primary_orange py-2 text-lg font-bold rounded-md"
         icon={
           <div className="bg-primary_color p-3 rounded-md">
