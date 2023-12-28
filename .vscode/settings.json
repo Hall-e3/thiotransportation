@@ -8,23 +8,12 @@
     "editor.selectionHighlight": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
   "files.autoSave": "afterDelay",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.fontWeight": "normal",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": [
-    "abouts",
-    "heroicons",
-    "Incoterms",
-    "orignals",
-    "stockouts",
-    "Supensing",
-    "tailwindcss",
-    "Theo",
-    "trackie",
-    "Travelling"
-  ]
+  "cSpell.words": ["abouts", "heroicons", "Incoterms", "orignals", "stockouts", "Supensing", "tailwindcss", "Theo", "trackie", "Travelling"]
 }

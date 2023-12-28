@@ -46,7 +46,6 @@ export default function QuoteForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateLogin()) {
-      // console.log(validateLogin());
       console.log("incomplete form");
     }
   };
